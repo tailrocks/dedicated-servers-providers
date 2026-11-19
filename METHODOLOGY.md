@@ -14,7 +14,7 @@ The user did not specify a location, operating system, network allowance, worklo
 
 ## Reference configuration
 
-The regular Hetzner AX162-1 is an EPYC 9454P (48 cores / 96 threads), 128 GB DDR5 ECC registered RAM and two 3.84 TB datacenter NVMe SSDs. On 2026-11-19 the official price list and live price feed showed EUR 612.30/month plus EUR 304 setup, excluding VAT and IPv4. The provider's separate USD tariff was USD 722.10/month plus USD 359 setup. The EUR first-year subtotal is EUR 7,651.60 before IPv4 and tax.
+The regular Hetzner AX162-1 is an EPYC 9454P (48 cores / 96 threads), 128 GB DDR5 ECC registered RAM and two 3.84 TB datacenter NVMe SSDs. On 2026-11-19 the official price list and live price feed showed EUR 612.30/month plus EUR 304 setup, excluding VAT and IPv4; the same live tariffs were rechecked on 2026-11-20 Asia/Ho_Chi_Minh. The provider's separate USD tariff was USD 722.10/month plus USD 359 setup. The EUR first-year subtotal is EUR 7,651.60 before IPv4 and tax.
 
 Sources:
 
@@ -28,7 +28,7 @@ Limited-stock / legacy AX162 prices are separate offers. An absent limited-stock
 
 ## CPU qualification
 
-An exact 9454P is an exact CPU-model match. A newer or different CPU is evaluated with primary specifications and benchmarks; core count, model number or vendor marketing alone is insufficient. Record whether performance is directly benchmark-supported or inferred from a newer architecture and comparable specifications.
+An exact 9454P is an exact CPU-model match, subject to contradictory product-specific details. For example, the Singapore listings reviewed on 20 November explicitly say 48 cores and 48 threads instead of the model's 96 threads; do not assume an enabled SMT setting or silently repair the listing. Those offers remain conditional. A newer or different CPU is evaluated with primary specifications and benchmarks; core count, model number or vendor marketing alone is insufficient. Record whether performance is directly benchmark-supported or inferred from a newer architecture and comparable specifications.
 
 PassMark observations used in the 2026-11-19 research:
 
@@ -59,6 +59,8 @@ The [Threadripper PRO 9985WX offers eight channels](https://www.amd.com/en/produ
 
 Older Xeons, EPYC 7702/7763, mainstream Ryzen and EPYC 9354P offers from broader budget searches must not enter the qualifying shortlist simply because they are inexpensive. A dual-socket aggregate result also must not be confused with a single-socket score.
 
+The 20 November follow-up adds two cautionary examples. The [dual Xeon Gold 6438Y+ result](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6438Y%2B&cpuCount=2) was 92,419 CPU Mark, below 94,689 for the reference despite the combined 64 cores. The [Threadripper PRO 7975WX](https://www.cpubenchmark.net/compare/5729vs5596/AMD-Ryzen-Threadripper-PRO-7975WX-vs-AMD-EPYC-9454P) was only about 0.9% ahead on the aggregate score and lower in several parallel subtests. It is retained as workload-dependent, rather than qualifying from the overall score alone. The [newer CPU evidence](research/2026-11-20-newer-cpu.md) records the subtests and the stronger 9475F's separate SPEC evidence and customer-specific price conditions.
+
 ## Storage qualification
 
 The main table interprets the requested 2 TB as raw installed SSD capacity. Mirrored capacity is separately noted where material.
@@ -79,6 +81,7 @@ The README retains the original `Price (USD/mo)` column and ascending sort. Nati
 
 - Native USD offers use their advertised USD recurring amount.
 - EUR offers are converted for comparison at **EUR 1 = USD 1.0992**, the [ECB reference rate dated 2026-11-19](https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata). Converted amounts are prefixed `~` and rounded to two decimals. This dated API source remains reproducible after the ECB's landing page advances to the next business day.
+- BRL offers use **EUR 1 = BRL 6.4765**, the [same date's ECB observation](https://data-api.ecb.europa.eu/service/data/EXR/D.BRL.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata). Calculate `BRL / 6.4765 * 1.0992` and round only the final USD amount. Keep the actual BRL invoice in Notes. The 20 November pass took place before that day's new ECB publication, so the 19 November rates remain dated explicitly.
 - The converted amount is not a promise that the provider will charge that USD price. Provider-specific USD tariffs, card fees and future exchange rates can differ.
 - Prices are before VAT where the tax basis is verified. A provider stating that it does not charge VAT is recorded accordingly. Unknown tax treatment is explicitly marked; do not silently subtract an assumed tax rate.
 - An advertised tax-inclusive price whose VAT rate cannot be established must never be presented as a verified net amount. Mark it **†** in the price column and retain the full displayed gross amount, with the tax caveat in Notes. This is a conservative comparison when that gross amount is already below the reference's net amount. Do not subtract an assumed VAT percentage. Unknown prices without an established currency belong in the evidence log.
@@ -103,6 +106,8 @@ Each table row distinguishes the evidence available:
 When a website describes itself as a demonstration or a checkout explicitly simulates hardware, exclude it from recommendations. Missing identity information, inconsistent specifications or a registration-number discrepancy are verification concerns, not proof of fraud. Record what was actually observed and any possible benign explanation.
 
 Some WHMCS storefronts need normal session cookies to preserve a selected product through redirects. Before concluding that a link selects the wrong server, retry the provider's published numeric product link in a fresh anonymous session. Do not use a cookie-less fetch failure as evidence that no order exists. A successful matching follow-up supersedes the earlier retrieval result; keep both observations in the dated log. This process requires no login, checkout submission or payment.
+
+Text extraction can expose hidden alternative-cycle labels such as `Unavailable` or `Indisponível`. Check the selected billing cycle, active product link, HTML state, price calculation and relevant stylesheet before treating those words as stock evidence. This resolved the AMS SOFT and CrockyHost false negatives on 20 November. A working selected cart still does not prove physical stock. Conversely, an explicitly sold-out SKU or negative live inventory result is not overridden merely because a configurator accepts the product.
 
 If demonstration wording is historical and current legal/product pages have changed, record that chronology explicitly. Do not claim the current service is definitely a demonstration; require fresh supply evidence before treating static stock indicators as availability.
 
