@@ -2,7 +2,7 @@
 
 Original research: **19 November 2026**; targeted hardware and storage refresh: **20 November 2026**. Prices: **Singapore dollars (SGD)** unless stated otherwise. Workload: native Linux CI runners building and testing Rust and TypeScript projects in Docker containers. Priority: performance first, then value; ordinary non-ECC RAM for owned desktop/workstation hardware. Entries not explicitly refreshed retain the original observation date.
 
-This file extends the repository's rental research with CI-specific ownership candidates. Regional hosting and ownership economics are in [02-rental-market.md](02-rental-market.md) and [03-rent-vs-buy-tco.md](03-rent-vs-buy-tco.md). [05-repository-rental-comparison.md](05-repository-rental-comparison.md) covers all 104 existing rental rows. The workload acceptance procedure is in [04-validation-and-procurement.md](04-validation-and-procurement.md).
+This file extends the repository's rental research with CI-specific ownership candidates. Regional hosting and ownership economics are in [02-rental-market.md](02-rental-market.md) and [03-rent-vs-buy-tco.md](03-rent-vs-buy-tco.md). The [initial 104-offer comparison](05-repository-rental-comparison.md) and [15-offer update](08-latest-rental-comparisons.md) together cover all 119 current rental rows. The workload acceptance procedure is in [04-validation-and-procurement.md](04-validation-and-procurement.md).
 
 ## 1. Decision
 

@@ -91,7 +91,7 @@ After validation, calculate:
 
 Include actual utilization, outages and job failures. Use queue latency as a second criterion; a cheap high-throughput machine can still be unacceptable if critical-path jobs finish late. For two-node options, retain the per-host memory and storage constraints.
 
-If the duration of need is uncertain, a short rental commitment has value beyond a three-year cost table; a powered-off allocated dedicated server still has the modeled recurring bill. A reliable existing office can improve ownership economics, but the repository's cheaper European rental candidates can remain below that ownership budget. Use [all-rental coverage](05-repository-rental-comparison.md), not only regular Hetzner pricing. Keep an inexpensive existing rental's actual invoice in the comparison. AX162-LTD is unavailable in the repository's latest inventory evidence and is only a historical sensitivity.
+If the duration of need is uncertain, a short rental commitment has value beyond a three-year cost table; a powered-off allocated dedicated server still has the modeled recurring bill. A reliable existing site can improve ownership economics; office rent is excluded from every scenario, and electricity and internet are independent choices. The repository's cheaper European rental candidates can remain below the ownership budget with selected costs. Use the [initial 104-rental coverage](05-repository-rental-comparison.md) plus [the 15 latest additions](08-latest-rental-comparisons.md), not only regular Hetzner pricing. Keep an inexpensive existing rental's actual invoice in the comparison. AX162-LTD is unavailable in the repository's latest inventory evidence and is only a historical sensitivity.
 
 ## 9. Review and remaining evidence gaps
 

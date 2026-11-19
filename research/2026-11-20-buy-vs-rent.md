@@ -2,6 +2,8 @@
 
 This extension compares buying non-ECC desktop/workstation hardware in Singapore or Malaysia with the rental research already in this repository. It adds a permanent [buy-versus-rent research folder](buy-vs-rent/README.md) for Rust/TypeScript builds and tests in Docker. Singapore is the preferred purchase/hosting market, with Malaysia second; worldwide rental locations remain available for comparison when geography is flexible.
 
+**Current coverage: 119 rental offers.** The initial 104-offer snapshot and direct-payback follow-up are preserved chronologically below. The [latest integration](#follow-up-integrating-the-119-offer-main-branch) adds the 15 offers subsequently published on main.
+
 ## Source snapshot and repository scope
 
 The rental input is the root README and dated logs at commit **07180f43068a8de01ae30c41a265ec16ef1f138b**, containing 104 rows across 38 alternative seller brands plus Hetzner. The seven-column table, numeric sort, row contents and existing historical logs are preserved. Importing an offer into the cost model does not reset its original checked date or establish new inventory.
@@ -70,3 +72,21 @@ For the S$8,609.40 A2 workstation, UHost's USD220/month quote is **30.34 months 
 All 104 rental IDs and source URLs remain represented, with **68 capacity-profile comparisons across 66 distinct matching offers**, plus 38 nonmatches. Unknown setup remains `N/Q` for setup-adjusted payback. Prepaid service-month equivalents, actual term payments and minimum commitments are distinguished; a temporary cash crossing is not called permanent payback. Whole-month results use unrounded values: BizoSiz A1 with both utilities is 38.0006, so the crossing is month 39, not 38.
 
 GPT-6.2 Astra max computed the utility and all-rental extensions; GPT-6.2 Sol max independently checked the formulas, arithmetic, payment timing, source mappings and repository integration. No purchase, vendor contact, actual CI replay or wall-power measurement was performed.
+
+## Follow-up: integrating the 119-offer main branch
+
+On the next repository check, main had advanced to **c868b31019be4c449bb62cbfa9786d44ac663db4**, adding **15 offers from nine sellers** and four evidence logs. The original 104 rows were unchanged. The research branch integrates that upstream work without replacing its table or logs. The ownership extension now covers **119 rows across 47 alternative seller brands plus Hetzner**.
+
+The new [08-latest-rental-comparisons.md](buy-vs-rent/08-latest-rental-comparisons.md) preserves all 15 additions as stable IDs **N01–N15**, including hardware, capacity matching, native price/setup/term, 12/24/36-month known charges and the same four independent electricity/internet payback scenarios. Files 05 and 07 retain their initial IDs 001–104 and explicitly state their snapshot scope. Their combination covers every current canonical row. No office or premises rent is introduced; room cooling remains separately optional.
+
+The additions consist of **three A1-only, seven A2-only and five nonmatching offers**. Current totals are **35 A1-only, 39 A2-only, two matching both and 43 matching neither**: **76 distinct matches and 78 profile comparisons**. Across all 119 offers, 87 state a setup fee and 32 leave it unresolved. Unknown fees are not changed to zero. The five capacity failures remain visible, including XDLHOST's roughly 1 TB mirror; its advertised rental-versus-Hetzner month-14 setup recovery is not a hardware-purchase payback result.
+
+The dated GBP observation was fetched directly from the [ECB CSV](https://data-api.ecb.europa.eu/service/data/EXR/D.GBP.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata), confirming **EUR1 = GBP0.83581**. GBP-to-SGD calculations use the native quote divided by 0.83581 and multiplied by 1.4176 without an intermediate rounded USD amount.
+
+The [Progressive Robot catalogue](https://account.progressiverobot.com/index.php?rp=/store/dedicated-servers) was reopened and retains GBP221/month plus GBP88 setup for each exact A1/A2 listing. That gives **S$13,643.26** in 36-month known charges for each. With direct Singapore electricity plus internet, setup-adjusted purchase crossings are **35.65 months for A1** and **34.50 for A2**, or whole months **36** and **35**. Deployment country/city, final tax, minimum term and physical allocation remain unresolved. These two offers bring the number below the optional expanded ownership budgets to **nine**, while the number below direct hardware-plus-both-utilities remains **six**, and below hardware alone remains **zero**, considering the ranked capacity matches with stated setup fees.
+
+The [Faciotech configurator](https://faciotech.com/dedicated-servers.php#configurator) was reopened and retains the USD389/month / zero-setup Enterprise Metal quote, with engineer confirmation before billing. Nindohost's USD234 A2 remains quote-only with unknown setup; this integration uses the upstream evidence after a fresh parameterized web fetch failed. Its 36-month rent-only subtotal of **S$10,864.14** is not a complete invoice. UHost A2 and PlusClouds A1 remain the lowest stated-setup 36-month totals in the ranked inventory before unquoted charges.
+
+The update preserves payment-specific watchlists separately. AvalinHost's EUR pricing basis is paid in Iranian toman, with international payment eligibility unverified; Gengbiz's Malaysian-market page does not establish a qualifying Malaysian physical deployment. Neither is silently promoted to a generally payable or locally allocated replacement. AmazingRDP's annual quote is modeled as a real USD5,400 upfront term invoice, with cash crossover distinguished from its monthly equivalent.
+
+GPT-6.2 Astra max performed the delta comparison and decision-impact review, followed by GPT-6.2 Sol max's independent review of new calculations, capacity counts, fee/currency handling, prepaid behavior and cross-file integration. The current canonical server table is preserved byte-for-byte from `c868b31`; the authored integration commit includes the standing Alexey Zhokhov sign-off.

@@ -1,4 +1,6 @@
-# Hardware purchase break-even across all 104 rental offers
+# Hardware purchase break-even across the initial 104 rental offers
+
+**Current coverage:** this appendix preserves the initial IDs 001–104 from commit `07180f4`. Add [N01–N15 from the latest research](08-latest-rental-comparisons.md) for all **119 current offers**, with 76 distinct capacity matches, 78 profile comparisons and 43 nonmatches. Counts below remain scoped to the initial snapshot; its four utility choices and formulas continue unchanged.
 
 **How many months of rent buy a server?** On UHost’s Helsinki A2 quote, S$8,609.40 of Singapore hardware equals **30.34 months of recurring rent**. The provider also lists USD 120 setup. Counting that fee on a new rental moves hardware-only break-even to **29.80 months**. Counting both electricity and internet on the owned host moves it to **54.86 months**, or month 55 on monthly billing. For the A1 server with the larger mirrored drives, BizoSiz gives **24.71 months of recurring rent**, **24.31 months** including setup and **38.0006 months** including setup and both operating costs. The first completed month at or beyond that last threshold is **39**. Supply, taxes and actual CI performance remain unverified. [Recorded UHost quotes](../2026-11-19-global.md#exact-cpu-published-qualifying-offers) · [BizoSiz carts](../2026-11-20-exact-cpu.md#bizosiz)
 

@@ -1,6 +1,8 @@
-# All 104 rental offers against the owned CI hosts
+# Initial 104 rental offers against the owned CI hosts
 
-**This file preserves the complete rental inventory and its original optional expanded-budget comparison.** For the user's primary hardware-only and independently selected electricity/internet question, start with [direct payback](06-direct-payback.md) and [all-rental break-even months](07-all-rentals-break-even.md). Office rent is excluded in every scenario. The expanded ownership totals here additionally count UPS/assembly, room cooling and a repair reserve; they must not be mistaken for hardware-only totals.
+**Snapshot scope:** this file preserves IDs 001–104 from commit `07180f4`. The current repository has **119** offers; the [15 subsequent additions](08-latest-rental-comparisons.md) extend the same capacity, horizon-cost and payback methodology. Counts and the seven-offer finding below refer to this initial snapshot; the current expanded-budget count is nine. Do not renumber these stable IDs using the latest sorted README positions.
+
+**This file preserves the original rental inventory and its optional expanded-budget comparison.** For the user's primary hardware-only and independently selected electricity/internet question, start with [direct payback](06-direct-payback.md), [initial rental break-even months](07-all-rentals-break-even.md) and [the latest additions](08-latest-rental-comparisons.md). Office rent is excluded in every scenario. The expanded ownership totals here additionally count UPS/assembly, room cooling and a repair reserve; they must not be mistaken for hardware-only totals.
 
 **At 36 months, seven capacity-matched rental offers have published rent and setup below the corresponding optional expanded Singapore budget before additional customer-specific charges.** The lowest A2 quote with a stated fee is UHost in Helsinki at S$10,368.91. For A1, PlusClouds lists S$12,269.33, while BizoSiz reached a matching cart at S$13,096.55. These are European server locations. If runners must be in Singapore or Malaysia, the relevant alternatives are in the [regional rental comparison](02-rental-market.md).
 
@@ -198,7 +200,7 @@ All 38 offers have 128 GB RAM and lack a pair of drives of at least 3.84 TB. Som
 
 ## Other sites, billing choices and exclusions in the research logs
 
-The 104-row total follows the canonical rental table. Its notes also record the following material alternatives. They use the same calculation rules when substituted for a main-row price.
+The 104-row total follows the canonical rental table at the frozen initial commit. Its notes also record the following material alternatives. They use the same calculation rules when substituted for a main-row price. The subsequent 15 additions are recorded separately in [file 08](08-latest-rental-comparisons.md).
 
 | Source rows | Alternative recorded in the supporting evidence |
 |---|---|
