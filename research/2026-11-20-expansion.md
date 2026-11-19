@@ -1,6 +1,12 @@
 # More dedicated-server sellers — 20 November 2026 expansion
 
-Research date: **2026-11-20, Asia/Ho_Chi_Minh**; retrievals took place on 19 November UTC. This pass continues the previous 119-row comparison. It adds **22 rows from eight additional seller brands**, updates an existing PowerDedi promotion, and preserves every earlier offer and evidence file. The current comparison has **141 rows: 55 alternative seller brands plus Hetzner**. Rows include materially different RAM/storage and payment terms; they are not counts of independently available physical machines.
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
+[22 offers added](#what-this-pass-adds) · [Detailed evidence](#evidence-files) · [PowerDedi coupon](#powerdedi-first-month-reduction-unchanged-renewal) · [Excluded offers](#other-excluded-and-unresolved-offers)
+
+Research date: **2026-11-20, Asia/Ho_Chi_Minh**; retrievals took place on 19 November UTC. This pass continues the previous 119-row comparison. It adds **22 rows from eight additional seller brands**, updates an existing PowerDedi promotion, and preserves every earlier offer and evidence file. This pass brought the comparison to **141 rows: 55 alternative seller brands plus Hetzner**. Rows include materially different RAM/storage and payment terms; they are not counts of independently available physical machines.
 
 The requirements remain a whole physical dedicated server, CPU performance at least in the EPYC 9454P class, at least 128 GB RAM and at least 2 TB **raw** SSD. An exact 9454P is preferred for an unambiguous CPU-model match. All accepted new rows use that CPU or the separately benchmark-supported non-P EPYC 9455. No VPS or dedicated-vCPU offer was admitted.
 

@@ -1,5 +1,9 @@
 # Regional dedicated-server quotes checked on 20 November 2026 ICT
 
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
 ## AvalinHost — exact 9454P, provider-denominated in EUR and billed in Iranian toman
 
 [AvalinHost's new-server configurator, AX section](https://www.avalinhost.com/index.php?page=dedicated-servers-hetzner-new#AX) is a purchasing channel of Iranian company Avalin Dadeh Gostar Sabz. Its live HTML dated 1405/08/28 at 21:00 (19 November 2026) contains both full machines, the buyer's location selector and the price calculation used in the order dialog. The same product and price fields appear in the desktop table and mobile cards. The numbers in this section are the live response, not the search engine's older cached toman quote.

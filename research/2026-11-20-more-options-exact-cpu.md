@@ -1,5 +1,9 @@
 # European exact-CPU offers checked on 20 November 2026 in Vietnam
 
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
 All proposed entries use the whole AMD EPYC 9454P, 48 cores / 96 threads. Dollar comparisons use €1 = $1.0992. Storage is raw capacity. The two-drive 1.92 TB option gives 3.84 TB raw and 1.92 TB nominal when mirrored. Tables below distinguish directly returned configurator totals from estimates. No order or supplier inquiry was submitted.
 
 ## Pure Next, Germany

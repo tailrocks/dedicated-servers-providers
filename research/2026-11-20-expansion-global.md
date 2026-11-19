@@ -1,5 +1,9 @@
 # Indian and Palestinian storefronts checked on 20 November 2026
 
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
 Checked on 19 November UTC / 20 November in Vietnam. The qualifying configurations below use the exact AMD EPYC 9454P. The amounts are native USD. Commercial checks used public product pages and temporary anonymous configuration summaries. No order, domain registration, payment, account or seller contact was made.
 
 ## ServerWala

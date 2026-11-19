@@ -1,5 +1,9 @@
 # Additional physical-server sellers, November 20, 2026 (Asia/Ho_Chi_Minh)
 
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
 ## IpServer.su | EPYC 9455 in France and Canada
 
 Both the [France configurator, FR-RISE-XL](https://www.ipserver.su/en/prices/index/view/id/7217/fr-rise-xl) and the [Canada configurator, CA-RISE-XL](https://www.ipserver.su/en/prices/index/view/id/7423/ca-rise-xl) directly identify dedicated servers and returned complete matching order forms. The French and Canadian product-specific hardware, all default option increments and four term charges were verified separately. Both advertise a non-P 48c/96t Turin 9455, 128 GB DDR5 ECC, 2 × 1.92 TB NVMe, software RAID 1 by default (1.92 TB nominal mirrored), guaranteed unmetered 1 Gbps public and 1 Gbps private, and IPv6 /64. Additional IPv4 entries are optional. The selected form does not establish the number of primary IPv4 addresses included. Country is explicit; physical city is unspecified. The [French catalogue](https://www.ipserver.su/en/prices/cats/view/id/2/countryId/55) and [Canadian catalogue](https://www.ipserver.su/en/prices/cats/view/id/2/countryId/86) show Configure while nearby unavailable SKUs explicitly say Unavailable. Physical allocation/stock is unconfirmed. These appear to be RISE-XL resale prices; the [direct upstream inventory](https://eu.api.ovh.com/v1/dedicated/server/datacenter/availabilities?planCode=25risexl01-v1) separately reported all six locations unavailable at the research check. Preallocated stock held by the reseller is unknown.

@@ -1,6 +1,12 @@
 # Dedicated server offer audit, 19 November 2026
 
-Evidence record from the 2026-11-19 research pass. The [README](../README.md) is the canonical comparison; [the consolidated history](2026-11-19.md#continuation-of-research) records later corrections across parallel checks.
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 19 November 2026
+
+[Pro-m](#pro-m-physical-dedicated-servers) · [IP-Projects](#ip-projects-configurations) · [Drive options](#additional-drive-choices) · [Excluded offers](#other-leads-and-exclusions)
+
+Evidence record from the 2026-11-19 research pass. The [rental catalog](../rentals/README.md) is the canonical comparison; [the consolidated history](2026-11-19.md#continuation-of-research) records later corrections across parallel checks.
 
 ## Pro-m physical dedicated servers
 

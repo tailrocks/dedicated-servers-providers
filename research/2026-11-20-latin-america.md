@@ -1,5 +1,9 @@
 # Brazilian and Peruvian storefronts, 20 November 2026
 
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
 Hardware locations below are supplied by the storefronts and differ from the reseller's location. Verification took place 19 November UTC, after midnight in Asia/Ho_Chi_Minh. The 19 November ECB reference rates were [6.4765 BRL per EUR](https://data-api.ecb.europa.eu/service/data/EXR/D.BRL.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata) and [1.0992 USD per EUR](https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata). Converted monthly values use BRL ÷ 6.4765 × 1.0992.
 
 ## AMS SOFT

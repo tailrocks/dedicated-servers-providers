@@ -1,6 +1,12 @@
 # Fifteen additional rentals against the Singapore hardware options
 
-**Snapshot scope:** this file preserves the 15 additions and combined 119-offer findings at commit `c868b31`. The [next 22 offers and current 141-offer totals](09-expanded-rental-comparisons.md), plus [current corrections to existing offers](10-current-offer-updates.md), extend this evidence. Counts below remain scoped to this pinned snapshot.
+[Home](../../README.md) · [Buy vs rent](README.md)
+
+**Rental snapshot** · 15 added offers through `c868b31` (119 total)
+
+[Invoices](#native-invoices-and-singapore-dollar-cash-budgets) · [Payback](#direct-hardware-break-even-in-months) · [36-month totals](#what-changes-at-36-months-across-all-119-offers) · [Evidence](#offer-evidence-and-exclusions)
+
+**Snapshot scope:** this file preserves the 15 additions and combined 119-offer findings at commit `c868b31`. The [next 22 offers and the 141-offer totals](09-expanded-rental-comparisons.md), plus [current corrections to existing offers](10-current-offer-updates.md), extend this evidence. Counts below remain scoped to this pinned snapshot.
 
 **Progressive Robot is the only new seller with a stated setup fee whose rent falls below the expanded Singapore ownership budgets at 36 months.** Its A1 and A2 offers both list GBP 221/month plus GBP 88 setup. That is **S$13,643.26 over 36 months** at the dated FX. The direct purchase budget with server electricity and internet is lower by S$86.16 for A1 and S$367.76 for A2. The expanded ownership budgets are higher by S$2,130.55 and S$1,823.61, respectively. These small direct-budget gaps make final tax and other fees material. The order path reached domain selection, with deployment country, minimum commitment, final checkout and physical stock unresolved. [Progressive Robot catalog and ordering evidence](../2026-11-20-follow-up-global.md#progressive-robot)
 

@@ -1,8 +1,14 @@
 # Initial 104 rental offers against the owned CI hosts
 
-**Snapshot scope:** this file preserves IDs 001–104 from commit `07180f4`. The current repository has **141** offers; the [next 15 additions](08-latest-rental-comparisons.md) and [latest 22 additions](09-expanded-rental-comparisons.md) extend the same capacity, horizon-cost and payback methodology. Counts and the seven-offer finding below refer to this initial snapshot; the current expanded-budget count is fifteen. [Current offer corrections](10-current-offer-updates.md) overlay the 087 PowerDedi first-month coupon. Do not renumber these stable IDs using the latest sorted README positions.
+[Home](../../README.md) · [Buy vs rent](README.md)
 
-**This file preserves the original rental inventory and its optional expanded-budget comparison.** For the user's primary hardware-only and independently selected electricity/internet question, start with [direct payback](06-direct-payback.md), [initial rental break-even months](07-all-rentals-break-even.md) and [the current 141-offer coverage update](09-expanded-rental-comparisons.md). Office rent is excluded in every scenario. The expanded ownership totals here additionally count UPS/assembly, room cooling and a repair reserve; they must not be mistaken for hardware-only totals.
+**Rental snapshot** · 104 offers at `07180f4`
+
+[Read the comparison](#reading-the-full-comparison) · [A1 only](#a1-only) · [A2 only](#a2-only) · [Both profiles](#both-a1-and-a2) · [Neither profile](#neither-a1-nor-a2)
+
+**Snapshot scope:** this file preserves IDs 001–104 from commit `07180f4`. The [next 15 additions](08-latest-rental-comparisons.md) and [following 22 additions](09-expanded-rental-comparisons.md) extend the same capacity, horizon-cost and payback methodology to **141** offers through `175399c`. Counts and the seven-offer finding below refer to this initial snapshot; the 141-offer snapshot's expanded-budget count is fifteen. [Current offer corrections](10-current-offer-updates.md) overlay the 087 PowerDedi first-month coupon. Do not renumber these stable IDs using current sorted rental catalog positions.
+
+**This file preserves the original rental inventory and its optional expanded-budget comparison.** For the user's primary hardware-only and independently selected electricity/internet question, start with [direct payback](06-direct-payback.md), [initial rental break-even months](07-all-rentals-break-even.md) and [the 141-offer coverage update](09-expanded-rental-comparisons.md). Office rent is excluded in every scenario. The expanded ownership totals here additionally count UPS/assembly, room cooling and a repair reserve; they must not be mistaken for hardware-only totals.
 
 **At 36 months, seven capacity-matched rental offers have published rent and setup below the corresponding optional expanded Singapore budget before additional customer-specific charges.** The lowest A2 quote with a stated fee is UHost in Helsinki at S$10,368.91. For A1, PlusClouds lists S$12,269.33, while BizoSiz reached a matching cart at S$13,096.55. These are European server locations. If runners must be in Singapore or Malaysia, the relevant alternatives are in the [regional rental comparison](02-rental-market.md).
 

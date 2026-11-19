@@ -1,8 +1,14 @@
 # CI server hardware and performance research
 
+[Home](../../README.md) · [Buy vs rent](README.md)
+
+**Research dates** · 19 November 2026 and 20 November 2026
+
+[Benchmarks](#3-performance-evidence-and-its-limits) · [5995WX build](#4-owned-build-a-5995wx--wrx80--256-gb-non-ecc) · [Two-node builds](#5-owned-builds-b-and-c-two-mainstream-desktop-runners) · [NVMe options](#8-nvme-choices-and-enterprise-differences) · [Sources](#sources)
+
 Original research: **19 November 2026**; targeted hardware and storage refresh: **20 November 2026**. Prices: **Singapore dollars (SGD)** unless stated otherwise. Workload: native Linux CI runners building and testing Rust and TypeScript projects in Docker containers. Priority: performance first, then value; ordinary non-ECC RAM for owned desktop/workstation hardware. Entries not explicitly refreshed retain the original observation date.
 
-This file extends the repository's rental research with CI-specific ownership candidates. Regional hosting and ownership economics are in [02-rental-market.md](02-rental-market.md) and [03-rent-vs-buy-tco.md](03-rent-vs-buy-tco.md). The [initial 104-offer comparison](05-repository-rental-comparison.md), [15-offer follow-up](08-latest-rental-comparisons.md) and [22-offer expansion](09-expanded-rental-comparisons.md) together cover all 141 current rental rows, with [current corrections](10-current-offer-updates.md) applied to earlier offers. The workload acceptance procedure is in [04-validation-and-procurement.md](04-validation-and-procurement.md).
+This file extends the repository's rental research with CI-specific ownership candidates. Regional hosting and ownership economics are in [02-rental-market.md](02-rental-market.md) and [03-rent-vs-buy-tco.md](03-rent-vs-buy-tco.md). The [initial 104-offer comparison](05-repository-rental-comparison.md), [15-offer follow-up](08-latest-rental-comparisons.md) and [22-offer expansion](09-expanded-rental-comparisons.md) together cover all 141 rental rows analyzed through `175399c`, with [current corrections](10-current-offer-updates.md) applied to earlier offers. The workload acceptance procedure is in [04-validation-and-procurement.md](04-validation-and-procurement.md).
 
 ## 1. Decision
 

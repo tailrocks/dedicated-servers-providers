@@ -1,5 +1,9 @@
 # New physical-server offers and CPU checks, 20 November 2026 in Asia/Ho_Chi_Minh
 
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
 ## REDS CLOUD — two Ukrainian-hryvnia contracts for the EPYC 9455
 
 [Dedicated-server terms, §§1 and 9](https://reds.cloud/en/dedicated-terms) describe an entire physical server, and define UAH as the price currency. The site's USD display is a reference equivalent at the commercial rate on invoicing. [General terms, §11.1](https://reds.cloud/en/terms-of-services) specify that prices include mandatory taxes and fees applicable under Ukrainian law. Preserve the full gross UAH charge. Do not present the provider's USD display as a universally payable US-dollar tariff. Acceptance of a specific foreign customer's card was not verified. No checkout was submitted.

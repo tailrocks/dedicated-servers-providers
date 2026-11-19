@@ -1,5 +1,11 @@
 # 141 rental offers against the Singapore CI workstations
 
+[Home](../../README.md) · [Buy vs rent](README.md)
+
+**Rental snapshot** · 22 added offers through `175399c` (141 total) · [Browse the current rental catalog](../../rentals/README.md)
+
+[36-month findings](#which-quotes-cost-less-at-36-months) · [Invoices](#native-rental-charges-and-singapore-dollar-cash-required) · [Payback](#direct-payback-for-17-capacity-matched-offers) · [Prepaid cash](#when-prepaid-cash-crosses) · [Evidence](#what-the-supplier-evidence-establishes)
+
 **At 36 months, six capacity-matched rental quotes with a stated setup charge cost less than buying the matching Singapore workstation and paying for server electricity and internet.** Counting only the hardware price gives zero cheaper rentals. Adding a UPS, assembly/delivery, room cooling and a repair reserve raises the count to **15**, including six of the 22 offers added on 20 November 2026. Wsla has the lowest new three-year A2 quote at **S$13,591.32**. ServerWala’s Helsinki annual plan has the lowest new A1 quote at **S$13,998.03**, with its hardware and first invoice documented. [Wsla evidence](../2026-11-20-expansion-global.md#wsla-technology) · [ServerWala evidence](../2026-11-20-expansion-global.md#serverwala) · [Ownership budgets](03-rent-vs-buy-tco.md)
 
 The 22 additions cover eight seller brands. IDs E01–E22 follow their order in the 141-row source table. The full inventory spans 55 alternative seller brands plus Hetzner and counts hardware, location and billing variants. The earlier 104 offers retain IDs 001–104 and the next 15 retain N01–N15. PowerDedi’s first-month promotion updates the existing Amsterdam offer 087. Source checks for the additions were made on 19 November 2026 UTC, 20 November in Vietnam. [141-row source snapshot][snapshot] · [Original 104 offers](05-repository-rental-comparison.md) · [Next 15 offers](08-latest-rental-comparisons.md) · [PowerDedi update](10-current-offer-updates.md)

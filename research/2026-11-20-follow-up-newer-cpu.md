@@ -1,5 +1,9 @@
 # New CPU and seller checks, 20 November 2026 in Asia/Ho_Chi_Minh
 
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
 ## New qualifying seller, PowerVPS.net
 
 This is PowerVPS.net. PowerDedi is a different brand. Both the [English storefront](https://powervps.net/) and the [operator's dated hardware reference](https://kb.powervps.net/?p=713) returned HTTP 200 in independent anonymous direct requests. The configurations appear under dedicated servers, with KVM VPS offerings in another section. The hardware reference names physical core counts and distinguishes a processor core from a VPS vCPU. Both CPUs are 48 cores / 96 threads. Direct CSS/HTML inspection of both storefronts confirms the monthly prices in their dedicated-server cards. The [Polish storefront](https://powervps.net/pl/) corroborates them.

@@ -1,6 +1,12 @@
 # Eleven more sellers and selected price checks — 20 November 2026
 
-Checks took place on **20 November 2026 in Asia/Ho_Chi_Minh**, during 19 November UTC. This pass adds **29 rows** to the previous 141: **11 new seller brands** and four further Fit Servers configurations. The current table has **170 rows covering 66 alternative brands plus Hetzner**. Rows count materially different hardware or billing terms; they are not 170 separate providers or confirmed units in stock. Identically priced Hosting House 256 GB machines in Germany and Finland share one row per billing term, with both product links retained.
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
+[29 offers added](#new-offers-worth-comparing) · [Arxan](#arxan-lowest-configured-net-quote-with-a-visible-tax-and-payment-distinction) · [Currency and payment](#reference-normalization-and-why-full-payments-matter) · [Excluded offers](#withheld-leads-and-price-mismatches)
+
+Checks took place on **20 November 2026 in Asia/Ho_Chi_Minh**, during 19 November UTC. This pass adds **29 rows** to the previous 141: **11 new seller brands** and four further Fit Servers configurations. This pass brought the comparison to **170 rows covering 66 alternative brands plus Hetzner**. Rows count materially different hardware or billing terms; they are not 170 separate providers or confirmed units in stock. Identically priced Hosting House 256 GB machines in Germany and Finland share one row per billing term, with both product links retained.
 
 The same requirements apply: an entire physical server, at least EPYC 9454P-class CPU performance, 128 GB installed RAM and 2 TB raw SSD. Every new main-table configuration has NVMe. Exact 9454P models account for 24 new rows; five use the separately benchmark-supported non-P EPYC 9455. No account, supplier inquiry, paid order or hardware reservation was submitted. Public anonymous configuration, price calculation and cart review establish the quoted product; they do not prove hardware allocation.
 
@@ -78,4 +84,4 @@ The user explicitly instructed that commits must be published and that every PR 
 
 The 141-row rental table and previous expansion evidence were preserved during that merge. While this pass was being prepared, [PR #2](https://github.com/tailrocks/dedicated-servers-providers/pull/2) separately extended the ownership model to the **141-offer snapshot** and was merged as [`bede21be324a39d1c11e1b8c7b600502f540dc53`](https://github.com/tailrocks/dedicated-servers-providers/commit/bede21be324a39d1c11e1b8c7b600502f540dc53). All 15 upstream file changes, including the new ownership files 09 and 10, were incorporated before publishing this expansion. The current labels now identify that 141-offer snapshot explicitly. This pass adds 29 reviewed rental rows and does **not** recalculate ownership against 170 rows. [AGENTS.md](../AGENTS.md) retains the authorized sign-off and publication/merge instructions. Required checks and branch protections must still be respected.
 
-Prior research remains available in the [canonical README](../README.md#additional-findings-and-watchlist), including the [previous 22-row expansion](2026-11-20-expansion.md), [earlier follow-up](2026-11-20-follow-up.md), [first 20 November report](2026-11-20.md), and [19 November history](2026-11-19.md). All evidence levels and old check dates are preserved unless explicitly rechecked.
+The [rental watchlist](../rentals/watchlist.md) summarizes leads. Prior research remains available in the [research index](README.md), including the [previous 22-row expansion](2026-11-20-expansion.md), [earlier follow-up](2026-11-20-follow-up.md), [first 20 November report](2026-11-20.md), and [19 November history](2026-11-19.md). All evidence levels and old check dates are preserved unless explicitly rechecked.

@@ -1,5 +1,9 @@
 # Additional supplier checks, 20 November 2026
 
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
 Public checks ran on 19 November UTC, 20 November in Vietnam. Amounts are before any applicable customer-specific tax unless a source says otherwise. No account, real domain, contact request, reservation or order was submitted. Raw disk capacities use decimal TB. The [19 November GBP](https://data-api.ecb.europa.eu/service/data/EXR/D.GBP.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata), [MYR](https://data-api.ecb.europa.eu/service/data/EXR/D.MYR.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata), and [USD](https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata) ECB series gave 0.83581 GBP, 4.5205 MYR and 1.0992 USD per EUR. Converted GBP or MYR charges are rounded only at the end.
 
 ## Nindohost

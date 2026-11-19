@@ -1,8 +1,14 @@
 # Direct hardware payback: electricity and internet chosen independently
 
+[Home](../../README.md) · [Buy vs rent](README.md)
+
+**Rental snapshot** · 141 offers through `175399c`
+
+[Choose costs](#3-electricity-cooling-and-internet-separate-inputs) · [Singapore payback](#4-singapore-direct-payback-against-selected-monthly-rental-quotes) · [12/24/36-month budgets](#5-direct-cash-budgets-at-12-24-and-36-months) · [Malaysia payback](#6-malaysia-separate-electricity-sensitivity-and-local-purchase) · [Optional costs](#7-additional-costs-stay-separate-and-optional)
+
 **Updated: 20 November 2026.** This is the primary purchase-versus-rental view requested by the user. **Office, room, floor-space and premises rent are excluded from every scenario**, including optional sensitivities. Singapore is the first purchase/hosting preference; Malaysia is second.
 
-**Current rental coverage is 141 offers:** the [initial 104-offer payback snapshot](07-all-rentals-break-even.md), [15 subsequent additions](08-latest-rental-comparisons.md) and [22 latest additions](09-expanded-rental-comparisons.md), with [current corrections to existing offers](10-current-offer-updates.md). Stable original IDs are preserved. New quotes inherit their evidence dates; a cost calculation does not establish new stock or payment eligibility.
+**The analysis covers 141 rental offers through `175399c`** across the [initial 104-offer payback snapshot](07-all-rentals-break-even.md), [15 subsequent additions](08-latest-rental-comparisons.md) and [22 further additions](09-expanded-rental-comparisons.md), with [current corrections to existing offers](10-current-offer-updates.md). Stable original IDs are preserved. New quotes inherit their evidence dates; a cost calculation does not establish new stock or payment eligibility.
 
 ## 1. What “the hardware has cost me zero” means
 
@@ -204,7 +210,7 @@ The whole-month number is the first integer service-month whose **modeled cumula
 
 For prepaid `p`-month blocks costing `P`, rental cash needed for a horizon `N≥1` is `F + ceil(N/p)×P`, assuming the same terms renew. Monthly equivalent `R=P/p` is useful for an economic comparison but is not the actual payment schedule. Buying may appear cheaper at the first prepayment, become more expensive before that paid term ends, then become cheaper at renewal. Do not call the first temporary crossing permanent payback. Monthly-paid minimum contracts also create liabilities without implying the entire term was paid on day one.
 
-The [initial 104-offer payback appendix](07-all-rentals-break-even.md), [next 15 offers](08-latest-rental-comparisons.md) and [latest 22 offers](09-expanded-rental-comparisons.md) keep these cases distinct across all 141 current rows, mark unknown setup/terms, and exclude capacity-unmatched offers from equivalence rankings. The initial appendix's regular Hetzner row preserves the root table's **bare** server price, whereas this file's regular Hetzner rows explicitly add one IPv4; the different figures have different, labeled scopes.
+The [initial 104-offer payback appendix](07-all-rentals-break-even.md), [next 15 offers](08-latest-rental-comparisons.md) and [following 22 offers](09-expanded-rental-comparisons.md) keep these cases distinct across all 141 rows in that rental snapshot, mark unknown setup/terms, and exclude capacity-unmatched offers from equivalence rankings. The initial appendix's regular Hetzner row preserves the frozen rental table's **bare** server price. This file's regular Hetzner rows include one IPv4.
 
 A verified first-month-only rental credit lowers rental costs once; it does not lower recurring rent. With credit `C`, a new monthly-rental comparison becomes `(H − F + C)/(R − O)` when the crossing occurs after that credit. [File 10](10-current-offer-updates.md) applies this to the European PowerDedi offer and preserves the historical no-coupon baseline.
 

@@ -1,8 +1,14 @@
 # CI ownership and worldwide rental comparison — 20 November 2026
 
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
+[Original 104 offers](#source-snapshot-and-repository-scope) · [119-offer integration](#follow-up-integrating-the-119-offer-main-branch) · [141-offer integration](#follow-up-integrating-the-141-offer-main-branch-and-merging)
+
 This extension compares buying non-ECC desktop/workstation hardware in Singapore or Malaysia with the rental research already in this repository. It adds a permanent [buy-versus-rent research folder](buy-vs-rent/README.md) for Rust/TypeScript builds and tests in Docker. Singapore is the preferred purchase/hosting market, with Malaysia second; worldwide rental locations remain available for comparison when geography is flexible.
 
-**Current coverage: 141 rental offers.** The initial 104-offer snapshot and subsequent 119-offer integration are preserved chronologically below. The [latest integration](#follow-up-integrating-the-141-offer-main-branch-and-merging) adds 22 offers and the current PowerDedi first-month correction.
+**Ownership analysis covers 141 rental offers through `175399c`.** The initial 104-offer snapshot and subsequent 119-offer integration are preserved chronologically below. The [141-offer integration](#follow-up-integrating-the-141-offer-main-branch-and-merging) adds 22 offers and the current PowerDedi first-month correction.
 
 ## Source snapshot and repository scope
 
@@ -10,7 +16,7 @@ The rental input is the root README and dated logs at commit **07180f43068a8de01
 
 New files:
 
-- [Research index](buy-vs-rent/README.md).
+- Ownership index, now the [decision guide](buy-vs-rent/README.md) and [chapter index](buy-vs-rent/findings.md#files).
 - [Owned hardware and performance](buy-vs-rent/01-hardware-and-performance.md).
 - [Singapore/Malaysia rental, colocation and local purchase](buy-vs-rent/02-rental-market.md).
 - [12/24/36-month ownership and rental budgets](buy-vs-rent/03-rent-vs-buy-tco.md).
@@ -77,7 +83,7 @@ GPT-6.2 Astra max computed the utility and all-rental extensions; GPT-6.2 Sol ma
 
 On the next repository check, main had advanced to **c868b31019be4c449bb62cbfa9786d44ac663db4**, adding **15 offers from nine sellers** and four evidence logs. The original 104 rows were unchanged. The research branch integrates that upstream work without replacing its table or logs. The ownership extension now covers **119 rows across 47 alternative seller brands plus Hetzner**.
 
-The new [08-latest-rental-comparisons.md](buy-vs-rent/08-latest-rental-comparisons.md) preserves all 15 additions as stable IDs **N01–N15**, including hardware, capacity matching, native price/setup/term, 12/24/36-month known charges and the same four independent electricity/internet payback scenarios. Files 05 and 07 retain their initial IDs 001–104 and explicitly state their snapshot scope. Their combination covers every current canonical row. No office or premises rent is introduced; room cooling remains separately optional.
+The new [08-latest-rental-comparisons.md](buy-vs-rent/08-latest-rental-comparisons.md) preserves all 15 additions as stable IDs **N01–N15**, including hardware, capacity matching, native price/setup/term, 12/24/36-month known charges and the same four independent electricity/internet payback scenarios. Files 05 and 07 retain their initial IDs 001–104 and explicitly state their snapshot scope. Their combination covers all 119 rows at `c868b31`. No office or premises rent is introduced; room cooling remains separately optional.
 
 The additions consist of **three A1-only, seven A2-only and five nonmatching offers**. Current totals are **35 A1-only, 39 A2-only, two matching both and 43 matching neither**: **76 distinct matches and 78 profile comparisons**. Across all 119 offers, 87 state a setup fee and 32 leave it unresolved. Unknown fees are not changed to zero. The five capacity failures remain visible, including XDLHOST's roughly 1 TB mirror; its advertised rental-versus-Hetzner month-14 setup recovery is not a hardware-purchase payback result.
 
@@ -89,7 +95,7 @@ The [Faciotech configurator](https://faciotech.com/dedicated-servers.php#configu
 
 The update preserves payment-specific watchlists separately. AvalinHost's EUR pricing basis is paid in Iranian toman, with international payment eligibility unverified; Gengbiz's Malaysian-market page does not establish a qualifying Malaysian physical deployment. Neither is silently promoted to a generally payable or locally allocated replacement. AmazingRDP's annual quote is modeled as a real USD5,400 upfront term invoice, with cash crossover distinguished from its monthly equivalent.
 
-GPT-6.2 Astra max performed the delta comparison and decision-impact review, followed by GPT-6.2 Sol max's independent review of new calculations, capacity counts, fee/currency handling, prepaid behavior and cross-file integration. The current canonical server table is preserved byte-for-byte from `c868b31`; the authored integration commit includes the standing Alexey Zhokhov sign-off.
+GPT-6.2 Astra max performed the delta comparison and decision-impact review, followed by GPT-6.2 Sol max's independent review of new calculations, capacity counts, fee/currency handling, prepaid behavior and cross-file integration. That integration preserved the canonical server table byte-for-byte from `c868b31`; the authored integration commit includes the standing Alexey Zhokhov sign-off.
 
 
 ## Publication follow-up: preserve the analyzed snapshot

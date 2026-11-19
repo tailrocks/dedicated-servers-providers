@@ -1,10 +1,14 @@
 # Current corrections to existing rental offers
 
+[Home](../../README.md) · [Buy vs rent](README.md)
+
+**Correction recorded** · 20 November 2026
+
 **Updated: 20 November 2026 (Asia/Ho_Chi_Minh).** This file overlays changes to existing stable rental IDs without rewriting their earlier evidence. The [initial 104-offer costs](05-repository-rental-comparison.md) and [payback appendix](07-all-rentals-break-even.md) remain dated snapshots. The [141-offer expansion](09-expanded-rental-comparisons.md) includes the 22 newly added rows separately.
 
 ## 087 — PowerDedi European EPYC 9454P first-month coupon
 
-The current repository [expansion evidence](../2026-11-20-expansion.md#powerdedi-first-month-reduction-unchanged-renewal) records the Amsterdam-selected **EPYC 9454P / 256 GB / two 3.84 TB NVMe** offer with `BIRTHDAY20`: **USD 391.20 for month one, then USD 489/month**, with zero setup. A fresh direct retrieval of the [public order URL](https://powerdedi.com/order?plan=e-9454p&promo=BIRTHDAY20) in this integration again returned USD 391.20 due, USD 97.80 discount and explicit first-month-only wording. The search-service parameterized fetch failed, so this verification used the returned public HTML. No account or order was created.
+The 20 November [expansion evidence](../2026-11-20-expansion.md#powerdedi-first-month-reduction-unchanged-renewal) records the Amsterdam-selected **EPYC 9454P / 256 GB / two 3.84 TB NVMe** offer with `BIRTHDAY20`: **USD 391.20 for month one, then USD 489/month**, with zero setup. A fresh direct retrieval of the [public order URL](https://powerdedi.com/order?plan=e-9454p&promo=BIRTHDAY20) in this integration again returned USD 391.20 due, USD 97.80 discount and explicit first-month-only wording. The search-service parameterized fetch failed, so this verification used the returned public HTML. No account or order was created.
 
 The offer fits both A1 and A2 nominal capacity floors. Physical allocation, the legal operator, customer-specific tax and payment fees remain unresolved. Payment uses a crypto-funded balance; buyer eligibility still needs confirmation. A cycling promotion timer does not establish a permanent discount or a contractual last redemption date. The comparison is conditional on the coupon being accepted for the intended new order. **Do not transfer this Amsterdam check to the separate Singapore lead in file 06.** That location still has conflicting fulfillment evidence.
 

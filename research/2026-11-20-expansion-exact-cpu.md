@@ -1,5 +1,9 @@
 # Regional exact-CPU storefronts, 20 November 2026 ICT
 
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
 ## HOSTING.WORKS, Ukraine — four exact EPYC 9454P offers
 
 The Ukrainian provider [HOSTING.WORKS](https://hosting.works/dedicated) publishes four identifiable whole-server configurations with a single 48-core EPYC 9454P (96 threads with SMT), DDR5 ECC, full root access, 1 Gbit/s and unlimited traffic. One dedicated IPv4 and an IPv6 /64 are included. The service details explicitly specify these network allowances. Each product page embeds the site's product and pricing data in the server-rendered Angular app state, with the same plan ID and separate EUR, UAH and UAH_JURO monthly and setup fields. Each product has a distinct purchase button that opens the provider's own billing app. No buyer-specific tax, assigned inventory, delivery time or minimum contract was established. The monthly billing period in the data is one month. No annual discount is assumed.
