@@ -20,6 +20,17 @@ The table keeps the original seven columns and ascending `Price (USD/mo)` sort. 
 
 Several offers are resales of the same datacenter hardware. More sellers do not necessarily mean more physical stock. Read [methodology and CPU evidence](METHODOLOGY.md) before choosing between unlike platforms.
 
+## Buy in Singapore or Malaysia versus rent
+
+The [CI ownership comparison](research/buy-vs-rent/README.md) adds non-ECC desktop/workstation builds for **Rust/TypeScript testing in Docker**, with Singapore as the preferred purchase/hosting market and Malaysia second. It compares buying with **all 104 existing rental rows**, preserving the table below and its original evidence dates.
+
+- [Hardware BOMs and performance evidence](research/buy-vs-rent/01-hardware-and-performance.md): 5995WX/WRX80 single-host candidates, two-node mainstream desktop alternatives, exact RAM qualification and NVMe price options. No actual CI result certifies the requested 3–5% tolerance yet.
+- [Singapore/Malaysia rental and colocation](research/buy-vs-rent/02-rental-market.md) and [12/24/36-month costs](research/buy-vs-rent/03-rent-vs-buy-tco.md): office power, cooling, maintenance, rack conversion, tax scenarios and contract commitments are explicit.
+- [All-offer rental comparison](research/buy-vs-rent/05-repository-rental-comparison.md): 66 distinct current rows meet at least one AX162 A1/A2 mirrored-capacity class; the other 38 remain visible as smaller-capacity or differently configured options. Capacity matching does not guarantee CI performance.
+- [Workload acceptance and procurement](research/buy-vs-rent/04-validation-and-procurement.md) and [integration/review log](research/2026-11-20-buy-vs-rent.md).
+
+**The main financial finding:** if Europe is acceptable, cheaper existing UHost, BizoSiz and PlusClouds quotes can undercut a three-year Singapore office build. Their stock, final invoices and service qualifications still apply. Buying is most attractive when local placement/control matters and an existing suitable office is available. Singapore colocation and Malaysian hosting need separate complete quotes; regular Hetzner pricing alone is not the right rental baseline.
+
 ## Servers
 
 | Provider | Location | Specs | Price (USD/mo) | URL | Last checked | Notes |

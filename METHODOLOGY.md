@@ -10,7 +10,7 @@ The current offers live in the seven-column table in [README.md](README.md). Dat
 - At least 2 TB of installed SSD capacity, preferably NVMe. HDD capacity does not satisfy this floor.
 - A lower recurring price than the reference server, with setup fees and minimum commitments shown separately. A lower monthly rate does not necessarily mean a lower first-year cost.
 
-The user did not specify a location, operating system, network allowance, workload or a minimum physical core count. These must not be invented. Differences that materially affect a purchase are recorded in Notes.
+The original general rental comparison did not specify a location, operating system, network allowance, workload or minimum physical core count. Those original rental-table criteria remain separate from the [CI ownership extension](research/buy-vs-rent/README.md), which explicitly specifies Rust/TypeScript testing in Docker, Singapore-first/Malaysia-second purchasing, non-ECC owned memory and a 3–5% performance tolerance. Do not silently relabel the general table's rows as measured CI equivalents. Differences that materially affect a purchase are recorded in Notes.
 
 ## Reference configuration
 
@@ -112,6 +112,20 @@ Text extraction can expose hidden alternative-cycle labels such as `Unavailable`
 If demonstration wording is historical and current legal/product pages have changed, record that chronology explicitly. Do not claim the current service is definitely a demonstration; require fresh supply evidence before treating static stock indicators as availability.
 
 No account registration, vendor contact, paid order or hardware reservation was performed as part of this comparison.
+
+## CI ownership comparison
+
+The [buy-versus-rent folder](research/buy-vs-rent/README.md) compares the locally purchased candidates with every existing rental row, using the table and logs at commit `07180f43068a8de01ae30c41a265ec16ef1f138b` as the source snapshot. Existing rows retain their checked dates and evidence levels; importing a row into a calculation is not a fresh checkout or stock check.
+
+- **A1 capacity class:** at least 128 GB and a drive layout supporting about 3.84 TB mirrored capacity. **A2:** at least 256 GB and about 1.92 TB mirrored. These are stricter than the general 2 TB raw disk floor. A two-host pool has per-host limits, not a shared memory pool.
+- **Performance:** use public compiler results only to screen candidates. Predeclare actual CI critical-job latency and sustained queue-throughput targets; require both by default. For a 3% tolerance use duration at most 1.03× baseline and rate at least 0.97×; for 5%, 1.05× and 0.95×. A test whose uncertainty spans the threshold remains unresolved.
+- **Pricing:** keep native rent/setup/term quotes, then convert with dated FX. Ownership budgets identify UPS, power, cooling, network, maintenance reserve and labour assumptions; unknown supplier/facility charges remain unknown. A reserve is a contingency, not a measured repair expense.
+- **Tax:** ordinary advertised retail ownership prices and rental quotes are not automatically tax-normalized. The 9% Singapore-billing rental calculation is an explicit sensitivity, not a tax determination based on server geography. Preserve tax-inclusive quotes without subtracting an invented rate.
+- **Commitment:** prepaid rental comparisons show the entire term commitment needed to cover the selected horizon. A 24-month prepayment is not a 12-month cash price; renewed term prices are assumptions. Do not treat a missing setup line as a verified free setup.
+- **Location:** buying in Singapore and hosting in Malaysia are separate choices. Include power/chassis acceptance, servicing and logistics; a country's seller address is not a datacenter location. European rental savings apply only if European placement is acceptable.
+- **Availability:** absent LTD inventory stays historical. Ordinary storefront stock labels, a successful cart and a selected city do not prove allocation. No purchase or supplier contact is part of this research.
+
+The currency reference remains **19 November 2026**: EUR 1 = SGD 1.4176 = USD 1.0992 = MYR 4.5205 = BRL 6.4765. SGD/MYR are additional currencies for the ownership extension; the root table retains its existing USD conversions. [Dated SGD observation](https://data-api.ecb.europa.eu/service/data/EXR/D.SGD.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata), [dated MYR observation](https://data-api.ecb.europa.eu/service/data/EXR/D.MYR.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata).
 
 ## Ongoing updates
 
