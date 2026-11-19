@@ -10,9 +10,11 @@
 
 **Owned hardware:** non-ECC desktop/workstation memory; performance first, price second.
 
+**Primary cost comparison:** hardware alone, hardware plus electricity, hardware plus internet, or hardware plus both. **Office / room / floor-space / premises rent is excluded in every scenario.** Cooling and other ownership allowances are separate optional additions.
+
 ## Decision
 
-**If a European placement is acceptable, investigate the repository's cheaper capacity-matched rentals before buying.** Their known charges can be below three-year office ownership, even though regular Hetzner new-order pricing makes buying look attractive. Stock, final invoice, network, operator and payment conditions still need acceptance.
+**Choose which costs to count before deciding whether to buy.** With electricity and internet excluded, the S$8,609.40 A2 machine equals 30.34 months of UHost's recurring rent. Against a new rental including its avoidable setup, buying crosses in month 30 with neither utility, month 42 with electricity, month 37 with internet, and month 55 with both. Stock, final invoice, network, operator and payment conditions still need acceptance. Several cheaper European quotes can beat ownership when running costs are counted; regular Hetzner new-order pricing alone gives a different answer.
 
 **If Singapore placement or local physical control is required, a 5995WX with 256 GB non-ECC RAM is the strongest single-host ownership candidate found for testing.** Prefer an existing suitable office over assuming that cheap 1U colocation will accept a large workstation. Malaysia colocation has lower published leads but unresolved power, chassis, contract and local-service costs.
 
@@ -24,9 +26,11 @@
 |---|---|
 | [01-hardware-and-performance.md](01-hardware-and-performance.md) | Exact Singapore BOMs, compiler evidence, RAM qualification, storage alternatives, cooling and PSU requirements |
 | [02-rental-market.md](02-rental-market.md) | Singapore/Malaysia rental and colocation leads; Malaysian local BOM; electricity and currency sources |
-| [03-rent-vs-buy-tco.md](03-rent-vs-buy-tco.md) | 12/24/36-month ownership budgets, worldwide rental comparisons, power/tax/labour assumptions and sensitivities |
+| [03-rent-vs-buy-tco.md](03-rent-vs-buy-tco.md) | Optional expanded 12/24/36-month budgets, with electricity, cooling, internet and reserves broken out |
 | [04-validation-and-procurement.md](04-validation-and-procurement.md) | Actual CI replay, strict acceptance gates and complete quote requirements |
 | [05-repository-rental-comparison.md](05-repository-rental-comparison.md) | Coverage of all 104 existing rental rows, A1/A2 capacity matching, native terms and horizon costs |
+| [06-direct-payback.md](06-direct-payback.md) | **Start here:** hardware-only rent equivalents, four independent electricity/internet scenarios, first whole break-even month, Singapore and Malaysia |
+| [07-all-rentals-break-even.md](07-all-rentals-break-even.md) | Four-scenario payback for every capacity-matched rental; setup unknowns, prepaid cash and commitment distinctions |
 | [Integration and corrections log](../2026-11-20-buy-vs-rent.md) | Changes from the earlier standalone hardware research and exact source snapshot |
 
 The [root seven-column table](../../README.md#servers) remains the canonical provider list. This folder adds a workload-specific ownership decision; it does not silently change the original rental table's raw-capacity floor or label every listed CPU as a measured CI match.
@@ -59,7 +63,37 @@ The 5995WX option is workstation-class hardware with ordinary non-ECC DIMMs on t
 
 Lower-priced storage is not assumed equally fast under sustained mixed CI I/O. ADATA's cited data sheet leaves the NAND cell type and dedicated DRAM unspecified; Samsung documents TLC and DRAM. The Lexar offer's displayed delivery estimate is not a reservation of two drives.
 
-## Financial comparison that changes the recommendation
+## Direct hardware payback: the primary comparison
+
+For an existing rental with avoidable future monthly charge `R`, hardware `H` is recovered after `H / (R − selected electricity − selected internet)` months. With both utilities excluded, this is simply **`H/R`**. An already paid setup is sunk. When choosing between a **new** rental and purchase, deduct only its known avoidable setup `F` from the numerator. After break-even, the hardware is paid for through avoided rent; future utility bills still exist.
+
+The Singapore single-host direct inputs are **S$79.6138/month server electricity**, assuming 350 W average wall power and 730 hours, and **S$50/month internet** as an independent, replaceable incremental allowance. Optional extra room cooling is **S$19.90345/month**. The direct table does not add cooling, UPS, assembly allowances, repairs, labour or office rent.
+
+| New rental / owned profile | Hardware only | Known recurring rental/month | Hardware ÷ recurring rent | Neither utility: first whole month | Electricity only | Internet only | Both utilities |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| UHost Europe / A2 | S$8,609.40 | S$283.73 | 30.34 months | **30** | **42** | **37** | **55** |
+| BizoSiz Europe / A2 | S$8,609.40 | S$359.82 | 23.93 months | **24** | **31** | **28** | **37** |
+| PlusClouds Europe / A2, term unconfirmed | S$8,609.40 | S$324.63 | 26.52 months | **25** | **33** | **29** | **41** |
+| BizoSiz Europe / A1 | S$8,891.00 | S$359.82 | 24.71 months | **25** | **32** | **29** | **39** |
+| PlusClouds Europe / A1, term unconfirmed | S$8,891.00 | S$324.63 | 27.39 months | **26** | **34** | **31** | **43** |
+| Hetzner regular + IPv4, before tax / A2 | S$8,609.40 | S$1,196.45 | 7.20 months | **7** | **8** | **7** | **8** |
+
+The four whole-month columns credit known new-rental setup; `H/R` does not. Unknown taxes/network charges and supplier limitations remain. Actual prices and native quotes, fractions, existing-lease versions, alternative drives and Malaysia are in [06](06-direct-payback.md). Whole months use unrounded values; BizoSiz A1 with both is 38.0006, so month 39. PlusClouds' unconfirmed term makes its result a monthly-equivalent sensitivity, not a promised payment/cancellation schedule.
+
+For A2 Singapore ownership, the direct **36-month costs** are:
+
+| Costs selected | Electricity/month | Internet/month | Hardware + selected costs over 36 months |
+|---|---:|---:|---:|
+| Neither utility | Excluded | Excluded | **S$8,609.40** |
+| Electricity only | S$79.61 | Excluded | **S$11,475.50** |
+| Internet only | Excluded | S$50 | **S$10,409.40** |
+| Both utilities | S$79.61 | S$50 | **S$13,275.50** |
+
+UHost's known 36-month rent plus setup is **S$10,368.91**. Thus hardware alone is below it, while including both selected bills puts ownership above it. Do not describe either conclusion as universal. The exhaustive [break-even appendix](07-all-rentals-break-even.md) preserves all 104 offers, 68 capacity-profile comparisons over 66 matching offers, missing fees, and prepaid cash flows. Among the stated-setup matches, six offers are cheaper at 36 months than the direct hardware-plus-both-utilities models; the seven-offer finding in file 05 belongs to the optional expanded budgets below.
+
+## Optional expanded financial comparison
+
+The following earlier budgets include UPS/assembly allowances, cooling and a repair reserve in addition to electricity and internet. They remain useful as explicitly selected planning cases, **not the hardware-only answer**. Office rent is still excluded.
 
 These rental figures are **known charges before unquoted taxes/network/IP costs**, with fixed 19 November FX and unchanged renewal rates assumed. They are not final tax-normalized invoices. Ownership includes the explicit allowances below.
 
@@ -74,11 +108,11 @@ These rental figures are **known charges before unquoted taxes/network/IP costs*
 
 UHost is a configurator lead with unknown stock and network terms. BizoSiz has matching repository cart evidence but unresolved final supply, taxes and service details. PlusClouds is listed and its configure link opens a general portal, so the quote/term and supply remain less certain. These figures justify investigating the offers; they do not establish a completed supplier selection.
 
-The office reference assumes **350 W average wall power**, 25% cooling overhead, S$50/month incremental connectivity, a 3% annual hardware reserve, and S$700 upfront UPS/assembly/delivery allowances. Power is unmeasured; labour and resale are zero in the base case. S$100/month additional ownership work adds S$3,600 over three years.
+The expanded reference assumes **350 W average wall power**: S$79.61/month server electricity, **S$19.90/month separate cooling**, **S$50/month internet**, a 3% annual hardware reserve, and S$700 upfront UPS/assembly/delivery allowances. Power is unmeasured; labour and resale are zero in this optional case. S$100/month additional ownership work, if separately chosen, adds S$3,600 over three years. Office rent is never added.
 
 Alternative-drive sensitivities reduce three-year Singapore office budgets to **S$14,878 for A2 with ADATA**, **S$14,618 for A1 with Lexar**, or **S$15,707 for 256 GB plus two 4 TB Lexars**. Performance and procurement conditions remain.
 
-The main model also contains:
+The optional expanded model also contains:
 
 - Singapore 5U colocation: A2 about **S$36,791/36 months**, plus unquoted facility extras; a shared 100 Mbps service differs from the European 1 Gbps offers.
 - Malaysia office electricity sensitivity: same Singapore-procured A2 hardware about **S$13,871/36 months** before unquoted logistics and tax differences.
@@ -86,7 +120,7 @@ The main model also contains:
 - Regular Hetzner A1/A2 and a separate illustrative Singapore-billing tax case.
 - Historical AX162-LTD sensitivity: **unavailable in the current public feeds**, not a purchasable alternative.
 
-A Malaysia-local pair of Intel desktops was separately priced at **RM24,008 ≈ S$7,529**, with an illustrative **S$13,760 three-year Malaysian office budget** using local electricity and the same stated allowances. It is an independent-job topology with 64 GB per host, not a locally verified Malaysian 5995WX quote or a shared A1/A2 memory pool.
+A Malaysia-local pair of Intel desktops was separately priced at **RM24,008 ≈ S$7,529**. Its [direct four-scenario budgets](06-direct-payback.md#malaysia-local-intel-pair) separate S$56.75/month modeled server electricity and S$50/month optional internet; the earlier **S$13,760 three-year expanded Malaysian budget** additionally includes the stated cooling/UPS/assembly/reserve allowances. It is an independent-job topology with 64 GB per host, not a locally verified Malaysian 5995WX quote or a shared A1/A2 memory pool.
 
 ## Performance and procurement gates
 

@@ -1,14 +1,14 @@
-# Rent versus buy: Singapore and Malaysia CI server budgets
+# Optional ownership budgets for Singapore and Malaysia
 
-Original cost model: **19 November 2026**; repository-wide rental comparison and alternative-drive sensitivities added **20 November 2026**. All amounts in the cost tables are **Singapore dollars** unless stated otherwise. These are reproducible planning budgets, not supplier quotes, forecasts or proof that the proposed machine meets the performance target. Read with [all 104 existing rental offers](05-repository-rental-comparison.md).
+For the direct hardware-versus-rent decision, choose whether to count server electricity and internet independently. The direct comparison shows the months of rent needed to recover the hardware price, both for an existing lease and for a new rental with a setup fee. [Direct hardware payback](06-direct-payback.md)
 
-## 1. Decision supported by the evidence
+This report adds **optional** UPS, assembly/delivery, separate room cooling and repair allowances. **Office, room and floor-space rent are excluded from every scenario.** Figures are in Singapore dollars unless another currency is shown. The original 19 November 2026 model was extended on 20 November with worldwide rental and alternative-drive comparisons.
 
-**Cheap European rentals already researched in this repository can cost less than owning in Singapore, even over three years.** Buying for an existing suitable Singapore office remains the strongest ownership case when local placement or control matters. Singapore colocation is a much more expensive case. Malaysia has lower published colocation leads, but power, chassis acceptance, tax, contract and servicing details remain unresolved.
+## 1. How the choice of costs changes the decision
 
-Do not use only Hetzner's expensive regular new-order rate to decide whether to buy. The current repository includes UHost, BizoSiz and PlusClouds offers with matching A1 or A2 capacity at much lower recurring prices, subject to their evidence and service limitations. AX162-1-LTD is **unavailable in the current public feeds** and remains below only as a historical sensitivity. Retain a cheap existing lease's actual invoice. Regional figures and limitations are in [02-rental-market.md](02-rental-market.md).
+The Singapore 256 GB workstation costs **S$8,609.40 in parts**. UHost's published Helsinki rental and setup total **S$10,368.91 over 36 months**. Buying comes out **S$1,759.51 lower** when comparing hardware alone. Counting the workstation's electricity and S$50/month of incremental internet brings ownership to **S$13,275.50**, so the same rental comes out **S$2,906.59 lower**. Including the separately priced allowances in this report brings ownership to **S$15,466.87**. The rental amounts precede unquoted customer-specific charges. Stock and CI performance remain unverified. [Worldwide rental offers](05-repository-rental-comparison.md)
 
-All financial conclusions below are conditional on the [candidate passing the actual CI replay](04-validation-and-procurement.md). A low cost cannot compensate for failing the user's 3–5% performance tolerance.
+For a runner that must be in Singapore or Malaysia, compare the existing-site purchase with a rental physically available there. Colocation has its own facility and network charges. For an existing lease, use its current invoice. The AX162-1-LTD is **unavailable in the current public feeds** and appears here only as a historical sensitivity. Final comparisons depend on the 3–5% CI performance tolerance and the site's service requirements. [Regional offerings](02-rental-market.md) · [CI acceptance test](04-validation-and-procurement.md)
 
 ## 2. Owned profiles compared with Hetzner
 
@@ -21,36 +21,50 @@ The [full BOM](01-hardware-and-performance.md) includes cooling, case and PSU. A
 
 These are **capacity-class comparisons**, not identical machines: consumer versus enterprise storage, memory protection, platform generation, support and network service differ. The public Clang benchmark is useful screening evidence for the 5995WX, not a measured performance result for either proposed BOM.
 
-## 3. Model and assumptions
+## 3. Optional budget components and assumptions
 
-The budget counts upfront cash plus recurring costs and an earmarked repair reserve:
+The expanded existing-site example selects both utilities and all four allowances. Use each selected input once.
 
-`Owner budget(N months) = upfront + N × monthly operating budget − any explicitly modeled resale proceeds`
+`Expanded owner budget(N months) = hardware + selected upfront allowances + N × (selected server electricity + selected room cooling + selected internet + selected repair reserve + selected extra labour) − resale proceeds`
 
-`Rental budget(N months) = setup + N × recurring invoice`
+`New monthly rental budget(N months) = setup + N × recurring invoice`
 
-A commitment longer than N can create a larger liability or upfront payment than this simple rental equation. This matters particularly for UltaHost's two-year offer.
+A term commitment can require payment beyond the chosen horizon. For example, UltaHost displays a two-year term. Past setup on an existing lease is a sunk cost.
 
-| Input | Base assumption | Status |
+| Input | Expanded example | How to apply it |
 |---|---|---|
 | Analysis periods | 12, 24 and 36 months; 730 hours per modeled month | Planning convention |
-| Single workstation average wall power | **350 W**, including idle and busy periods | Assumption; not measured, and not CPU TDP or PSU rating |
-| Separate office cooling | **25%** extra energy | Assumption; actual ambient temperature and cooling arrangement can differ |
-| Singapore electricity | **S$0.3116/kWh including GST** | SP Q4 2026 reference tariff; use actual marginal bill if different |
-| Office connectivity increment | **S$50/month** | Allowance; may be zero on an adequate existing connection or more for business connectivity |
-| Maintenance reserve | **3% of parts cost per year** | Budget contingency, not a claimed annual repair rate |
-| Office initial extras | **S$700**: S$500 UPS allowance and S$200 assembly/delivery allowance | Not retail quotes; size UPS from actual load/runtime |
+| Average wall power | **350 W** per workstation or **450 W combined** per desktop pair | Duty-cycle assumptions that include internal cooling and power supply losses. Replace with measured averages. |
+| Server electricity | Singapore **S$0.3116/kWh** including GST. Peninsular Malaysia **RM0.5509088/kWh** before account-specific tax. | Select independently from internet. Use the applicable marginal tariff. |
+| Separate room cooling | Optional **25% of server electricity** | Use measured incremental air-conditioning if available. |
+| Incremental internet | Optional **S$50/month per site** or about **RM159.44** | An allowance for the bill increase. Use zero if the existing connection can serve the runners at the same charge. |
+| Repair reserve | Optional **3% of parts cost per year** | A contingency. Actual cash outlay depends on repairs. |
+| UPS and assembly/delivery | Optional **S$500 UPS per single host or S$1,000 per pair**, plus **S$200** assembly/delivery per deployment | Upfront allowances totaling S$700 or S$1,200. Use supplier prices if these items are needed. |
 | Resale value | Zero | Conservative simplification; resale is uncertain |
 | Financing, discount rate, tax deductions | Not modeled | Cash-budget comparison, not discounted investment valuation |
-| Additional ownership labour | Zero in base; **S$100/month** sensitivity shown | Incremental work only; common CI/software administration applies to rentals too |
-| Extra office floor-space/rent | Zero | Assumes an existing suitable location; add any incremental premises cost |
+| Additional ownership labour | Zero in the expanded example. Optional **S$100/month** sensitivity. | Count only owner-specific work beyond common CI administration. |
 | Future power tariffs, FX and service rates | Held constant | Sensitivity assumption, not a forecast |
 
 The advertised parts prices were collected from several retailers, not one complete GST-normalized assembled invoice. Obtain a final tax-inclusive quote. Final invoice differences could reverse close results.
 
 **Tax reference:** the main Hetzner table uses an illustrative **9% Singapore-billed consumer/non-recoverable tax case**. The user's billing residence, registration and recoverability have not been established. Server location alone does not decide tax. [Hetzner's VAT page][T01] lists Singapore at 9%; [IRAS][T02] explains the effect of business registration for imported services. Net prices are shown below as well. A GST-registered business should compare consistently on its actual recoverable/non-recoverable basis.
 
-**FX reference:** [ECB on 19 November 2026][T03], EUR 1 = SGD 1.4176 = USD 1.0992 = MYR 4.5205. Bank/card spreads are excluded.
+On 19 November 2026 the model fixes EUR 1 = SGD 1.4176 = USD 1.0992 = MYR 4.5205, before any bank or card spread. [ECB reference rates][T03]
+
+### Monthly components at an existing site
+
+All figures below are **S$ per month** for the entire host or pair. Choose server electricity and internet independently. If counting electricity, optional room cooling adds 25% of the server electricity charge. The reserve is a separate choice. Totals use the unrounded inputs, so displayed components can differ from a total by one cent. [Electricity tariffs and their scope](02-rental-market.md#8-electricity-sources-for-ownership-scenarios)
+
+| Location and configuration | Server electricity | Optional room cooling | Optional internet | Optional repair reserve | Expanded monthly budget |
+|---|---:|---:|---:|---:|---:|
+| Singapore A1, 128 GB / 2 × 4 TB Samsung | 79.61 | 19.90 | 50.00 | 22.23 | **171.74** |
+| Singapore A2, 256 GB / 2 × 2 TB Samsung | 79.61 | 19.90 | 50.00 | 21.52 | **171.04** |
+| Singapore Intel pair, 64 GB per host | 102.36 | 25.59 | 50.00 | 18.70 | **196.65** |
+| Singapore Intel pair, 128 GB per host | 102.36 | 25.59 | 50.00 | 26.10 | **204.05** |
+| Singapore AMD pair, 64 GB per host | 102.36 | 25.59 | 50.00 | 20.60 | **198.55** |
+| Singapore AMD pair, 128 GB per host | 102.36 | 25.59 | 50.00 | 28.00 | **205.95** |
+| Malaysia A2 sensitivity, Singapore-sourced hardware | 44.14 | 11.04 | 50.00 | 21.52 | **126.70** |
+| Malaysia-local Intel pair, 64 GB per host | 56.75 | 14.19 | 50.00 | 18.82 | **139.76** |
 
 ## 4. Rental inputs: current new-order schedule
 
@@ -75,11 +89,13 @@ These use the repository's exact native quotes at the fixed 19 November FX, befo
 
 Sources and all remaining offers are mapped in [05-repository-rental-comparison.md](05-repository-rental-comparison.md), preserving original dates and qualifications. These are European placements; the owner's or reseller's country is not the physical server location. They do not satisfy a requirement to place the machine in Singapore/Malaysia.
 
-For A2, UHost's S$10,369 and BizoSiz's S$13,097 known 36-month charges are below the S$15,467 Singapore office reference. For A1, PlusClouds' S$12,269 and BizoSiz's S$13,097 are below the S$15,774 reference. Illustratively adding 9% to those rental amounts gives S$11,302 for UHost, S$14,275 for BizoSiz and S$13,374 for PlusClouds A1. This sensitivity is **not a claim that any provider owes that exact tax**. Stock, network requirements, payment eligibility, supplier identity and final invoice costs can change the choice. The direct UHost and PlusClouds listings were re-opened on 20 November; BizoSiz retains the repository's existing 20 November cart evidence after this pass's independent fetch failed.
+For A2, UHost's S$10,369 and BizoSiz's S$13,097 known 36-month charges are below the **expanded** Singapore budget of S$15,467. For A1, PlusClouds' S$12,269 and BizoSiz's S$13,097 are below the **expanded** S$15,774. Across all capacity-matched rentals with a stated setup fee, **seven** have lower known charges than the corresponding expanded budgets. **Six** do so with only hardware, server electricity and internet counted, and **zero** with hardware alone. These figures use the Samsung A1/A2 reference builds. [All rental rows and fee qualifications](05-repository-rental-comparison.md)
 
-## 5. Main 12-, 24- and 36-month comparison
+Illustratively adding 9% to the three named rental offers gives S$11,302 for UHost, S$14,275 for BizoSiz and S$13,374 for PlusClouds A1. Customer-specific billing, stock, network requirements, payment eligibility and the supplier's identity can change the choice. The UHost and PlusClouds listings were re-opened on 20 November. BizoSiz retains the repository's 20 November cart evidence after this pass's independent fetch failed.
 
-Whole-dollar totals below are calculated from unrounded inputs. They include the repair reserve for ownership; actual spending can be lower if that reserve remains unused. Do not also add repair spending funded from the same reserve without adjusting it.
+## 5. Expanded budgets over 12, 24 and 36 months
+
+The existing-site purchase rows select the optional UPS, assembly/delivery, 25% room cooling, S$50 internet and 3% annual repair reserve. The colocation rows use provider charges and rack costs described below. The Hetzner rows select IPv4 and the illustrative 9% non-recoverable tax. Whole-dollar totals use unrounded inputs. Actual cash spending can be lower when the reserve remains unused. Count repairs against the reserve once.
 
 | Scenario | Upfront | Monthly budget | 12 months | 24 months | 36 months |
 |---|---:|---:|---:|---:|---:|
@@ -95,11 +111,11 @@ Whole-dollar totals below are calculated from unrounded inputs. They include the
 
 A1 upfront is S$8,891 + S$700 = **S$9,591**. A2 is S$8,609.40 + S$700 = **S$9,309.40**.
 
-Single-host energy and cooling = 0.350 kW × 730 hours × S$0.3116 × 1.25 = **S$99.52/month**. Add S$50 network and reserve of S$22.23 for A1 or S$21.52 for A2. These give S$171.74 and S$171.04 monthly, respectively.
+At 350 W for 730 hours, the host draws **255.5 kWh/month**, costing **S$79.61**. Allowing 25% for additional room cooling adds **S$19.90**, bringing electricity with cooling to **S$99.52/month** from unrounded inputs. Internet and repairs have their own lines in the [monthly component table](#monthly-components-at-an-existing-site).
 
 At 12 months, A1 office ownership is only about **S$203** below regular AX162-1 in this model. That is too close for a categorical purchase decision before complete quotes and validation. At 36 months it is about **S$18,851** below that regular rate.
 
-Against the historical, currently unavailable AX162-1-LTD rate, however, the same office build saves only about **S$2,031 over 36 months**. Adding S$100/month of ownership-specific work makes rental cheaper over that horizon. This is why the actual existing or obtainable rental rate matters more than a generic “buy is cheaper” claim.
+Against the historical, currently unavailable AX162-1-LTD rate, the same expanded purchase budget saves about **S$2,031 over 36 months**. Adding S$100/month of ownership-specific work makes rental cheaper over that horizon.
 
 A2 office ownership is approximately **S$32,129 below regular AX162-2 over 36 months** under the stated assumptions. Its capacity-matched consumer storage and benchmark confidence still need acceptance.
 
@@ -109,19 +125,19 @@ The [QUAPE 5U plan][T06] is S$680 before tax / **S$741.20 including 9% GST**, wi
 
 For a new build, replace the S$302.40 tower case with [RM51 5U at S$624][T07] and [rails at S$159][T08]: **S$480.60 additional hardware**. Add S$200 assembly/delivery; no office UPS allowance. Reserve is calculated on the revised hardware subtotal.
 
-The recurring colocation price already includes the listed power allocation, so office electricity/cooling is **not added again**. Unknown facility setup, nonstandard network service, repairs/remote hands and installation charges are not asserted to be zero; these rows are known-charge budgets subject to the final facility quote.
+QUAPE quotes one recurring service charge covering rack space, power allocation and shared connectivity. Separate power and internet prices are unquoted. The colocation budget counts the full service fee once, with **no additional office electricity, cooling or internet allowance**. Facility setup, higher network service levels, chargeable remote hands and installation can add to the final quote.
 
 At 36 months, A1 Singapore colocation is about **S$2,474 more** than regular AX162-1, before such unknown charges, and considerably more than LTD. A2 colocation can be cheaper than regular AX162-2, but its weaker network allocation and owner hardware responsibility remain material.
 
-## 6. Financial crossover and sensitivity to labour
+## 6. Expanded-budget crossover and sensitivity to labour
 
-For fixed costs with no resale value:
+These crossovers use the specific expanded ownership and tax-inclusive rental rows in section 5. At fixed inputs and zero resale value the calculation is
 
 `Crossover months = (owner upfront − rental setup) / (rental monthly − owner monthly)`
 
-This is meaningful only if the rental monthly cost is higher and the performance/service difference is acceptable. It is not an investment return guarantee.
+Here owner upfront includes the selected UPS/assembly or rack conversion, and owner monthly includes the reserve. Rental setup is deducted only when comparing with a new rental. For crossover on the hardware invoice alone, or with either utility switched off, use [direct hardware payback](06-direct-payback.md).
 
-| Comparison | Base crossover | With S$100/month extra ownership work |
+| Comparison | Expanded-budget crossover | Expanded plus S$100/month extra ownership work |
 |---|---:|---:|
 | Buy A1 SG office vs Rent AX162-1 standard | 11.7 months | 13.5 months |
 | Buy A2 SG office vs Rent AX162-2 standard | 7.6 months | 8.4 months |
@@ -132,7 +148,7 @@ This is meaningful only if the rental monthly cost is higher and the performance
 
 A long theoretical crossover such as 49 or 108 months is especially uncertain for older hardware because failure, availability, resale and replacement decisions can change. If both upfront and monthly ownership costs are higher, there is no crossing in this model.
 
-**A useful quote threshold:** for A2 in a Singapore office, a zero-setup, capacity- and performance-acceptable rental at approximately **S$429.64/month all-in** equals the modeled 36-month ownership budget. The equivalent A1 threshold is **S$438.16/month**. These rise by S$100/month if that additional ownership work is required. A cheaper acceptable rental can beat ownership even when an expensive regular AX162 tariff does not.
+At 36 months, a zero-setup rental at **S$429.64/month all-in for A2** or **S$438.16/month for A1** equals the corresponding **expanded** Singapore ownership budget. The hardware-only thresholds are **S$239.15** and **S$246.97** respectively. Counting only hardware, server electricity and internet gives **S$368.76** and **S$376.59**. Selecting S$100/month of additional owner labour raises the corresponding threshold by S$100/month. A rental comparison still requires acceptable performance, capacity and service.
 
 ## 7. Local rentals: financial context without promoting uncertain quotes to guarantees
 
@@ -150,9 +166,9 @@ The lowest PowerDedi advertised rate would materially improve Singapore rental e
 
 For more expensive faster rental candidates, compare **successful CI jobs per dollar**, queue latency and required completion time after a workload test. Paying 50% more is reasonable only when the measured benefit or service requirement justifies it.
 
-## 8. Two mainstream desktop nodes in a Singapore office
+## 8. Expanded budget for two desktop nodes in Singapore
 
-These models use **450 W combined average wall power**, also an assumption, plus 25% cooling. The pair gets **S$1,200 upfront allowances**: S$1,000 total UPS budget and S$200 assembly/delivery. Network is S$50/month for the pair, and reserve is 3% of pair parts per year. External KVM/remote power, if required, is not included.
+The pair draws **450 W combined** in this example. Server electricity is **S$102.36/month**, separate room cooling adds **S$25.59**, and internet adds **S$50 for the pair**. The expanded rows also select **S$1,200 upfront** for two UPS units and assembly/delivery, and a reserve of 3% of pair parts per year. External KVM or remote power, if required, would be a separate purchase. [Per-pair reserve and monthly totals](#monthly-components-at-an-existing-site)
 
 | Pair | Upfront incl. allowances | Monthly budget | 12 months | 24 months | 36 months |
 |---|---:|---:|---:|---:|---:|
@@ -165,7 +181,7 @@ DediJet's two rented 128 GB hosts cost **S$24,978 before tax over 36 months**, o
 
 The cheaper 64 GB-per-host models cannot run a job that requires 128 GB on one host. Aggregate memory across runners is not a shared pool. For bursty work, purchasing one node and adding the second only when measured queue pressure warrants it can reduce unused capital; the complete pool must still satisfy the target when compared with AX162.
 
-## 9. Malaysia: electricity sensitivity and conditional colocation floors
+## 9. Malaysia electricity sensitivity and conditional colocation floors
 
 No complete Malaysian 5995WX non-ECC BOM was established. The following keep the Singapore-procured parts assumption so the effect of hosting location is visible. They **exclude unquoted cross-border logistics, import/transaction taxes, local servicing arrangements and extra hands**. They are not Malaysia local-purchase quotes.
 
@@ -175,19 +191,21 @@ No complete Malaysian 5995WX non-ECC BOM was established. The following keep the
 | Buy A2 MY Awan4U floor | S$9,135 | S$194.81 | S$11,473 | S$13,811 | S$16,148 |
 | Buy A2 MY tower floor | S$8,841 | S$209.37 | S$11,353 | S$13,866 | S$16,378 |
 
-The **Malaysia office sensitivity** changes only the energy rate; it retains the S$700 office allowance, S$50 network and repair reserve. The modeled Peninsular commercial marginal rate is **RM0.5509088/kWh**, derived in the market report. It includes the renewable-energy levy and November AFA but is **prior to any additional invoice-specific tax**. The RM20 retail charge is incremental only for a new account. It is not a Sabah/Sarawak or domestic tariff.
+The **expanded Malaysia existing-site sensitivity** changes only the electricity tariff for the Singapore-sourced A2. It keeps the optional S$700 equipment/assembly allowance, S$50 internet and repair reserve. Server electricity is **RM140.76 or S$44.14/month**. Optional room cooling adds **RM35.19 or S$11.04/month**. The Peninsular commercial marginal rate of **RM0.5509088/kWh** includes the renewable-energy levy and November fuel adjustment before any additional invoice-specific tax. The RM20 retail charge is incremental only for a new account. [Commercial tariff assumptions](02-rental-market.md#8-electricity-sources-for-ownership-scenarios)
 
 At 350 W plus 25% cooling, this saves about **S$44.34/month, or S$1,596 over 36 months**, relative to the Singapore reference. That is much less than many multi-year rental differences and can be consumed by logistics or servicing. Lower electricity alone is not a sufficient reason to relocate.
 
 The **AwanPrime 4U floor** uses its RM550/month / 460 W offer, substitutes a S$469 RM44 and S$159 rails, and adds S$200 assembly. The 4U chassis/cooler fit, board clearance, peak power, non-ECC acceptance, setup and tax remain unresolved. A 350 W modeled average is not proof that peaks satisfy 460 W.
 
-The **ServerHosting.MY tower floor** retains the original case, adds S$200 assembly and the listed RM100 setup, then uses RM599/month. Its allowed wattage is unconfirmed; a 13 A socket is not the purchased power allocation. Generic terms may impose an annual obligation. The published floor cannot justify a final colocation purchase.
+The **ServerHosting.MY tower floor** retains the original case, adds S$200 assembly and the listed RM100 setup, then uses RM599/month. Allowed wattage is unconfirmed. A 13 A socket specifies the connection, and the contract must establish the paid power allowance. Generic terms may impose an annual obligation.
+
+Both Malaysian facilities quote a hosting service with network and power terms. The recurring service fee is counted once. Separate electricity and internet prices are unquoted. The existing-site utility switches do not change that fee, and the floor includes no additional office electricity, cooling or internet charge. Required power upgrades or other facility charges would increase the floor.
 
 ### Malaysian-local Intel runner pair
 
 For an actual Malaysian local desktop purchase, the separate two-node Intel BOM in the market report is **RM24,008 ≈ S$7,528.76**, near the Singapore parts figure rather than substantially below it. This is two 270K Plus machines with **64 GB and 2 × 2 TB per host** using the locally listed parts; no Singapore-to-Malaysia hardware shipment is assumed for this row.
 
-For a comparable office sensitivity, retain S$1,200 equivalent UPS/assembly/delivery allowances, S$50/month network and a 3% annual parts reserve. At an assumed 450 W combined average and 25% cooling, the Peninsular commercial electricity calculation is **S$70.94/month**. These allowances are planning figures, not Malaysian supplier quotes; add any unquoted invoice taxes, floor-space cost, labour or remote-management equipment.
+At an assumed 450 W combined, the pair's server electricity is **RM180.97 or S$56.75/month**. Optional room cooling adds **RM45.24 or S$14.19**, bringing electricity with cooling to **S$70.94/month**. The expanded example selects S$1,200 equivalent UPS/assembly/delivery allowances, S$50/month incremental internet for the pair and a 3% annual parts reserve. These planning allowances can be replaced with actual costs. Unquoted transaction taxes, owner labour or remote-management equipment can be treated separately if applicable. [Monthly components](#monthly-components-at-an-existing-site)
 
 | Malaysia-local Intel pair | Upfront incl. allowances | Monthly budget | 12 months | 24 months | 36 months |
 |---|---:|---:|---:|---:|---:|
@@ -197,9 +215,9 @@ This is an independent-job pool with 64 GB per host before OS/services/headroom,
 
 ## 10. Storage and RAM-qualification cost sensitivities
 
-The 20 November hardware refresh found the ADATA LEGEND 900 PRO 2 TB at S$479 and Lexar NM790 4 TB at S$859. The following hold the office power/network/UPS assumptions constant and change only parts plus the 3% reserve. Lower price does not establish equivalent sustained CI I/O; use the [manufacturer disclosures and exact sources](01-hardware-and-performance.md#20-november-storage-price-sensitivities).
+The 20 November hardware refresh found the ADATA LEGEND 900 PRO 2 TB at S$479 and Lexar NM790 4 TB at S$859. The expanded examples keep the S$700 single-host upfront allowances, server electricity, 25% room cooling and S$50 internet constant. Only the parts price and its corresponding 3% annual reserve change. Sustained CI I/O still needs validation. [Manufacturer disclosures and listings](01-hardware-and-performance.md#20-november-storage-price-sensitivities)
 
-| Single host | Parts subtotal | Singapore office, 36 months |
+| Single host | Parts subtotal | Expanded Singapore budget, 36 months |
 |---|---:|---:|
 | A2, Samsung reference | S$8,609 | S$15,467 |
 | A2, ADATA 2 × 2 TB candidate | S$8,069 | S$14,878 |
@@ -210,18 +228,21 @@ The 20 November hardware refresh found the ADATA LEGEND 900 PRO 2 TB at S$479 an
 
 The Samsung 256 GB / 2 × 4 TB case addresses the unverified eight-module 16 GB layout by retaining the stronger 32 GB-revision qualification evidence. At S$16,862 over three years, it is about S$943 below the historical 9%-tax LTD scenario, but about S$527 above the historical tax-net LTD cost of S$16,335. Neither LTD scenario is current stock. This illustrates why RAM qualification, storage and actual tax basis matter before interpreting a small saving.
 
-For the Intel 64 GB-per-host pair, four ADATA drives reduce parts by S$1,080 and the 36-month office budget by S$1,177.20, to **S$14,581.36**, holding 450 W average combined power and all other assumptions constant. The individual-job RAM limit remains unchanged.
+For the Intel 64 GB-per-host pair, four ADATA drives reduce parts by S$1,080 and the 36-month expanded budget by S$1,177.20, to **S$14,581.36**, holding 450 W average combined power and the other selected allowances constant.
 
 There is also a lower-priced **conditional Singapore rental-pair lead** in file 02: PowerDedi advertises two 9950X / 128 GB / 2 × 1.92 TB hosts at USD 318/month for both, or S$410.11. At unchanged rates, 36 months of **rent alone** is S$14,764.09 before tax and any setup, or S$16,092.86 with an illustrative 9% tax on rent. Setup for this pair was not established. This could undercut the owned 128 GB-per-host pairs, but exact Singapore availability, complete invoice, operator and service conditions remain unresolved. The drives are slightly smaller than the owned 2 TB pair. Do not use it as a firm fulfilled quote.
 
 ## 11. Power, network and utilization
 
-| Average whole-host wall power | Singapore energy only | Singapore with 25% cooling | Malaysia with 25% cooling, converted |
-|---|---:|---:|---:|
-| 100 W | S$22.75 | S$28.43 | S$15.76 |
-| 200 W | S$45.49 | S$56.87 | S$31.53 |
-| 350 W | S$79.61 | S$99.52 | S$55.18 |
-| 500 W | S$113.73 | S$142.17 | S$78.82 |
+Monthly electricity at the stated tariffs and 730 hours, all in **S$**. The 450 W row represents the combined draw of a desktop pair.
+
+| Average wall power | Singapore server | Optional cooling | Singapore with cooling | Malaysia server | Optional cooling | Malaysia with cooling |
+|---|---:|---:|---:|---:|---:|---:|
+| 100 W | 22.75 | 5.69 | 28.43 | 12.61 | 3.15 | 15.76 |
+| 200 W | 45.49 | 11.37 | 56.87 | 25.22 | 6.31 | 31.53 |
+| 350 W | 79.61 | 19.90 | 99.52 | 44.14 | 11.04 | 55.18 |
+| 450 W | 102.36 | 25.59 | 127.95 | 56.75 | 14.19 | 70.94 |
+| 500 W | 113.73 | 28.43 | 142.17 | 63.06 | 15.76 | 78.82 |
 
 Measure average power across the intended duty cycle. A machine running several hours daily can average much less than a continuously busy compiler host; an always-full queue can average more. Neither an 850 W PSU nor a CPU's 280 W rating supplies the required average.
 
