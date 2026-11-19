@@ -4,7 +4,7 @@
 
 **Buy/host priority:** Singapore first, Malaysia second.
 
-**Rental coverage:** all **141 current offers** in this repository: the original 104 plus 15 follow-up and 22 expansion additions, with existing worldwide locations and evidence retained.
+**Rental coverage:** the **141-offer snapshot through `175399c`**: the original 104 plus 15 follow-up and 22 expansion additions, with worldwide locations and evidence retained. The canonical rental table subsequently expanded to 170 rows; the additional 29 rows are not included in these ownership calculations.
 
 **Workload:** Linux Rust/TypeScript builds and tests in Docker containers.
 
@@ -32,7 +32,7 @@
 | [06-direct-payback.md](06-direct-payback.md) | **Start here:** hardware-only rent equivalents, four independent electricity/internet scenarios, first whole break-even month, Singapore and Malaysia |
 | [07-all-rentals-break-even.md](07-all-rentals-break-even.md) | Four-scenario payback for the initial 104 offers; setup unknowns, prepaid cash and commitment distinctions |
 | [08-latest-rental-comparisons.md](08-latest-rental-comparisons.md) | Fifteen additions and the combined 119-offer snapshot; GBP quotes, horizon costs, four-scenario payback and prepaid cash |
-| [09-expanded-rental-comparisons.md](09-expanded-rental-comparisons.md) | Twenty-two latest additions and current 141-offer totals; native charges, four utility scenarios, annual and multi-year cash commitments |
+| [09-expanded-rental-comparisons.md](09-expanded-rental-comparisons.md) | Twenty-two additions and the 141-offer snapshot totals; native charges, four utility scenarios, annual and multi-year cash commitments |
 | [10-current-offer-updates.md](10-current-offer-updates.md) | Current corrections to existing stable IDs, including PowerDedi’s first-month coupon and its effect on payback |
 | [Integration and corrections log](../2026-11-20-buy-vs-rent.md) | Changes from the earlier standalone hardware research and exact source snapshot |
 

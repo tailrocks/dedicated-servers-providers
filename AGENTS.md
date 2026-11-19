@@ -20,3 +20,9 @@ after addressing review findings and passing the repository's required checks;
 do not stop at a draft or ask again for permission already granted. Integrate
 newer base-branch changes when needed and preserve other contributors' work.
 Include the same sign-off on any authored integration or final merge commit.
+
+Respect branch protections, required reviews and failing checks. If completion is
+blocked, report the exact blocker and published commit or PR state. Direct
+commits to the authorized branch do not require an unnecessary PR. Preserve all
+prior dated research and keep ownership calculations tied to their explicitly
+documented snapshot until separately recalculated.
