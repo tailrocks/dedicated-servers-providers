@@ -2,15 +2,23 @@
 
 [Start](../README.md) / Research archive
 
-Use these dated reports to trace a price, understand an exclusion or see what a later check corrected. The four passes on 20 November use Vietnam local time and include checks made on 19 November UTC. For the complete price-sorted comparison, open the [rental catalog](../rentals/README.md).
+Use these dated reports to trace a price, understand an exclusion or see what a later check corrected. The passes on 20 November use Vietnam local time and include checks made on 19 November UTC. For the complete price-sorted comparison, open the [rental catalog](../rentals/README.md).
 
 ## Rental evidence
 
 The most recent pass comes first. Offer counts include different configurations and payment terms from the same seller.
 
+### 20 November 2026 · 195 offers
+
+This pass added 25 rows from 12 new sellers and one additional UHost configuration. It recovered Websupport.cz's annual product data, rejected conflicting checkout prices and tested BPHOST's ineligible coupons. [Summary, UHost storage upgrade, TezHost, reference checks and root exclusions](2026-11-20-further-options.md)
+
+- [040Hosting, W3 DATA, 99RDP, Websupport.cz and European exclusions](2026-11-20-further-options-exact-cpu.md)
+- [Quicservers, TRAIDNT and regional price/hardware mismatches](2026-11-20-further-options-global.md)
+- [COLO BIRD, Capa7, Visual Web, BPHOST, DV Hosting and promotions](2026-11-20-further-options-newer-cpu.md)
+
 ### 20 November 2026 · 170 offers
 
-The latest pass added 29 rows, including 11 new sellers and four additional Fit Servers configurations. [Summary, Arxan's tax and payment terms, and withheld claims](2026-11-20-more-options.md)
+This pass added 29 rows, including 11 new sellers and four additional Fit Servers configurations. [Summary, Arxan's tax and payment terms, and withheld claims](2026-11-20-more-options.md)
 
 - [European EPYC 9454P offers and term prices](2026-11-20-more-options-exact-cpu.md)
 - [Newer CPUs, Ukrainian hryvnia billing and supply concerns](2026-11-20-more-options-newer-cpu.md)
@@ -51,4 +59,4 @@ The first records include candidate offers, failed checks and cart quotes recove
 
 ## Ownership study
 
-The ownership calculations cover 141 rental offers through revision `175399c`. The 29 offers added in the final rental pass fall outside those calculations. [Buy or rent decision guide](buy-vs-rent/README.md) · [Dated ownership integration and corrections log](2026-11-20-buy-vs-rent.md)
+The ownership calculations cover 141 rental offers through revision `175399c`. Rental offers added after that snapshot fall outside those calculations. [Buy or rent decision guide](buy-vs-rent/README.md) · [Dated ownership integration and corrections log](2026-11-20-buy-vs-rent.md)

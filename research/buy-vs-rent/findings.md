@@ -8,7 +8,7 @@ Jump to [capacity classes](#reference-capacity-classes), [owned hardware](#owned
 
 **Buy/host priority:** Singapore first, Malaysia second.
 
-**Rental coverage:** the **141-offer snapshot through `175399c`**: the original 104 plus 15 follow-up and 22 expansion additions, with worldwide locations and evidence retained. The canonical rental table subsequently expanded to 170 rows; the additional 29 rows are not included in these ownership calculations.
+**Rental coverage:** the **141-offer snapshot through `175399c`**: the original 104 plus 15 follow-up and 22 expansion additions, with worldwide locations and evidence retained. The canonical rental table continues to expand; offers added after this snapshot are not included in these ownership calculations.
 
 **Workload:** Linux Rust/TypeScript builds and tests in Docker containers.
 

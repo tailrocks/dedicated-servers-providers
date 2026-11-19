@@ -4,7 +4,7 @@
 
 Compare buying a **non-ECC workstation or desktop runners** for Rust/TypeScript builds and tests in Docker with renting a dedicated server. The purchase and hosting preference is Singapore first, Malaysia second.
 
-**Rental coverage is fixed at 141 offers through `175399c`.** The [rental catalog](../../rentals/README.md) has since grown to 170. The 29 later options have no payback calculation in this study.
+**Rental coverage is fixed at 141 offers through `175399c`.** The [rental catalog](../../rentals/README.md) continues to grow. Offers added after this snapshot have no payback calculation in this study.
 
 <a name="decision"></a>
 <a name="direct-hardware-payback-the-primary-comparison"></a>
