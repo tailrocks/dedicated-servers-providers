@@ -2,6 +2,8 @@
 
 [Start](../../README.md) / [Buy or rent](README.md) / Detailed findings
 
+**Preserved earlier snapshot:** use the [new online-only study](../../old/buy-vs-rent/README.md) for the current non-ECC purchasing recommendation, refreshed prices and four-scenario calculations. Its recommendation is completed from public evidence and has no physical-testing prerequisite.
+
 Jump to [capacity classes](#reference-capacity-classes), [owned hardware](#owned-hardware-shortlist), [direct payback](#direct-hardware-payback-the-primary-comparison), [expanded budgets](#optional-expanded-financial-comparison), or [performance checks](#performance-and-procurement-gates).
 
 **Updated: 20 November 2026 (Asia/Ho_Chi_Minh).**

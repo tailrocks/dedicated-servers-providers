@@ -1,0 +1,1538 @@
+{
+  "checked_local_date": "2026-11-20",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "scope": "Component subtotals. Quantity is total across all nodes. Existing Ethernet patch lead/site switch assumed; cooling, integrated graphics, wired NIC, and included mounting hardware are explained in the country tables. No physical tests or supplier contact.",
+  "signed_off_by": "Alexey Zhokhov <alexey@zhokhov.com>",
+  "owned_builds": [
+    {
+      "id": "SG-WRX256-2",
+      "currency": "SGD",
+      "nodes": 1,
+      "cpu_per_node": "5995WX",
+      "ram_gb_per_node": 256,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "A/E. Closest single-host compiler candidate. Custom-order CPU and listed cooler.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Founder Extreme",
+          "model": "AMD Ryzen Threadripper PRO 5995WX",
+          "unit_price": 2990,
+          "url": "https://founderextreme.com/product/amd-ryzen-threadripper-pro-series-custom-order/",
+          "availability": "custom order; price specific to 5995WX, final allocation unconfirmed",
+          "warranty": "new sealed per seller; exact local warranty unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "ElectronicsCrazy / Memory World",
+          "model": "ASUS Pro WS WRX80E-SAGE SE WIFI (original)",
+          "unit_price": 1789,
+          "url": "https://www.electronicscrazy.sg/asus-pro-ws-wrx80e-sage-se-wifi-amd-threadripper-pro-eatx-workstation-motherboard-black/",
+          "availability": "seller reports in stock",
+          "warranty": "product description 1 year; generic store section 3 years, scope unresolved",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "Bizgram via Sim Lim Square",
+          "model": "Kingston ValueRAM KVR32N22D8/32, 32 GB DDR4-3200 non-ECC UDIMM",
+          "unit_price": 858,
+          "url": "https://simlimsquare.com.sg/product/kingston-3200mhz-32gb-dimm-kvr32n22d832-20662",
+          "availability": "Bizgram marketplace reports 100 units; physical allocation unverified",
+          "warranty": "Kingston limited lifetime subject to authenticity and terms; local RMA unquoted",
+          "quantity": 8
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 2 TB M.2 2280 LNM790X002T-RNNNG",
+          "unit_price": 504,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-2tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Bizgram via Sim Lim Square",
+          "model": "ARCTIC Freezer 4U-M Rev. 2 ACFRE00133B",
+          "unit_price": 119,
+          "url": "https://www.simlimsquare.com.sg/public/product/arctic-freezer-4u-m-sp6-sp3-str5-tr4-swrx8-strx4-lga4677-lg-21515",
+          "availability": "listed; indexed stock 2; direct page intermittently restricted",
+          "warranty": "6-year ARCTIC limited warranty; local handling unconfirmed",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "The Techyard",
+          "model": "Fractal Design Define 7 XL Solid black FD-C-DEF7X-01 with 3 x 140 mm fans",
+          "unit_price": 309,
+          "url": "https://thetechyard.com/products/fractal-design-define-7-xl-black-solid-panel",
+          "availability": "exact variant orderable",
+          "warranty": "2 years local (Convergent)",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "Vii PC",
+          "model": "Seasonic FOCUS GX-850 V4 ATX 3.1 black, retail cable set",
+          "unit_price": 251,
+          "url": "https://www.viipc.sg/products/focus-gx-750-v4atx-3-80-plus-gold?variant=45415426719893",
+          "availability": "exact black GX-850 variant orderable",
+          "warranty": "10 years advertised",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 13330.0
+    },
+    {
+      "id": "SG-WRX256-4",
+      "currency": "SGD",
+      "nodes": 1,
+      "cpu_per_node": "5995WX",
+      "ram_gb_per_node": 256,
+      "drives_per_node": 2,
+      "drive_tb": 4,
+      "raw_tb_per_node": 8,
+      "mirror_tb_per_node": 4,
+      "notes": "Largest single-host capacity configuration in both dimensions.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Founder Extreme",
+          "model": "AMD Ryzen Threadripper PRO 5995WX",
+          "unit_price": 2990,
+          "url": "https://founderextreme.com/product/amd-ryzen-threadripper-pro-series-custom-order/",
+          "availability": "custom order; price specific to 5995WX, final allocation unconfirmed",
+          "warranty": "new sealed per seller; exact local warranty unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "ElectronicsCrazy / Memory World",
+          "model": "ASUS Pro WS WRX80E-SAGE SE WIFI (original)",
+          "unit_price": 1789,
+          "url": "https://www.electronicscrazy.sg/asus-pro-ws-wrx80e-sage-se-wifi-amd-threadripper-pro-eatx-workstation-motherboard-black/",
+          "availability": "seller reports in stock",
+          "warranty": "product description 1 year; generic store section 3 years, scope unresolved",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "Bizgram via Sim Lim Square",
+          "model": "Kingston ValueRAM KVR32N22D8/32, 32 GB DDR4-3200 non-ECC UDIMM",
+          "unit_price": 858,
+          "url": "https://simlimsquare.com.sg/product/kingston-3200mhz-32gb-dimm-kvr32n22d832-20662",
+          "availability": "Bizgram marketplace reports 100 units; physical allocation unverified",
+          "warranty": "Kingston limited lifetime subject to authenticity and terms; local RMA unquoted",
+          "quantity": 8
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 4 TB M.2 2280 LNM790X004T-RNNNG",
+          "unit_price": 859,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-4tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Bizgram via Sim Lim Square",
+          "model": "ARCTIC Freezer 4U-M Rev. 2 ACFRE00133B",
+          "unit_price": 119,
+          "url": "https://www.simlimsquare.com.sg/public/product/arctic-freezer-4u-m-sp6-sp3-str5-tr4-swrx8-strx4-lga4677-lg-21515",
+          "availability": "listed; indexed stock 2; direct page intermittently restricted",
+          "warranty": "6-year ARCTIC limited warranty; local handling unconfirmed",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "The Techyard",
+          "model": "Fractal Design Define 7 XL Solid black FD-C-DEF7X-01 with 3 x 140 mm fans",
+          "unit_price": 309,
+          "url": "https://thetechyard.com/products/fractal-design-define-7-xl-black-solid-panel",
+          "availability": "exact variant orderable",
+          "warranty": "2 years local (Convergent)",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "Vii PC",
+          "model": "Seasonic FOCUS GX-850 V4 ATX 3.1 black, retail cable set",
+          "unit_price": 251,
+          "url": "https://www.viipc.sg/products/focus-gx-750-v4atx-3-80-plus-gold?variant=45415426719893",
+          "availability": "exact black GX-850 variant orderable",
+          "warranty": "10 years advertised",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 14040.0
+    },
+    {
+      "id": "SG-WRX128-4",
+      "currency": "SGD",
+      "nodes": 1,
+      "cpu_per_node": "5995WX",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 4,
+      "raw_tb_per_node": 8,
+      "mirror_tb_per_node": 4,
+      "notes": "D. Exact eight-DIMM topology; indicative memory quote only.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Founder Extreme",
+          "model": "AMD Ryzen Threadripper PRO 5995WX",
+          "unit_price": 2990,
+          "url": "https://founderextreme.com/product/amd-ryzen-threadripper-pro-series-custom-order/",
+          "availability": "custom order; price specific to 5995WX, final allocation unconfirmed",
+          "warranty": "new sealed per seller; exact local warranty unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "ElectronicsCrazy / Memory World",
+          "model": "ASUS Pro WS WRX80E-SAGE SE WIFI (original)",
+          "unit_price": 1789,
+          "url": "https://www.electronicscrazy.sg/asus-pro-ws-wrx80e-sage-se-wifi-amd-threadripper-pro-eatx-workstation-motherboard-black/",
+          "availability": "seller reports in stock",
+          "warranty": "product description 1 year; generic store section 3 years, scope unresolved",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "Bizgram",
+          "model": "Kingston ValueRAM KVR32N22D8/16, 16 GB DDR4-3200 non-ECC UDIMM",
+          "unit_price": 355.75,
+          "url": "https://bizgram.com/product/kingston-kvr32n22d8-16-16gb-3200mhz-ddr4-non-ecc-cl22",
+          "availability": "indicative on 2026-10-28 catalog; listed, quote required; eight unconfirmed",
+          "warranty": "Kingston limited lifetime subject to terms; local RMA unquoted",
+          "quantity": 8
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 4 TB M.2 2280 LNM790X004T-RNNNG",
+          "unit_price": 859,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-4tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Bizgram via Sim Lim Square",
+          "model": "ARCTIC Freezer 4U-M Rev. 2 ACFRE00133B",
+          "unit_price": 119,
+          "url": "https://www.simlimsquare.com.sg/public/product/arctic-freezer-4u-m-sp6-sp3-str5-tr4-swrx8-strx4-lga4677-lg-21515",
+          "availability": "listed; indexed stock 2; direct page intermittently restricted",
+          "warranty": "6-year ARCTIC limited warranty; local handling unconfirmed",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "The Techyard",
+          "model": "Fractal Design Define 7 XL Solid black FD-C-DEF7X-01 with 3 x 140 mm fans",
+          "unit_price": 309,
+          "url": "https://thetechyard.com/products/fractal-design-define-7-xl-black-solid-panel",
+          "availability": "exact variant orderable",
+          "warranty": "2 years local (Convergent)",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "Vii PC",
+          "model": "Seasonic FOCUS GX-850 V4 ATX 3.1 black, retail cable set",
+          "unit_price": 251,
+          "url": "https://www.viipc.sg/products/focus-gx-750-v4atx-3-80-plus-gold?variant=45415426719893",
+          "availability": "exact black GX-850 variant orderable",
+          "warranty": "10 years advertised",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 10022.0
+    },
+    {
+      "id": "SG-WRX128-2",
+      "currency": "SGD",
+      "nodes": 1,
+      "cpu_per_node": "5995WX",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "Lower storage variant; indicative memory quote only.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Founder Extreme",
+          "model": "AMD Ryzen Threadripper PRO 5995WX",
+          "unit_price": 2990,
+          "url": "https://founderextreme.com/product/amd-ryzen-threadripper-pro-series-custom-order/",
+          "availability": "custom order; price specific to 5995WX, final allocation unconfirmed",
+          "warranty": "new sealed per seller; exact local warranty unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "ElectronicsCrazy / Memory World",
+          "model": "ASUS Pro WS WRX80E-SAGE SE WIFI (original)",
+          "unit_price": 1789,
+          "url": "https://www.electronicscrazy.sg/asus-pro-ws-wrx80e-sage-se-wifi-amd-threadripper-pro-eatx-workstation-motherboard-black/",
+          "availability": "seller reports in stock",
+          "warranty": "product description 1 year; generic store section 3 years, scope unresolved",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "Bizgram",
+          "model": "Kingston ValueRAM KVR32N22D8/16, 16 GB DDR4-3200 non-ECC UDIMM",
+          "unit_price": 355.75,
+          "url": "https://bizgram.com/product/kingston-kvr32n22d8-16-16gb-3200mhz-ddr4-non-ecc-cl22",
+          "availability": "indicative on 2026-10-28 catalog; listed, quote required; eight unconfirmed",
+          "warranty": "Kingston limited lifetime subject to terms; local RMA unquoted",
+          "quantity": 8
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 2 TB M.2 2280 LNM790X002T-RNNNG",
+          "unit_price": 504,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-2tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Bizgram via Sim Lim Square",
+          "model": "ARCTIC Freezer 4U-M Rev. 2 ACFRE00133B",
+          "unit_price": 119,
+          "url": "https://www.simlimsquare.com.sg/public/product/arctic-freezer-4u-m-sp6-sp3-str5-tr4-swrx8-strx4-lga4677-lg-21515",
+          "availability": "listed; indexed stock 2; direct page intermittently restricted",
+          "warranty": "6-year ARCTIC limited warranty; local handling unconfirmed",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "The Techyard",
+          "model": "Fractal Design Define 7 XL Solid black FD-C-DEF7X-01 with 3 x 140 mm fans",
+          "unit_price": 309,
+          "url": "https://thetechyard.com/products/fractal-design-define-7-xl-black-solid-panel",
+          "availability": "exact variant orderable",
+          "warranty": "2 years local (Convergent)",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "Vii PC",
+          "model": "Seasonic FOCUS GX-850 V4 ATX 3.1 black, retail cable set",
+          "unit_price": 251,
+          "url": "https://www.viipc.sg/products/focus-gx-750-v4atx-3-80-plus-gold?variant=45415426719893",
+          "availability": "exact black GX-850 variant orderable",
+          "warranty": "10 years advertised",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 9312.0
+    },
+    {
+      "id": "SG-WRX256-2-USED",
+      "currency": "SGD",
+      "nodes": 1,
+      "cpu_per_node": "5995WX",
+      "ram_gb_per_node": 256,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "Sensitivity only. Eight matching .C16FE modules unconfirmed.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Founder Extreme",
+          "model": "AMD Ryzen Threadripper PRO 5995WX",
+          "unit_price": 2990,
+          "url": "https://founderextreme.com/product/amd-ryzen-threadripper-pro-series-custom-order/",
+          "availability": "custom order; price specific to 5995WX, final allocation unconfirmed",
+          "warranty": "new sealed per seller; exact local warranty unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "ElectronicsCrazy / Memory World",
+          "model": "ASUS Pro WS WRX80E-SAGE SE WIFI (original)",
+          "unit_price": 1789,
+          "url": "https://www.electronicscrazy.sg/asus-pro-ws-wrx80e-sage-se-wifi-amd-threadripper-pro-eatx-workstation-motherboard-black/",
+          "availability": "seller reports in stock",
+          "warranty": "product description 1 year; generic store section 3 years, scope unresolved",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "myhalo",
+          "model": "Refurbished Crucial CT32G4DFD832A; exact CT32G4DFD832A.C16FE required",
+          "unit_price": 329,
+          "url": "https://shop.myhalo.com.sg/products/certified-reloved-crucial-32gb-ddr4-3200mhz-udimm-desktop-memory-ct32g4dfd832a",
+          "availability": "online variant orderable; quantity eight and QVL suffix unconfirmed",
+          "warranty": "30-day seller warranty",
+          "quantity": 8
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 2 TB M.2 2280 LNM790X002T-RNNNG",
+          "unit_price": 504,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-2tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Bizgram via Sim Lim Square",
+          "model": "ARCTIC Freezer 4U-M Rev. 2 ACFRE00133B",
+          "unit_price": 119,
+          "url": "https://www.simlimsquare.com.sg/public/product/arctic-freezer-4u-m-sp6-sp3-str5-tr4-swrx8-strx4-lga4677-lg-21515",
+          "availability": "listed; indexed stock 2; direct page intermittently restricted",
+          "warranty": "6-year ARCTIC limited warranty; local handling unconfirmed",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "The Techyard",
+          "model": "Fractal Design Define 7 XL Solid black FD-C-DEF7X-01 with 3 x 140 mm fans",
+          "unit_price": 309,
+          "url": "https://thetechyard.com/products/fractal-design-define-7-xl-black-solid-panel",
+          "availability": "exact variant orderable",
+          "warranty": "2 years local (Convergent)",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "Vii PC",
+          "model": "Seasonic FOCUS GX-850 V4 ATX 3.1 black, retail cable set",
+          "unit_price": 251,
+          "url": "https://www.viipc.sg/products/focus-gx-750-v4atx-3-80-plus-gold?variant=45415426719893",
+          "availability": "exact black GX-850 variant orderable",
+          "warranty": "10 years advertised",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 9098.0
+    },
+    {
+      "id": "SG-WRX256-4-USED",
+      "currency": "SGD",
+      "nodes": 1,
+      "cpu_per_node": "5995WX",
+      "ram_gb_per_node": 256,
+      "drives_per_node": 2,
+      "drive_tb": 4,
+      "raw_tb_per_node": 8,
+      "mirror_tb_per_node": 4,
+      "notes": "Sensitivity only. Eight matching .C16FE modules unconfirmed.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Founder Extreme",
+          "model": "AMD Ryzen Threadripper PRO 5995WX",
+          "unit_price": 2990,
+          "url": "https://founderextreme.com/product/amd-ryzen-threadripper-pro-series-custom-order/",
+          "availability": "custom order; price specific to 5995WX, final allocation unconfirmed",
+          "warranty": "new sealed per seller; exact local warranty unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "ElectronicsCrazy / Memory World",
+          "model": "ASUS Pro WS WRX80E-SAGE SE WIFI (original)",
+          "unit_price": 1789,
+          "url": "https://www.electronicscrazy.sg/asus-pro-ws-wrx80e-sage-se-wifi-amd-threadripper-pro-eatx-workstation-motherboard-black/",
+          "availability": "seller reports in stock",
+          "warranty": "product description 1 year; generic store section 3 years, scope unresolved",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "myhalo",
+          "model": "Refurbished Crucial CT32G4DFD832A; exact CT32G4DFD832A.C16FE required",
+          "unit_price": 329,
+          "url": "https://shop.myhalo.com.sg/products/certified-reloved-crucial-32gb-ddr4-3200mhz-udimm-desktop-memory-ct32g4dfd832a",
+          "availability": "online variant orderable; quantity eight and QVL suffix unconfirmed",
+          "warranty": "30-day seller warranty",
+          "quantity": 8
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 4 TB M.2 2280 LNM790X004T-RNNNG",
+          "unit_price": 859,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-4tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Bizgram via Sim Lim Square",
+          "model": "ARCTIC Freezer 4U-M Rev. 2 ACFRE00133B",
+          "unit_price": 119,
+          "url": "https://www.simlimsquare.com.sg/public/product/arctic-freezer-4u-m-sp6-sp3-str5-tr4-swrx8-strx4-lga4677-lg-21515",
+          "availability": "listed; indexed stock 2; direct page intermittently restricted",
+          "warranty": "6-year ARCTIC limited warranty; local handling unconfirmed",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "The Techyard",
+          "model": "Fractal Design Define 7 XL Solid black FD-C-DEF7X-01 with 3 x 140 mm fans",
+          "unit_price": 309,
+          "url": "https://thetechyard.com/products/fractal-design-define-7-xl-black-solid-panel",
+          "availability": "exact variant orderable",
+          "warranty": "2 years local (Convergent)",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "Vii PC",
+          "model": "Seasonic FOCUS GX-850 V4 ATX 3.1 black, retail cable set",
+          "unit_price": 251,
+          "url": "https://www.viipc.sg/products/focus-gx-750-v4atx-3-80-plus-gold?variant=45415426719893",
+          "availability": "exact black GX-850 variant orderable",
+          "warranty": "10 years advertised",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 9808.0
+    },
+    {
+      "id": "SG-INTEL128-2",
+      "currency": "SGD",
+      "nodes": 1,
+      "cpu_per_node": "270K Plus",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "B. Single 128 GB value worker.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Dynacore Technologies",
+          "model": "Intel Core Ultra 7 270K Plus, EAN 5032037284837",
+          "unit_price": 488,
+          "url": "https://dynacoretech.com/products/intel-core-ultra-270k-plus-3-7ghz-24c-24t-lga-1851-processor-5032037284837",
+          "availability": "exact variant orderable",
+          "warranty": "local term to confirm with retailer",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "ElectronicsCrazy",
+          "model": "ASUS TUF GAMING B860M-PLUS WIFI",
+          "unit_price": 393,
+          "url": "https://www.electronicscrazy.sg/asus-tuf-gaming-b860m-plus-wifi-lga-1851-m-atx-motherboard/",
+          "availability": "seller reports in stock",
+          "warranty": "3 years advertised",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "6AM Productions Tech",
+          "model": "KLEVV CRAS V RGB KD5CGUB80-60A320G, 128 GB (2 x 64 GB) DDR5-6000 CL32",
+          "unit_price": 2579,
+          "url": "https://6amproductionstech.com/allproducts/p/klevv-cras-v-rgb-ddr5-128gb-2x64gb",
+          "availability": "listed for sale; store uses unlimited inventory tracking, physical kit count unverified; require stated black part",
+          "warranty": "limited lifetime",
+          "quantity": 1
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 2 TB M.2 2280 LNM790X002T-RNNNG",
+          "unit_price": 504,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-2tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright Aqua Elite 360 V3 black with 3 radiator fans, EAN 814256016346",
+          "unit_price": 88,
+          "url": "https://dynacoretech.com/products/thermalright-aqua-elite-360-black-v3-argb-aio-liquid-cooler3yrs-814256016346",
+          "availability": "exact variant orderable",
+          "warranty": "3 years local",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "Dynacore Technologies",
+          "model": "Cooler Master Elite 502 ARGB black with 3 x 120 mm fans",
+          "unit_price": 85,
+          "url": "https://dynacoretech.com/products/cooler-master-elite-502-steel-tempered-glass-atx-case-with-3-x-120mm-argb-fans",
+          "availability": "black exact variant orderable; white unavailable",
+          "warranty": "2 years local",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright TR-KG650 black, 650 W Gold, EAN 814256019729",
+          "unit_price": 116,
+          "url": "https://dynacoretech.com/products/thermalright-tr-kg650-650w-atx3-1-80-gold-full-modular-psu5yrs-814256019729",
+          "availability": "exact variant orderable",
+          "warranty": "5 years local",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 4757.0
+    },
+    {
+      "id": "SG-INTEL128-4",
+      "currency": "SGD",
+      "nodes": 1,
+      "cpu_per_node": "270K Plus",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 4,
+      "raw_tb_per_node": 8,
+      "mirror_tb_per_node": 4,
+      "notes": "Lower-cost DDR5 128 GB / 4 TB mirrored option.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Dynacore Technologies",
+          "model": "Intel Core Ultra 7 270K Plus, EAN 5032037284837",
+          "unit_price": 488,
+          "url": "https://dynacoretech.com/products/intel-core-ultra-270k-plus-3-7ghz-24c-24t-lga-1851-processor-5032037284837",
+          "availability": "exact variant orderable",
+          "warranty": "local term to confirm with retailer",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "ElectronicsCrazy",
+          "model": "ASUS TUF GAMING B860M-PLUS WIFI",
+          "unit_price": 393,
+          "url": "https://www.electronicscrazy.sg/asus-tuf-gaming-b860m-plus-wifi-lga-1851-m-atx-motherboard/",
+          "availability": "seller reports in stock",
+          "warranty": "3 years advertised",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "6AM Productions Tech",
+          "model": "KLEVV CRAS V RGB KD5CGUB80-60A320G, 128 GB (2 x 64 GB) DDR5-6000 CL32",
+          "unit_price": 2579,
+          "url": "https://6amproductionstech.com/allproducts/p/klevv-cras-v-rgb-ddr5-128gb-2x64gb",
+          "availability": "listed for sale; store uses unlimited inventory tracking, physical kit count unverified; require stated black part",
+          "warranty": "limited lifetime",
+          "quantity": 1
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 4 TB M.2 2280 LNM790X004T-RNNNG",
+          "unit_price": 859,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-4tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright Aqua Elite 360 V3 black with 3 radiator fans, EAN 814256016346",
+          "unit_price": 88,
+          "url": "https://dynacoretech.com/products/thermalright-aqua-elite-360-black-v3-argb-aio-liquid-cooler3yrs-814256016346",
+          "availability": "exact variant orderable",
+          "warranty": "3 years local",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "Dynacore Technologies",
+          "model": "Cooler Master Elite 502 ARGB black with 3 x 120 mm fans",
+          "unit_price": 85,
+          "url": "https://dynacoretech.com/products/cooler-master-elite-502-steel-tempered-glass-atx-case-with-3-x-120mm-argb-fans",
+          "availability": "black exact variant orderable; white unavailable",
+          "warranty": "2 years local",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright TR-KG650 black, 650 W Gold, EAN 814256019729",
+          "unit_price": 116,
+          "url": "https://dynacoretech.com/products/thermalright-tr-kg650-650w-atx3-1-80-gold-full-modular-psu5yrs-814256019729",
+          "availability": "exact variant orderable",
+          "warranty": "5 years local",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 5467.0
+    },
+    {
+      "id": "SG-INTEL2X128-2",
+      "currency": "SGD",
+      "nodes": 2,
+      "cpu_per_node": "270K Plus",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "Separate 128 GB per worker; no shared memory or mirror.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Dynacore Technologies",
+          "model": "Intel Core Ultra 7 270K Plus, EAN 5032037284837",
+          "unit_price": 488,
+          "url": "https://dynacoretech.com/products/intel-core-ultra-270k-plus-3-7ghz-24c-24t-lga-1851-processor-5032037284837",
+          "availability": "exact variant orderable",
+          "warranty": "local term to confirm with retailer",
+          "quantity": 2
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "ElectronicsCrazy",
+          "model": "ASUS TUF GAMING B860M-PLUS WIFI",
+          "unit_price": 393,
+          "url": "https://www.electronicscrazy.sg/asus-tuf-gaming-b860m-plus-wifi-lga-1851-m-atx-motherboard/",
+          "availability": "seller reports in stock",
+          "warranty": "3 years advertised",
+          "quantity": 2
+        },
+        {
+          "component": "Memory",
+          "retailer": "6AM Productions Tech",
+          "model": "KLEVV CRAS V RGB KD5CGUB80-60A320G, 128 GB (2 x 64 GB) DDR5-6000 CL32",
+          "unit_price": 2579,
+          "url": "https://6amproductionstech.com/allproducts/p/klevv-cras-v-rgb-ddr5-128gb-2x64gb",
+          "availability": "listed for sale; store uses unlimited inventory tracking, physical kit count unverified; require stated black part",
+          "warranty": "limited lifetime",
+          "quantity": 2
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 2 TB M.2 2280 LNM790X002T-RNNNG",
+          "unit_price": 504,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-2tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 4
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright Aqua Elite 360 V3 black with 3 radiator fans, EAN 814256016346",
+          "unit_price": 88,
+          "url": "https://dynacoretech.com/products/thermalright-aqua-elite-360-black-v3-argb-aio-liquid-cooler3yrs-814256016346",
+          "availability": "exact variant orderable",
+          "warranty": "3 years local",
+          "quantity": 2
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "Dynacore Technologies",
+          "model": "Cooler Master Elite 502 ARGB black with 3 x 120 mm fans",
+          "unit_price": 85,
+          "url": "https://dynacoretech.com/products/cooler-master-elite-502-steel-tempered-glass-atx-case-with-3-x-120mm-argb-fans",
+          "availability": "black exact variant orderable; white unavailable",
+          "warranty": "2 years local",
+          "quantity": 2
+        },
+        {
+          "component": "PSU",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright TR-KG650 black, 650 W Gold, EAN 814256019729",
+          "unit_price": 116,
+          "url": "https://dynacoretech.com/products/thermalright-tr-kg650-650w-atx3-1-80-gold-full-modular-psu5yrs-814256019729",
+          "availability": "exact variant orderable",
+          "warranty": "5 years local",
+          "quantity": 2
+        }
+      ],
+      "parts_total": 9514.0
+    },
+    {
+      "id": "SG-RYZEN128-2",
+      "currency": "SGD",
+      "nodes": 1,
+      "cpu_per_node": "9950X3D",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "Single AM5 worker; denominator for pool price.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Dynacore Technologies",
+          "model": "AMD Ryzen 9 9950X3D tray, 100-000000719",
+          "unit_price": 959,
+          "url": "https://dynacoretech.com/products/amd-ryzen-9-9950x3d-4-3ghz-16c-32t-144mb-cache-tray-processor4yrs-100-000000719",
+          "availability": "exact variant orderable",
+          "warranty": "4 years local seller coverage",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "Dynacore Technologies",
+          "model": "MSI B850M GAMING PLUS WIFI, EAN 4711377347570",
+          "unit_price": 279,
+          "url": "https://dynacoretech.com/products/msi-b850m-gaming-plus-wifi-am5-m-atx-motherboard3yrs-4711377347570",
+          "availability": "exact variant orderable",
+          "warranty": "3 years local",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "6AM Productions Tech",
+          "model": "KLEVV CRAS V RGB KD5CGUB80-60A320G, 128 GB (2 x 64 GB) DDR5-6000 CL32",
+          "unit_price": 2579,
+          "url": "https://6amproductionstech.com/allproducts/p/klevv-cras-v-rgb-ddr5-128gb-2x64gb",
+          "availability": "listed for sale; store uses unlimited inventory tracking, physical kit count unverified; require stated black part",
+          "warranty": "limited lifetime",
+          "quantity": 1
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 2 TB M.2 2280 LNM790X002T-RNNNG",
+          "unit_price": 504,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-2tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright Aqua Elite 360 V3 black with 3 radiator fans, EAN 814256016346",
+          "unit_price": 88,
+          "url": "https://dynacoretech.com/products/thermalright-aqua-elite-360-black-v3-argb-aio-liquid-cooler3yrs-814256016346",
+          "availability": "exact variant orderable",
+          "warranty": "3 years local",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "Dynacore Technologies",
+          "model": "Cooler Master Elite 502 ARGB black with 3 x 120 mm fans",
+          "unit_price": 85,
+          "url": "https://dynacoretech.com/products/cooler-master-elite-502-steel-tempered-glass-atx-case-with-3-x-120mm-argb-fans",
+          "availability": "black exact variant orderable; white unavailable",
+          "warranty": "2 years local",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright TR-KG650 black, 650 W Gold, EAN 814256019729",
+          "unit_price": 116,
+          "url": "https://dynacoretech.com/products/thermalright-tr-kg650-650w-atx3-1-80-gold-full-modular-psu5yrs-814256019729",
+          "availability": "exact variant orderable",
+          "warranty": "5 years local",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 5114.0
+    },
+    {
+      "id": "SG-RYZEN2X128-2",
+      "currency": "SGD",
+      "nodes": 2,
+      "cpu_per_node": "9950X3D",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "C. Potential higher busy-queue throughput for independent jobs.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Dynacore Technologies",
+          "model": "AMD Ryzen 9 9950X3D tray, 100-000000719",
+          "unit_price": 959,
+          "url": "https://dynacoretech.com/products/amd-ryzen-9-9950x3d-4-3ghz-16c-32t-144mb-cache-tray-processor4yrs-100-000000719",
+          "availability": "exact variant orderable",
+          "warranty": "4 years local seller coverage",
+          "quantity": 2
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "Dynacore Technologies",
+          "model": "MSI B850M GAMING PLUS WIFI, EAN 4711377347570",
+          "unit_price": 279,
+          "url": "https://dynacoretech.com/products/msi-b850m-gaming-plus-wifi-am5-m-atx-motherboard3yrs-4711377347570",
+          "availability": "exact variant orderable",
+          "warranty": "3 years local",
+          "quantity": 2
+        },
+        {
+          "component": "Memory",
+          "retailer": "6AM Productions Tech",
+          "model": "KLEVV CRAS V RGB KD5CGUB80-60A320G, 128 GB (2 x 64 GB) DDR5-6000 CL32",
+          "unit_price": 2579,
+          "url": "https://6amproductionstech.com/allproducts/p/klevv-cras-v-rgb-ddr5-128gb-2x64gb",
+          "availability": "listed for sale; store uses unlimited inventory tracking, physical kit count unverified; require stated black part",
+          "warranty": "limited lifetime",
+          "quantity": 2
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 2 TB M.2 2280 LNM790X002T-RNNNG",
+          "unit_price": 504,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-2tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 4
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright Aqua Elite 360 V3 black with 3 radiator fans, EAN 814256016346",
+          "unit_price": 88,
+          "url": "https://dynacoretech.com/products/thermalright-aqua-elite-360-black-v3-argb-aio-liquid-cooler3yrs-814256016346",
+          "availability": "exact variant orderable",
+          "warranty": "3 years local",
+          "quantity": 2
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "Dynacore Technologies",
+          "model": "Cooler Master Elite 502 ARGB black with 3 x 120 mm fans",
+          "unit_price": 85,
+          "url": "https://dynacoretech.com/products/cooler-master-elite-502-steel-tempered-glass-atx-case-with-3-x-120mm-argb-fans",
+          "availability": "black exact variant orderable; white unavailable",
+          "warranty": "2 years local",
+          "quantity": 2
+        },
+        {
+          "component": "PSU",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright TR-KG650 black, 650 W Gold, EAN 814256019729",
+          "unit_price": 116,
+          "url": "https://dynacoretech.com/products/thermalright-tr-kg650-650w-atx3-1-80-gold-full-modular-psu5yrs-814256019729",
+          "availability": "exact variant orderable",
+          "warranty": "5 years local",
+          "quantity": 2
+        }
+      ],
+      "parts_total": 10228.0
+    },
+    {
+      "id": "MY-INTEL128-2",
+      "currency": "MYR",
+      "nodes": 1,
+      "cpu_per_node": "270K Plus",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "Malaysia-local single worker with 128 GB in one address space.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "E Cytech",
+          "model": "Intel Core Ultra 7 270K Plus",
+          "unit_price": 1499,
+          "url": "https://www.ecytech.com.my/product-page/intel-core-ultra-7-270k-plus",
+          "availability": "seller metadata in stock; no reserved quantity",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "Brightstar Computer",
+          "model": "ASUS TUF GAMING B860M-PLUS WIFI",
+          "unit_price": 999,
+          "url": "https://brightstarcomp.com/products/asus-tuf-gaming-b860m-plus-wifi-lga1851-micro-atx-motherboard",
+          "availability": "exact variant orderable",
+          "warranty": "local warranty handling applies; term to confirm",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "Server2U",
+          "model": "Kingston ValueRAM KVR56U46BD8-64, 64 GB DDR5-5600 non-ECC 2Rx8 UDIMM",
+          "unit_price": 6529,
+          "url": "https://server2u.com/shop/kvr56u46bd8-64-65772",
+          "availability": "structured exact offer in stock; actual multi-unit allocation unverified",
+          "warranty": "limited lifetime manufacturer warranty subject to terms; seller RMA unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "ITXLab",
+          "model": "Lexar NM790 2 TB M.2 2280, LNM790X002T-RNNNG, seller variant SKU 9424-9719",
+          "unit_price": 1430,
+          "url": "https://itxlab.com.my/product/lexar-nm790-m-2-2280-pcie-gen4x4-nvme-ssd-512gb-1tb-2tb/",
+          "availability": "2 TB exact variant in stock and purchasable; physical quantity unverified",
+          "warranty": "manufacturer limited 5 years or write limit; local service route unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "E Cytech",
+          "model": "Thermalright Phantom Spirit 120 Digital EVO",
+          "unit_price": 259,
+          "url": "https://www.ecytech.com.my/product-page/thermalright-phantom-spirit-120-digital-evo",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "E Cytech",
+          "model": "Cooler Master Elite 301 with 3 x 120 mm ARGB fans",
+          "unit_price": 209,
+          "url": "https://www.ecytech.com.my/product-page/cooler-master-elite-301",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "E Cytech",
+          "model": "MSI MAG A650GL 650 W 80 Plus Gold",
+          "unit_price": 269,
+          "url": "https://www.ecytech.com.my/product-page/msi-mag-a650gl",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 19153.0
+    },
+    {
+      "id": "MY-INTEL256-2",
+      "currency": "MYR",
+      "nodes": 1,
+      "cpu_per_node": "270K Plus",
+      "ram_gb_per_node": 256,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "Malaysia-local 256 GB 4 x 64 GB JEDEC DDR5; two channels, 4400 MT/s controller rating at 2DPC/2R.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "E Cytech",
+          "model": "Intel Core Ultra 7 270K Plus",
+          "unit_price": 1499,
+          "url": "https://www.ecytech.com.my/product-page/intel-core-ultra-7-270k-plus",
+          "availability": "seller metadata in stock; no reserved quantity",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "Brightstar Computer",
+          "model": "ASUS TUF GAMING B860M-PLUS WIFI",
+          "unit_price": 999,
+          "url": "https://brightstarcomp.com/products/asus-tuf-gaming-b860m-plus-wifi-lga1851-micro-atx-motherboard",
+          "availability": "exact variant orderable",
+          "warranty": "local warranty handling applies; term to confirm",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "Server2U",
+          "model": "Kingston ValueRAM KVR56U46BD8-64, 64 GB DDR5-5600 non-ECC 2Rx8 UDIMM",
+          "unit_price": 6529,
+          "url": "https://server2u.com/shop/kvr56u46bd8-64-65772",
+          "availability": "structured exact offer in stock; actual multi-unit allocation unverified",
+          "warranty": "limited lifetime manufacturer warranty subject to terms; seller RMA unquoted",
+          "quantity": 4
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "ITXLab",
+          "model": "Lexar NM790 2 TB M.2 2280, LNM790X002T-RNNNG, seller variant SKU 9424-9719",
+          "unit_price": 1430,
+          "url": "https://itxlab.com.my/product/lexar-nm790-m-2-2280-pcie-gen4x4-nvme-ssd-512gb-1tb-2tb/",
+          "availability": "2 TB exact variant in stock and purchasable; physical quantity unverified",
+          "warranty": "manufacturer limited 5 years or write limit; local service route unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "E Cytech",
+          "model": "Thermalright Phantom Spirit 120 Digital EVO",
+          "unit_price": 259,
+          "url": "https://www.ecytech.com.my/product-page/thermalright-phantom-spirit-120-digital-evo",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "E Cytech",
+          "model": "Cooler Master Elite 301 with 3 x 120 mm ARGB fans",
+          "unit_price": 209,
+          "url": "https://www.ecytech.com.my/product-page/cooler-master-elite-301",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "E Cytech",
+          "model": "MSI MAG A650GL 650 W 80 Plus Gold",
+          "unit_price": 269,
+          "url": "https://www.ecytech.com.my/product-page/msi-mag-a650gl",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 32211.0
+    },
+    {
+      "id": "MY-RYZEN128-2",
+      "currency": "MYR",
+      "nodes": 1,
+      "cpu_per_node": "9950X3D",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "Malaysia-local 128 GB AM5 worker.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "E Cytech",
+          "model": "AMD Ryzen 9 9950X3D",
+          "unit_price": 3369,
+          "url": "https://www.ecytech.com.my/product-page/amd-ryzen-9-9950x3d",
+          "availability": "seller metadata in stock; pair unconfirmed",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "E Cytech",
+          "model": "MSI B850M GAMING PLUS WIFI",
+          "unit_price": 829,
+          "url": "https://www.ecytech.com.my/product-page/msi-b850m-gaming-plus-wifi",
+          "availability": "seller metadata in stock; pair unconfirmed",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "Server2U",
+          "model": "Kingston ValueRAM KVR56U46BD8-64, 64 GB DDR5-5600 non-ECC 2Rx8 UDIMM",
+          "unit_price": 6529,
+          "url": "https://server2u.com/shop/kvr56u46bd8-64-65772",
+          "availability": "structured exact offer in stock; actual multi-unit allocation unverified",
+          "warranty": "limited lifetime manufacturer warranty subject to terms; seller RMA unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "ITXLab",
+          "model": "Lexar NM790 2 TB M.2 2280, LNM790X002T-RNNNG, seller variant SKU 9424-9719",
+          "unit_price": 1430,
+          "url": "https://itxlab.com.my/product/lexar-nm790-m-2-2280-pcie-gen4x4-nvme-ssd-512gb-1tb-2tb/",
+          "availability": "2 TB exact variant in stock and purchasable; physical quantity unverified",
+          "warranty": "manufacturer limited 5 years or write limit; local service route unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "E Cytech",
+          "model": "Thermalright Phantom Spirit 120 Digital EVO",
+          "unit_price": 259,
+          "url": "https://www.ecytech.com.my/product-page/thermalright-phantom-spirit-120-digital-evo",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "E Cytech",
+          "model": "Cooler Master Elite 301 with 3 x 120 mm ARGB fans",
+          "unit_price": 209,
+          "url": "https://www.ecytech.com.my/product-page/cooler-master-elite-301",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "E Cytech",
+          "model": "MSI MAG A650GL 650 W 80 Plus Gold",
+          "unit_price": 269,
+          "url": "https://www.ecytech.com.my/product-page/msi-mag-a650gl",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 20853.0
+    },
+    {
+      "id": "MY-RYZEN2X128-2",
+      "currency": "MYR",
+      "nodes": 2,
+      "cpu_per_node": "9950X3D",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "Two independent 128 GB workers; totals cover all four SSDs.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "E Cytech",
+          "model": "AMD Ryzen 9 9950X3D",
+          "unit_price": 3369,
+          "url": "https://www.ecytech.com.my/product-page/amd-ryzen-9-9950x3d",
+          "availability": "seller metadata in stock; pair unconfirmed",
+          "warranty": "local term unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "E Cytech",
+          "model": "MSI B850M GAMING PLUS WIFI",
+          "unit_price": 829,
+          "url": "https://www.ecytech.com.my/product-page/msi-b850m-gaming-plus-wifi",
+          "availability": "seller metadata in stock; pair unconfirmed",
+          "warranty": "local term unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "Memory",
+          "retailer": "Server2U",
+          "model": "Kingston ValueRAM KVR56U46BD8-64, 64 GB DDR5-5600 non-ECC 2Rx8 UDIMM",
+          "unit_price": 6529,
+          "url": "https://server2u.com/shop/kvr56u46bd8-64-65772",
+          "availability": "structured exact offer in stock; actual multi-unit allocation unverified",
+          "warranty": "limited lifetime manufacturer warranty subject to terms; seller RMA unquoted",
+          "quantity": 4
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "ITXLab",
+          "model": "Lexar NM790 2 TB M.2 2280, LNM790X002T-RNNNG, seller variant SKU 9424-9719",
+          "unit_price": 1430,
+          "url": "https://itxlab.com.my/product/lexar-nm790-m-2-2280-pcie-gen4x4-nvme-ssd-512gb-1tb-2tb/",
+          "availability": "2 TB exact variant in stock and purchasable; physical quantity unverified",
+          "warranty": "manufacturer limited 5 years or write limit; local service route unquoted",
+          "quantity": 4
+        },
+        {
+          "component": "Cooler",
+          "retailer": "E Cytech",
+          "model": "Thermalright Phantom Spirit 120 Digital EVO",
+          "unit_price": 259,
+          "url": "https://www.ecytech.com.my/product-page/thermalright-phantom-spirit-120-digital-evo",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "E Cytech",
+          "model": "Cooler Master Elite 301 with 3 x 120 mm ARGB fans",
+          "unit_price": 209,
+          "url": "https://www.ecytech.com.my/product-page/cooler-master-elite-301",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "PSU",
+          "retailer": "E Cytech",
+          "model": "MSI MAG A650GL 650 W 80 Plus Gold",
+          "unit_price": 269,
+          "url": "https://www.ecytech.com.my/product-page/msi-mag-a650gl",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 2
+        }
+      ],
+      "parts_total": 41706.0
+    },
+    {
+      "id": "SG-RYZENX3D2-128-2",
+      "currency": "SGD",
+      "nodes": 1,
+      "cpu_per_node": "9950X3D2",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "Single performance-first desktop alternative, higher 200 W CPU thermal design.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "Dynacore Technologies",
+          "model": "AMD Ryzen 9 9950X3D2 Dual Edition, EAN 730143318327",
+          "unit_price": 1489,
+          "url": "https://dynacoretech.com/products/amd-ryzen%E2%84%A2-9-9950x3d2-dual-edition-desktop-processor-730143318327",
+          "availability": "exact variant orderable",
+          "warranty": "3 years advertised",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "Dynacore Technologies",
+          "model": "MSI B850M GAMING PLUS WIFI, EAN 4711377347570",
+          "unit_price": 279,
+          "url": "https://dynacoretech.com/products/msi-b850m-gaming-plus-wifi-am5-m-atx-motherboard3yrs-4711377347570",
+          "availability": "exact variant orderable",
+          "warranty": "3 years local",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "6AM Productions Tech",
+          "model": "KLEVV CRAS V RGB KD5CGUB80-60A320G, 128 GB (2 x 64 GB) DDR5-6000 CL32",
+          "unit_price": 2579,
+          "url": "https://6amproductionstech.com/allproducts/p/klevv-cras-v-rgb-ddr5-128gb-2x64gb",
+          "availability": "listed for sale; store uses unlimited inventory tracking, physical kit count unverified; require stated black part",
+          "warranty": "limited lifetime",
+          "quantity": 1
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "theShop",
+          "model": "Lexar NM790 2 TB M.2 2280 LNM790X002T-RNNNG",
+          "unit_price": 504,
+          "url": "https://theshop.sg/products/pc-parts/m2-nvme-ssd/lexar-nm790-m-2-2280-pcie-gen-4x4-nvme-ssd-2tb",
+          "availability": "listed for delivery; physical pair unverified",
+          "warranty": "local authorised distributor; manufacturer limited 5 years or write limit",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright Aqua Elite 360 V3 black with 3 radiator fans, EAN 814256016346",
+          "unit_price": 88,
+          "url": "https://dynacoretech.com/products/thermalright-aqua-elite-360-black-v3-argb-aio-liquid-cooler3yrs-814256016346",
+          "availability": "exact variant orderable",
+          "warranty": "3 years local",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "Dynacore Technologies",
+          "model": "Cooler Master Elite 502 ARGB black with 3 x 120 mm fans",
+          "unit_price": 85,
+          "url": "https://dynacoretech.com/products/cooler-master-elite-502-steel-tempered-glass-atx-case-with-3-x-120mm-argb-fans",
+          "availability": "black exact variant orderable; white unavailable",
+          "warranty": "2 years local",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "Dynacore Technologies",
+          "model": "Thermalright TR-KG650 black, 650 W Gold, EAN 814256019729",
+          "unit_price": 116,
+          "url": "https://dynacoretech.com/products/thermalright-tr-kg650-650w-atx3-1-80-gold-full-modular-psu5yrs-814256019729",
+          "availability": "exact variant orderable",
+          "warranty": "5 years local",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 5644.0
+    },
+    {
+      "id": "MY-RYZENX3D2-128-2",
+      "currency": "MYR",
+      "nodes": 1,
+      "cpu_per_node": "9950X3D2",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 2,
+      "raw_tb_per_node": 4,
+      "mirror_tb_per_node": 2,
+      "notes": "Regional single-node performance per ringgit alternative, 200 W CPU with dual-tower air cooling; sustained thermal behavior unknown.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "E Cytech",
+          "model": "AMD Ryzen 9 9950X3D2 Dual Edition",
+          "unit_price": 4179,
+          "url": "https://www.ecytech.com.my/product-page/amd-ryzen-9-9950x3d2",
+          "availability": "seller metadata in stock; no reservation",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "E Cytech",
+          "model": "MSI B850M GAMING PLUS WIFI",
+          "unit_price": 829,
+          "url": "https://www.ecytech.com.my/product-page/msi-b850m-gaming-plus-wifi",
+          "availability": "seller metadata in stock; pair unconfirmed",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "Server2U",
+          "model": "Kingston ValueRAM KVR56U46BD8-64, 64 GB DDR5-5600 non-ECC 2Rx8 UDIMM",
+          "unit_price": 6529,
+          "url": "https://server2u.com/shop/kvr56u46bd8-64-65772",
+          "availability": "structured exact offer in stock; actual multi-unit allocation unverified",
+          "warranty": "limited lifetime manufacturer warranty subject to terms; seller RMA unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "ITXLab",
+          "model": "Lexar NM790 2 TB M.2 2280, LNM790X002T-RNNNG, seller variant SKU 9424-9719",
+          "unit_price": 1430,
+          "url": "https://itxlab.com.my/product/lexar-nm790-m-2-2280-pcie-gen4x4-nvme-ssd-512gb-1tb-2tb/",
+          "availability": "2 TB exact variant in stock and purchasable; physical quantity unverified",
+          "warranty": "manufacturer limited 5 years or write limit; local service route unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "E Cytech",
+          "model": "Thermalright Phantom Spirit 120 Digital EVO",
+          "unit_price": 259,
+          "url": "https://www.ecytech.com.my/product-page/thermalright-phantom-spirit-120-digital-evo",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "E Cytech",
+          "model": "Cooler Master Elite 301 with 3 x 120 mm ARGB fans",
+          "unit_price": 209,
+          "url": "https://www.ecytech.com.my/product-page/cooler-master-elite-301",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "E Cytech",
+          "model": "MSI MAG A650GL 650 W 80 Plus Gold",
+          "unit_price": 269,
+          "url": "https://www.ecytech.com.my/product-page/msi-mag-a650gl",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 21663.0
+    },
+    {
+      "id": "MY-INTEL128-4",
+      "currency": "MYR",
+      "nodes": 1,
+      "cpu_per_node": "270K Plus",
+      "ram_gb_per_node": 128,
+      "drives_per_node": 2,
+      "drive_tb": 4,
+      "raw_tb_per_node": 8,
+      "mirror_tb_per_node": 4,
+      "notes": "Malaysia-local AX162-1 storage-capacity alternative. Two SN850X factory heatsinks, omit motherboard M.2 covers, no GPU.",
+      "bom": [
+        {
+          "component": "CPU",
+          "retailer": "E Cytech",
+          "model": "Intel Core Ultra 7 270K Plus",
+          "unit_price": 1499,
+          "url": "https://www.ecytech.com.my/product-page/intel-core-ultra-7-270k-plus",
+          "availability": "seller metadata in stock; no reserved quantity",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Motherboard",
+          "retailer": "Brightstar Computer",
+          "model": "ASUS TUF GAMING B860M-PLUS WIFI",
+          "unit_price": 999,
+          "url": "https://brightstarcomp.com/products/asus-tuf-gaming-b860m-plus-wifi-lga1851-micro-atx-motherboard",
+          "availability": "exact variant orderable",
+          "warranty": "local warranty handling applies; term to confirm",
+          "quantity": 1
+        },
+        {
+          "component": "Memory",
+          "retailer": "Server2U",
+          "model": "Kingston ValueRAM KVR56U46BD8-64, 64 GB DDR5-5600 non-ECC 2Rx8 UDIMM",
+          "unit_price": 6529,
+          "url": "https://server2u.com/shop/kvr56u46bd8-64-65772",
+          "availability": "structured exact offer in stock; actual multi-unit allocation unverified",
+          "warranty": "limited lifetime manufacturer warranty subject to terms; seller RMA unquoted",
+          "quantity": 2
+        },
+        {
+          "component": "NVMe SSD",
+          "retailer": "GameShop Malaysia",
+          "model": "WD_BLACK SN850X 4 TB M.2 2280 with factory heatsink, WDS400T2XHE",
+          "unit_price": 3532,
+          "url": "https://www.gameshop.my/products/wd_black-sn850x-nvme-ssd-with-heatsink?variant=42164827816013",
+          "availability": "exact 4 TB seller variant orderable; two-unit physical allocation unverified",
+          "warranty": "manufacturer limited 5 years or 2,400 TBW; local return terms to confirm",
+          "quantity": 2
+        },
+        {
+          "component": "Cooler",
+          "retailer": "E Cytech",
+          "model": "Thermalright Phantom Spirit 120 Digital EVO",
+          "unit_price": 259,
+          "url": "https://www.ecytech.com.my/product-page/thermalright-phantom-spirit-120-digital-evo",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "Case and fans",
+          "retailer": "E Cytech",
+          "model": "Cooler Master Elite 301 with 3 x 120 mm ARGB fans",
+          "unit_price": 209,
+          "url": "https://www.ecytech.com.my/product-page/cooler-master-elite-301",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        },
+        {
+          "component": "PSU",
+          "retailer": "E Cytech",
+          "model": "MSI MAG A650GL 650 W 80 Plus Gold",
+          "unit_price": 269,
+          "url": "https://www.ecytech.com.my/product-page/msi-mag-a650gl",
+          "availability": "seller metadata in stock",
+          "warranty": "local term unquoted",
+          "quantity": 1
+        }
+      ],
+      "parts_total": 23357.0
+    }
+  ]
+}

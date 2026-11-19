@@ -1,0 +1,385 @@
+{
+  "checked_at": "2026-11-20",
+  "source": "procurement.json: exact sum of unit_price × quantity, no premises cost",
+  "signed_off_by": "Alexey Zhokhov <alexey@zhokhov.com>",
+  "builds": [
+    {
+      "id": "SG-WRX256-2",
+      "name": "1 × 5995WX, 256 GB/node, 2 × 2 TB/node",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "13330",
+      "power_profile": "wrx80",
+      "nodes": 1,
+      "ram_gb_per_node": 256,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "A/E. Closest single-host compiler candidate. Custom-order CPU and listed cooler. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "Closest single-host candidate; Clang proxy 98.6–106.2% across separate same-version pairs; exact CI unknown",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 337.1,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Published Clang work rate from one 5995WX submission; no measurement of the purchased non-ECC BOM."
+      }
+    },
+    {
+      "id": "SG-WRX256-4",
+      "name": "1 × 5995WX, 256 GB/node, 2 × 4 TB/node",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "14040",
+      "power_profile": "wrx80",
+      "nodes": 1,
+      "ram_gb_per_node": 256,
+      "mirror_tb_per_node": 4,
+      "cost_basis": "Largest single-host capacity configuration in both dimensions. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "Closest single-host candidate; Clang proxy 98.6–106.2% across separate same-version pairs; exact CI unknown",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 337.1,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Published Clang work rate from one 5995WX submission; no measurement of the purchased non-ECC BOM."
+      }
+    },
+    {
+      "id": "SG-WRX128-4",
+      "name": "1 × 5995WX, 128 GB/node, 2 × 4 TB/node",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "10022.00",
+      "power_profile": "wrx80",
+      "nodes": 1,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 4,
+      "cost_basis": "D. Exact eight-DIMM topology; indicative memory quote only. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "Closest single-host candidate; Clang proxy 98.6–106.2% across separate same-version pairs; exact CI unknown",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 337.1,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Published Clang work rate from one 5995WX submission; no measurement of the purchased non-ECC BOM."
+      }
+    },
+    {
+      "id": "SG-WRX128-2",
+      "name": "1 × 5995WX, 128 GB/node, 2 × 2 TB/node",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "9312.00",
+      "power_profile": "wrx80",
+      "nodes": 1,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "Lower storage variant; indicative memory quote only. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "Closest single-host candidate; Clang proxy 98.6–106.2% across separate same-version pairs; exact CI unknown",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 337.1,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Published Clang work rate from one 5995WX submission; no measurement of the purchased non-ECC BOM."
+      }
+    },
+    {
+      "id": "SG-WRX256-2-USED",
+      "name": "1 × 5995WX, 256 GB/node, 2 × 2 TB/node (conditional refurbished RAM)",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "9098",
+      "power_profile": "wrx80",
+      "nodes": 1,
+      "ram_gb_per_node": 256,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "Sensitivity only. Eight matching .C16FE modules unconfirmed. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "Closest single-host candidate; Clang proxy 98.6–106.2% across separate same-version pairs; exact CI unknown",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 337.1,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Published Clang work rate from one 5995WX submission; no measurement of the purchased non-ECC BOM."
+      }
+    },
+    {
+      "id": "SG-WRX256-4-USED",
+      "name": "1 × 5995WX, 256 GB/node, 2 × 4 TB/node (conditional refurbished RAM)",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "9808",
+      "power_profile": "wrx80",
+      "nodes": 1,
+      "ram_gb_per_node": 256,
+      "mirror_tb_per_node": 4,
+      "cost_basis": "Sensitivity only. Eight matching .C16FE modules unconfirmed. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "Closest single-host candidate; Clang proxy 98.6–106.2% across separate same-version pairs; exact CI unknown",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 337.1,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Published Clang work rate from one 5995WX submission; no measurement of the purchased non-ECC BOM."
+      }
+    },
+    {
+      "id": "SG-INTEL128-2",
+      "name": "1 × 270K Plus, 128 GB/node, 2 × 2 TB/node",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "4757",
+      "power_profile": "270kplus",
+      "nodes": 1,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "B. Single 128 GB value worker. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "Six-submission parallel Clang median 74.2%, observed 34.1–79.7%; not an EPYC-equivalent CI guarantee",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 242.85,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Median of six heterogeneous Linux 270K Plus Clang submissions, including low outlier; weak proxy only."
+      }
+    },
+    {
+      "id": "SG-INTEL128-4",
+      "name": "1 × 270K Plus, 128 GB/node, 2 × 4 TB/node",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "5467",
+      "power_profile": "270kplus",
+      "nodes": 1,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 4,
+      "cost_basis": "Lower-cost DDR5 128 GB / 4 TB mirrored option. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "Six-submission parallel Clang median 74.2%, observed 34.1–79.7%; not an EPYC-equivalent CI guarantee",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 242.85,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Median of six heterogeneous Linux 270K Plus Clang submissions, including low outlier; weak proxy only."
+      }
+    },
+    {
+      "id": "SG-INTEL2X128-2",
+      "name": "2 × 270K Plus, 128 GB/node, 2 × 2 TB/node",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "9514",
+      "power_profile": "two_270kplus",
+      "nodes": 2,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "Separate 128 GB per worker; no shared memory or mirror. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "Six-submission parallel Clang median 74.2%, observed 34.1–79.7%; not an EPYC-equivalent CI guarantee; two nodes, 80% efficiency is an analytical scenario, not a measurement",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 242.85,
+        "baseline_work_rate": 327.4,
+        "node_count": 2,
+        "pool_efficiency": 0.8,
+        "qualification": "Median of six heterogeneous Linux 270K Plus Clang submissions, including low outlier; weak proxy only. Two-node output multiplies by assumed80% scaling; sensitivity required."
+      }
+    },
+    {
+      "id": "SG-RYZEN128-2",
+      "name": "1 × 9950X3D, 128 GB/node, 2 × 2 TB/node",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "5114",
+      "power_profile": "ryzen",
+      "nodes": 1,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "Single AM5 worker; denominator for pool price. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "One-host parallel Clang proxy 78.1–79.8%; single-pipeline and mixed CI differ",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 258.5,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Mean of two published 9950X3D Clang rates; no measurement of this 128GB BOM."
+      }
+    },
+    {
+      "id": "SG-RYZEN2X128-2",
+      "name": "2 × 9950X3D, 128 GB/node, 2 × 2 TB/node",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "10228",
+      "power_profile": "two_ryzen",
+      "nodes": 2,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "C. Potential higher busy-queue throughput for independent jobs. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "One-host parallel Clang proxy 78.1–79.8%; single-pipeline and mixed CI differ; two nodes, 80% efficiency is an analytical scenario, not a measurement",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 258.5,
+        "baseline_work_rate": 327.4,
+        "node_count": 2,
+        "pool_efficiency": 0.8,
+        "qualification": "Mean of two published 9950X3D Clang rates; no measurement of this 128GB BOM. Two-node output multiplies by assumed80% scaling; sensitivity required."
+      }
+    },
+    {
+      "id": "MY-INTEL128-2",
+      "name": "1 × 270K Plus, 128 GB/node, 2 × 2 TB/node",
+      "market": "MY",
+      "currency": "MYR",
+      "purchase_cost": "19153",
+      "power_profile": "270kplus",
+      "nodes": 1,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "Malaysia-local 128 GB shared pool. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "Six-submission parallel Clang median 74.2%, observed 34.1–79.7%; not an EPYC-equivalent CI guarantee",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 242.85,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Median of six heterogeneous Linux 270K Plus Clang submissions, including low outlier; weak proxy only."
+      }
+    },
+    {
+      "id": "MY-INTEL256-2",
+      "name": "1 × 270K Plus, 256 GB/node, 2 × 2 TB/node",
+      "market": "MY",
+      "currency": "MYR",
+      "purchase_cost": "32211",
+      "power_profile": "270kplus",
+      "nodes": 1,
+      "ram_gb_per_node": 256,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "Malaysia-local 256 GB 4 x 64 GB JEDEC DDR5; two channels, 4400 MT/s controller rating at 2DPC/2R. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "Six-submission parallel Clang median 74.2%, observed 34.1–79.7%; not an EPYC-equivalent CI guarantee",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 242.85,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Median of six heterogeneous Linux 270K Plus Clang submissions, including low outlier; weak proxy only."
+      }
+    },
+    {
+      "id": "MY-RYZEN128-2",
+      "name": "1 × 9950X3D, 128 GB/node, 2 × 2 TB/node",
+      "market": "MY",
+      "currency": "MYR",
+      "purchase_cost": "20853",
+      "power_profile": "ryzen",
+      "nodes": 1,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "Malaysia-local 128 GB AM5 worker. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "One-host parallel Clang proxy 78.1–79.8%; single-pipeline and mixed CI differ",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 258.5,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Mean of two published 9950X3D Clang rates; no measurement of this 128GB BOM."
+      }
+    },
+    {
+      "id": "MY-RYZEN2X128-2",
+      "name": "2 × 9950X3D, 128 GB/node, 2 × 2 TB/node",
+      "market": "MY",
+      "currency": "MYR",
+      "purchase_cost": "41706",
+      "power_profile": "two_ryzen",
+      "nodes": 2,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "Two independent 128 GB workers; totals cover all four SSDs. Component subtotal under local collection/free eligible delivery and fee-free payment; final mixed-seller invoicing/stock not guaranteed.",
+      "performance_note": "One-host parallel Clang proxy 78.1–79.8%; single-pipeline and mixed CI differ; two nodes, 80% efficiency is an analytical scenario, not a measurement",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 258.5,
+        "baseline_work_rate": 327.4,
+        "node_count": 2,
+        "pool_efficiency": 0.8,
+        "qualification": "Mean of two published 9950X3D Clang rates; no measurement of this 128GB BOM. Two-node output multiplies by assumed80% scaling; sensitivity required."
+      }
+    },
+    {
+      "id": "SG-RYZENX3D2-128-2",
+      "name": "1 × 9950X3D2, 128 GB/node, 2 × 2 TB/node",
+      "market": "SG",
+      "currency": "SGD",
+      "purchase_cost": "5644.0",
+      "power_profile": "ryzen_x3d2",
+      "nodes": 1,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "Single performance-first desktop alternative, higher 200 W CPU thermal design. Component subtotal; local fee-free payment/collection assumptions; final invoices and physical stock unverified.",
+      "performance_note": "Clang proxy79.7%; published longer Linux compiles about7% faster than9950X3D, no directEPYC CI comparison",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 260.8,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Published 9950X3D2 Linux Geekbench6.7.1 Clang compared with6.4 AX162; publisher states CPU-score comparability6.3–6.7. No measured CI or purchasedBOM claim."
+      }
+    },
+    {
+      "id": "MY-RYZENX3D2-128-2",
+      "name": "1 × 9950X3D2, 128 GB/node, 2 × 2 TB/node",
+      "market": "MY",
+      "currency": "MYR",
+      "purchase_cost": "21663.0",
+      "power_profile": "ryzen_x3d2",
+      "nodes": 1,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 2,
+      "cost_basis": "Regional single-node performance per ringgit alternative, 200 W CPU with dual-tower air cooling; sustained thermal behavior unknown. Component subtotal; local fee-free payment/collection assumptions; final invoices and physical stock unverified.",
+      "performance_note": "Clang proxy79.7%; published longer Linux compiles about7% faster than9950X3D, no directEPYC CI comparison",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 260.8,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Published 9950X3D2 Linux Geekbench6.7.1 Clang compared with6.4 AX162; publisher states CPU-score comparability6.3–6.7. No measured CI or purchasedBOM claim."
+      }
+    },
+    {
+      "id": "MY-INTEL128-4",
+      "name": "1 × 270K Plus, 128 GB, 2 × WD SN850X 4 TB with factory heatsinks",
+      "market": "MY",
+      "currency": "MYR",
+      "purchase_cost": "23357.0",
+      "power_profile": "270kplus",
+      "nodes": 1,
+      "ram_gb_per_node": 128,
+      "mirror_tb_per_node": 4,
+      "cost_basis": "Malaysia-local AX162-1 storage-capacity alternative. Two SN850X factory heatsinks, omit motherboard M.2 covers, no GPU. Sticker-price subtotal; any bank-transfer promotion is excluded until final exact discount is confirmed. Local collection/eligible delivery, not a cross-border landed quote.",
+      "performance_note": "Six-submission parallel Clang median 74.2%, observed 34.1–79.7%; not an EPYC-equivalent CI guarantee",
+      "compiler_proxy": {
+        "name": "Geekbench 6 Linux AVX2 Clang against AX162-R 6.4 observation; see exact-version evidence",
+        "candidate_work_rate": 242.85,
+        "baseline_work_rate": 327.4,
+        "node_count": 1,
+        "pool_efficiency": 1,
+        "qualification": "Median of six heterogeneous Linux 270K Plus Clang submissions, including low outlier; weak proxy only."
+      }
+    }
+  ]
+}

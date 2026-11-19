@@ -59,4 +59,6 @@ The first records include candidate offers, failed checks and cart quotes recove
 
 ## Ownership study
 
+**Current online-only purchasing decision, 20 November 2026:** [Singapore/Malaysia non-ECC builds and rental comparison](../old/buy-vs-rent/README.md). This new study incorporates the 195-offer catalog context, refreshes selected relevant rental quotes, corrects unavailable component assumptions, and provides reproducible calculations for 18 priced builds. [Dated integration and review](2026-11-20-online-hardware-buy-vs-rent.md)
+
 The ownership calculations cover 141 rental offers through revision `175399c`. Rental offers added after that snapshot fall outside those calculations. [Buy or rent decision guide](buy-vs-rent/README.md) · [Dated ownership integration and corrections log](2026-11-20-buy-vs-rent.md)
