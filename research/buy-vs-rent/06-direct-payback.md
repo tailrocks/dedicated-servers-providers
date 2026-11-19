@@ -2,7 +2,7 @@
 
 **Updated: 20 November 2026.** This is the primary purchase-versus-rental view requested by the user. **Office, room, floor-space and premises rent are excluded from every scenario**, including optional sensitivities. Singapore is the first purchase/hosting preference; Malaysia is second.
 
-**Analyzed rental coverage is the 119-offer `c868b31` snapshot:** the [initial 104-offer payback snapshot](07-all-rentals-break-even.md) plus [15 subsequent additions](08-latest-rental-comparisons.md). Stable original IDs are preserved. New quotes inherit their evidence dates; a cost calculation does not establish new stock or payment eligibility.
+**Current rental coverage is 141 offers:** the [initial 104-offer payback snapshot](07-all-rentals-break-even.md), [15 subsequent additions](08-latest-rental-comparisons.md) and [22 latest additions](09-expanded-rental-comparisons.md), with [current corrections to existing offers](10-current-offer-updates.md). Stable original IDs are preserved. New quotes inherit their evidence dates; a cost calculation does not establish new stock or payment eligibility.
 
 ## 1. What “the hardware has cost me zero” means
 
@@ -71,7 +71,7 @@ Each four-scenario cell gives **fractional service months → first whole month*
 
 These are monthly-rate planning equations, not promises of allocation or renewal. **PlusClouds' final term is unconfirmed**, so its figures are explicitly monthly-equivalent sensitivities. Whole months are computed from unrounded results: BizoSiz A1 with both utilities is **38.0006**, therefore month **39**; PlusClouds A2 with electricity alone is **32.0022**, therefore month **33**. Display rounding must not turn either into an earlier pass.
 
-All amounts are SGD. Rental quotes retain their source tax treatment and exclude unquoted tax/IP/network charges; Hetzner rows explicitly include one IPv4 and exclude tax. The heterogeneous retail prices are not claimed to be tax-normalized against these quotes. [Native quotes and evidence](02-rental-market.md), [104 original rental rows](05-repository-rental-comparison.md), [15 latest additions](08-latest-rental-comparisons.md).
+All amounts are SGD. Rental quotes retain their source tax treatment and exclude unquoted tax/IP/network charges; Hetzner rows explicitly include one IPv4 and exclude tax. The heterogeneous retail prices are not claimed to be tax-normalized against these quotes. [Native quotes and evidence](02-rental-market.md), [104 original rental rows](05-repository-rental-comparison.md), [15-offer follow-up](08-latest-rental-comparisons.md), [22-offer expansion](09-expanded-rental-comparisons.md) and [current corrections](10-current-offer-updates.md).
 
 | Rental / owned capacity | Hardware H | Rent R/month | Known setup F | H/R, months | Neither utility | Electricity only | Internet only | Both utilities |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -113,7 +113,7 @@ Same whole-machine power assumption; storage performance and procurement conditi
 | 256 GB + Lexar 2 × 4 TB versus BizoSiz A1 | 8,829.40 | 359.82 | 143.15 | 24.54 | 24.14 → **25** | 31.00 → **31** | 28.04 → **29** | 37.73 → **38** |
 | 256 GB + Lexar 2 × 4 TB versus PowerDedi Singapore 9454P; lead only | 8,829.40 | 630.65 | 0.00 | 14.00 | 14.0006 → **15** | 16.02 → **17** | 15.21 → **16** | 17.62 → **18** |
 
-The PowerDedi listing has contradictory Singapore availability/location labels, unresolved fulfillment and restrictive payment terms. Its advertised zero setup is used only as a conditional scenario. The owned 256 GB / 2 × 4 TB option matches its capacity more closely than the smaller-drive A2 build; actual CI and SSD behavior remain unmeasured.
+The PowerDedi listing has contradictory Singapore availability/location labels, unresolved fulfillment and restrictive payment terms. The [new first-month coupon check](10-current-offer-updates.md) applies to Amsterdam; it is not applied to this separate Singapore lead. Its advertised zero setup is used only as a conditional scenario. The owned 256 GB / 2 × 4 TB option matches its capacity more closely than the smaller-drive A2 build; actual CI and SSD behavior remain unmeasured.
 
 ## 5. Direct cash budgets at 12, 24 and 36 months
 
@@ -204,7 +204,9 @@ The whole-month number is the first integer service-month whose **modeled cumula
 
 For prepaid `p`-month blocks costing `P`, rental cash needed for a horizon `N≥1` is `F + ceil(N/p)×P`, assuming the same terms renew. Monthly equivalent `R=P/p` is useful for an economic comparison but is not the actual payment schedule. Buying may appear cheaper at the first prepayment, become more expensive before that paid term ends, then become cheaper at renewal. Do not call the first temporary crossing permanent payback. Monthly-paid minimum contracts also create liabilities without implying the entire term was paid on day one.
 
-The [initial 104-offer payback appendix](07-all-rentals-break-even.md) and [latest 15-offer extension](08-latest-rental-comparisons.md) keep these cases distinct across all 119 analyzed snapshot rows, mark unknown setup/terms, and exclude capacity-unmatched offers from equivalence rankings. The initial appendix's regular Hetzner row preserves the root table's **bare** server price, whereas this file's regular Hetzner rows explicitly add one IPv4; the different figures have different, labeled scopes.
+The [initial 104-offer payback appendix](07-all-rentals-break-even.md), [next 15 offers](08-latest-rental-comparisons.md) and [latest 22 offers](09-expanded-rental-comparisons.md) keep these cases distinct across all 141 current rows, mark unknown setup/terms, and exclude capacity-unmatched offers from equivalence rankings. The initial appendix's regular Hetzner row preserves the root table's **bare** server price, whereas this file's regular Hetzner rows explicitly add one IPv4; the different figures have different, labeled scopes.
+
+A verified first-month-only rental credit lowers rental costs once; it does not lower recurring rent. With credit `C`, a new monthly-rental comparison becomes `(H − F + C)/(R − O)` when the crossing occurs after that credit. [File 10](10-current-offer-updates.md) applies this to the European PowerDedi offer and preserves the historical no-coupon baseline.
 
 ## 9. Practical interpretation
 
