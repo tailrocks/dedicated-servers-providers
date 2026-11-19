@@ -1,6 +1,12 @@
 # Hardware purchase break-even across the initial 104 rental offers
 
-**Current coverage:** this appendix preserves the initial IDs 001–104 from commit `07180f4`. Add [N01–N15](08-latest-rental-comparisons.md) and [E01–E22](09-expanded-rental-comparisons.md) for all **141 current offers**, with 93 distinct capacity matches, 95 profile comparisons and 48 nonmatches. [Current offer corrections](10-current-offer-updates.md) overlay the 087 PowerDedi first-month coupon. Counts and rows below remain scoped to the initial snapshot; its four utility choices and formulas continue unchanged.
+[Home](../../README.md) · [Buy vs rent](README.md)
+
+**Rental snapshot** · 104 offers at `07180f4`
+
+[Read payback figures](#how-to-read-a-payback-cell) · [A1 only](#a1-only) · [A2 only](#a2-only) · [Both profiles](#offers-that-fit-either-profile) · [Prepaid contracts](#prepaid-cash-and-contract-commitments)
+
+This appendix preserves the initial IDs 001–104 from commit `07180f4`. Add [N01–N15](08-latest-rental-comparisons.md) and [E01–E22](09-expanded-rental-comparisons.md) for all **141 analyzed offers through `175399c`**, with 93 distinct capacity matches, 95 profile comparisons and 48 nonmatches. [Current offer corrections](10-current-offer-updates.md) overlay the 087 PowerDedi first-month coupon. Counts and rows below remain scoped to the initial snapshot; its four utility choices and formulas continue unchanged.
 
 **How many months of rent buy a server?** On UHost’s Helsinki A2 quote, S$8,609.40 of Singapore hardware equals **30.34 months of recurring rent**. The provider also lists USD 120 setup. Counting that fee on a new rental moves hardware-only break-even to **29.80 months**. Counting both electricity and internet on the owned host moves it to **54.86 months**, or month 55 on monthly billing. For the A1 server with the larger mirrored drives, BizoSiz gives **24.71 months of recurring rent**, **24.31 months** including setup and **38.0006 months** including setup and both operating costs. The first completed month at or beyond that last threshold is **39**. Supply, taxes and actual CI performance remain unverified. [Recorded UHost quotes](../2026-11-19-global.md#exact-cpu-published-qualifying-offers) · [BizoSiz carts](../2026-11-20-exact-cpu.md#bizosiz)
 

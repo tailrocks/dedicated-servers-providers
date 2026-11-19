@@ -1,13 +1,20 @@
 # Comparison methodology
 
-The current offers live in the seven-column table in [README.md](README.md). Dated files under `research/` preserve evidence, rejected offers, older prices and unresolved questions. A historical entry is not a current purchase recommendation.
+[Home](README.md) / [Rental offers](rentals/README.md)
+
+The [rental catalog](rentals/README.md) contains the current seven-column comparison. The [dated research archive](research/README.md) preserves evidence, rejected offers, older prices and unresolved questions. Use the catalog for the latest checked offers and the archive to trace their evidence.
+
+- [Requirements](#requirements) and [Hetzner reference](#reference-configuration)
+- [CPU qualification](#cpu-qualification) and [raw versus mirrored storage](#storage-qualification)
+- [Currency, tax and price calculations](#price-normalization) and [checkout and stock evidence](#evidence-and-availability)
+- [CI ownership methodology](#ci-ownership-comparison) and [ongoing updates](#ongoing-updates)
 
 ## Requirements
 
 - A whole physical dedicated / bare-metal server. VPS, VDS, dedicated-vCPU and shared-hosting products do not qualify.
 - CPU performance at least in the AMD EPYC 9454P class.
 - At least 128 GB of installed RAM.
-- At least 2 TB of installed SSD capacity, preferably NVMe. HDD capacity does not satisfy this floor.
+- At least 2 TB of raw installed SSD capacity, preferably NVMe. HDD capacity does not satisfy this floor.
 - A lower recurring price than the reference server, with setup fees and minimum commitments shown separately. A lower monthly rate does not necessarily mean a lower first-year cost.
 
 The original general rental comparison did not specify a location, operating system, network allowance, workload or minimum physical core count. Those original rental-table criteria remain separate from the [CI ownership extension](research/buy-vs-rent/README.md), which explicitly specifies Rust/TypeScript testing in Docker, Singapore-first/Malaysia-second purchasing, non-ECC owned memory and a 3–5% performance tolerance. Do not silently relabel the general table's rows as measured CI equivalents. Differences that materially affect a purchase are recorded in Notes.
@@ -79,7 +86,7 @@ Capacities are nominal decimal TB before filesystem overhead. Do not round 1.92 
 
 ## Price normalization
 
-The README retains the original `Price (USD/mo)` column and ascending sort. Native prices, currencies, setup fees and payment terms remain in Notes so the original quote can be reconstructed.
+The rental catalog keeps the original seven columns and sorts by `Price (USD/mo)` in ascending numerical order across all price bands. Native prices, currencies, setup fees and payment terms remain in Notes so the original quote can be reconstructed. Amounts exclude optional services and licenses.
 
 - Native USD offers use their advertised USD recurring amount.
 - EUR offers are converted for comparison at **EUR 1 = USD 1.0992**, the [ECB reference rate dated 2026-11-19](https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata). Converted amounts are prefixed `~` and rounded to two decimals. This dated API source remains reproducible after the ECB's landing page advances to the next business day.
@@ -92,7 +99,7 @@ The README retains the original `Price (USD/mo)` column and ascending sort. Nati
 - Distinguish the seller's actual payment currency from an internal pricing index. AvalinHost calculates its payable Iranian toman quote from EUR, but no direct EUR/USD or international payment route was verified. Its indicative comparison remains in the payment-specific watchlist; the EUR basis is not represented as a universally payable foreign-currency price.
 - Prices are before VAT where the tax basis is verified. A provider stating that it does not charge VAT is recorded accordingly. Unknown tax treatment is explicitly marked; do not silently subtract an assumed tax rate.
 - An advertised tax-inclusive price whose VAT rate cannot be established must never be presented as a verified net amount. Mark it **†** in the price column and retain the full displayed gross amount, with the tax caveat in Notes. This is a conservative comparison when that gross amount is already below the reference's net amount. Do not subtract an assumed VAT percentage. Unknown prices without an established currency belong in the evidence log.
-- Show mandatory setup fees and minimum contract length. A prepaid annual or two-year amount divided by its term is an effective monthly rate, not a month-to-month subscription.
+- Show mandatory setup fees and minimum contract length. For a 12-, 24- or 36-month prepayment, divide the actual term rent by the number of months to obtain the effective monthly rate. Find the full upfront commitment in Notes.
 - Separate promotions / contract variants may have their own rows. State the upfront commitment, renewal terms when known, and whether the offer is conditional on a code, region or prepayment.
 - For prepaid terms, normalize the actual term invoice to a monthly rate and convert currencies before the final rounding. Multiplying a rounded native monthly equivalent can introduce a one-cent discrepancy.
 - First-year cost is `12 x recurring monthly + mandatory setup` for monthly billing. For annual prepayment, use the actual annual amount plus setup. A two-year prepayment is a two-year cash commitment and must not be disguised as a first-year payment.
@@ -106,9 +113,9 @@ Use provider product pages, exact public configurators, checkout summaries, docu
 Each table row distinguishes the evidence available:
 
 - **Configured / orderable:** matching hardware and prices were checked in a public configurator or its data; the product reports orderable. This does not prove hardware allocation or delivery.
-- **Cart checked:** the public cart names the exact configuration and recurring amount; final tax, stock or delivery may remain unknown.
+- **Configurator / cart checked:** the matching hardware and price were reached. A checked cart names the exact configuration and recurring amount. Final tax, stock and delivery can still require confirmation. Confirm the setup charge when the note says `No setup line shown`.
 - **Public calculator:** the provider's published product and price calculation were verified, without an issued invoice or allocated server. A calculator can still depend on advertised link parameters rather than authoritative backend pricing; state this distinction.
-- **Listed / stock unconfirmed:** a matching provider listing exists, but the exact order or allocation could not be verified.
+- **Listed / quote only / stock unconfirmed:** a provider advertises matching hardware. The complete selected order, allocation or delivery remains unverified. Notes retain identity or historical concerns where relevant.
 - **Unavailable:** the provider's current catalogue or stock feed reports no availability.
 - **Order mismatch / stale lead:** the advertised link resolves to a different product, errors, or is only indexed. Preserve the evidence in the log; never promote it to confirmed availability.
 - **Conditional CPU:** benchmark or platform tradeoffs require workload-specific confirmation.
@@ -120,6 +127,8 @@ Some WHMCS storefronts need normal session cookies to preserve a selected produc
 Text extraction can expose hidden alternative-cycle labels such as `Unavailable` or `Indisponível`. Check the selected billing cycle, active product link, HTML state, price calculation and relevant stylesheet before treating those words as stock evidence. This resolved the AMS SOFT and CrockyHost false negatives on 20 November. A working selected cart still does not prove physical stock. Conversely, an explicitly sold-out SKU or negative live inventory result is not overridden merely because a configurator accepts the product.
 
 If demonstration wording is historical and current legal/product pages have changed, record that chronology explicitly. Do not claim the current service is definitely a demonstration; require fresh supply evidence before treating static stock indicators as availability.
+
+Several sellers resell hardware from the same datacenter. Their separate listings can draw on the same physical stock. Each row records a seller's published offer and the evidence reached. Evaluate the provider and confirm allocation separately.
 
 No account registration, vendor contact, paid order or hardware reservation was performed as part of this comparison.
 
@@ -137,11 +146,11 @@ The [buy-versus-rent folder](research/buy-vs-rent/README.md) compares the locall
 - **Location:** buying in Singapore and hosting in Malaysia are separate choices. Include power/chassis acceptance, servicing and logistics; a country's seller address is not a datacenter location. European rental savings apply only if European placement is acceptable.
 - **Availability:** absent LTD inventory stays historical. Ordinary storefront stock labels, a successful cart and a selected city do not prove allocation. No purchase or supplier contact is part of this research.
 
-The currency reference remains **19 November 2026**: EUR 1 = SGD 1.4176 = USD 1.0992 = MYR 4.5205 = BRL 6.4765 = GBP 0.83581 = CNY 7.3280. SGD/MYR are additional currencies for the ownership extension; the root table retains its existing USD conversions. GBP prices convert directly to SGD as `GBP / 0.83581 × 1.4176`, without first rounding the USD comparison. CNY similarly uses `CNY / 7.3280 × 1.4176`, based on the dated ECB source above. [Dated SGD observation](https://data-api.ecb.europa.eu/service/data/EXR/D.SGD.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata), [dated MYR observation](https://data-api.ecb.europa.eu/service/data/EXR/D.MYR.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata), [dated GBP observation](https://data-api.ecb.europa.eu/service/data/EXR/D.GBP.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata).
+The currency reference remains **19 November 2026**: EUR 1 = SGD 1.4176 = USD 1.0992 = MYR 4.5205 = BRL 6.4765 = GBP 0.83581 = CNY 7.3280. SGD/MYR are additional currencies for the ownership extension; the rental catalog retains its existing USD conversions. GBP prices convert directly to SGD as `GBP / 0.83581 × 1.4176`, without first rounding the USD comparison. CNY similarly uses `CNY / 7.3280 × 1.4176`, based on the dated ECB source above. [Dated SGD observation](https://data-api.ecb.europa.eu/service/data/EXR/D.SGD.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata), [dated MYR observation](https://data-api.ecb.europa.eu/service/data/EXR/D.MYR.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata), [dated GBP observation](https://data-api.ecb.europa.eu/service/data/EXR/D.GBP.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata).
 
 ## Ongoing updates
 
-1. Read the current README and latest dated log before searching.
+1. Read the [rental catalog](rentals/README.md) and latest [dated log](research/README.md) before searching. Use the [contributor guide](CONTRIBUTING.md) for the row template and column definitions.
 2. Recheck the cheapest relevant offers and any expiring promotions or stock changes.
 3. Search new providers and stronger CPU configurations; do not pad the table with below-floor CPUs or duplicate locations without a meaningful difference.
 4. Preserve the seven columns and ascending numeric USD order. Keep native currency, tax, setup, term, performance and availability caveats in Notes.

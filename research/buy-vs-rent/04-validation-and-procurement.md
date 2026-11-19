@@ -1,5 +1,11 @@
 # CI workload validation and procurement requirements
 
+[Home](../../README.md) · [Buy vs rent](README.md)
+
+**Procedure updated** · 20 November 2026
+
+[Acceptance criteria](#1-acceptance-criteria) · [CI replay](#2-representative-ci-replay) · [Owned-system quote](#5-required-information-for-an-owned-system-quote) · [Rental quote](#6-required-information-for-a-rented-server-quote)
+
 Updated: **20 November 2026**. This procedure makes the requested 3–5% performance tolerance measurable. It has **not** been executed against the user's repositories. No hardware or hosting was bought, no account was created, and no vendor was contacted during the research.
 
 ## 1. Acceptance criteria

@@ -1,8 +1,14 @@
 # Dedicated rental and colocation market: Singapore first, Malaysia second
 
+[Home](../../README.md) · [Buy vs rent](README.md)
+
+**Regional snapshot** · 19 November 2026, with a 20 November reference recheck
+
+[Singapore rentals](#3-singapore-dedicated-rental-shortlist) · [Malaysia rentals](#4-malaysia-dedicated-rental-shortlist) · [Colocation](#5-singapore-colocation) · [Electricity](#8-electricity-sources-for-ownership-scenarios) · [Sources](#source-links)
+
 Regional-offer snapshot: **19 November 2026**. Repository integration and Hetzner live-feed recheck: **20 November 2026**. This is a comparison of publicly advertised dedicated hardware and ownership-hosting options, not a reserved inventory list or a supplier endorsement. Regional entries retain their original observation date unless a later check is specifically recorded. No orders, account registrations, paid trials or vendor messages were made.
 
-The non-ECC preference applies to **owned hardware**. Rental servers may use ECC. Ordinary cloud vCPUs are not treated as dedicated physical cores. See [01-hardware-and-performance.md](01-hardware-and-performance.md) for the owned builds and [03-rent-vs-buy-tco.md](03-rent-vs-buy-tco.md) for cost scenarios. The [main repository table](../../README.md#servers) supplies the worldwide rental baseline: [file 05](05-repository-rental-comparison.md) preserves the original 104 rows, [file 08](08-latest-rental-comparisons.md) adds the next 15, and [file 09](09-expanded-rental-comparisons.md) adds 22 more, covering all 141. [File 10](10-current-offer-updates.md) overlays corrections to existing offers. The Singapore/Malaysia leads below supplement that baseline; they do not replace cheaper European options when geography is flexible.
+The non-ECC preference applies to **owned hardware**. Rental servers may use ECC. Ordinary cloud vCPUs are not treated as dedicated physical cores. See [01-hardware-and-performance.md](01-hardware-and-performance.md) for the owned builds and [03-rent-vs-buy-tco.md](03-rent-vs-buy-tco.md) for cost scenarios. The worldwide rental baseline is the 141-offer catalog snapshot at `175399c`. [File 05](05-repository-rental-comparison.md) preserves the original 104 rows, [file 08](08-latest-rental-comparisons.md) adds the next 15, and [file 09](09-expanded-rental-comparisons.md) adds 22 more. [File 10](10-current-offer-updates.md) overlays corrections to existing offers. The Singapore/Malaysia leads below supplement that baseline; they do not replace cheaper European options when geography is flexible. The [current rental catalog](../../rentals/README.md) includes newer offers.
 
 ## 1. Currency and comparison rules
 

@@ -1,5 +1,9 @@
 # Bangladesh and Indonesia storefronts and additional Falkenstein configurations
 
+[Home](../README.md) · [Research](README.md)
+
+**Evidence date** · 20 November 2026
+
 Public pages, product lookups and anonymous price calculators were checked on 20 November 2026 in Vietnam (19 November UTC). The regular Hetzner AX162-1 reference is €612.30/month plus €304 setup. The [ECB's dated EUR/USD series](https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata) and [EUR/IDR series](https://data-api.ecb.europa.eu/service/data/EXR/D.IDR.EUR.SP00.A?startPeriod=2026-11-19&endPeriod=2026-11-19&format=csvdata) give USD 1.0992 and IDR 20,073.1 per EUR. No account was created, domain supplied, order placed, stock reserved or vendor contacted.
 
 ## Hostnin
