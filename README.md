@@ -7,7 +7,7 @@ Find a physical server with **AMD EPYC 9454P-class performance or better, at lea
 ## Start here
 
 - <a name="servers"></a>**[Compare rental offers by monthly price](rentals/README.md)**. Browse 195 hardware and billing options from 78 alternative seller brands plus Hetzner. Each row gives the seller's source, the date checked and what remains uncertain.
-- <a name="buy-in-singapore-or-malaysia-versus-rent"></a>**[Compare buying in Singapore or Malaysia with renting](research/buy-vs-rent/README.md)**. See when a workstation pays back and how to test it against a Rust/TypeScript CI workload. These calculations cover an earlier 141-offer snapshot.
+- <a name="buy-in-singapore-or-malaysia-versus-rent"></a>**[Compare buying in Singapore or Malaysia with renting](old/buy-vs-rent/README.md)**. Read the new internet-only CPU, non-ECC RAM, exact-parts and four-scenario financial study. The closest new 256 GB workstation costs S$13,330; lower-priced EPYC rentals materially change its payback. The [earlier 141-offer ownership snapshot](research/buy-vs-rent/README.md) remains available with its original assumptions.
 - **[Trace a finding to the dated research](research/README.md)**. Open the original price checks, corrections and exclusions by research pass.
 
 The latest rental checks were recorded on **20 November 2026** in Vietnam. The latest pass added 25 rows across 12 new sellers and an additional UHost NVMe configuration. A published price or checked cart still requires confirmation of physical stock. [Latest research pass](research/2026-11-20-further-options.md)

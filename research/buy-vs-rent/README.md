@@ -2,6 +2,8 @@
 
 [Start](../../README.md) / Buy or rent
 
+**Historical snapshot.** The new [20 November internet-only purchasing study](../../old/buy-vs-rent/README.md) provides current component evidence, 18 priced build variants and independent electricity/internet calculations. It supersedes this snapshot's parts basket and physical replay prerequisite for the current buying decision. This earlier study remains unchanged below to preserve its 141-offer calculations and evidence; its colocation scenarios are not inputs to the new model.
+
 Compare buying a **non-ECC workstation or desktop runners** for Rust/TypeScript builds and tests in Docker with renting a dedicated server. The purchase and hosting preference is Singapore first, Malaysia second.
 
 **Rental coverage is fixed at 141 offers through `175399c`.** The [rental catalog](../../rentals/README.md) continues to grow. Offers added after this snapshot have no payback calculation in this study.

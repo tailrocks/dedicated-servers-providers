@@ -1,0 +1,44 @@
+# Electricity for always-on CI workers
+
+[Study overview](README.md) · [Internet](internet-costs.md) · [Market inputs](data/market-inputs.json)
+
+**Checked 20 November 2026, Asia/Ho_Chi_Minh.** A 5995WX workstation averaging 275 W uses **200.75 kWh/month**. On the existing meters modeled here that is **S$62.55 in Singapore** or **RM110.59 in Peninsular Malaysia** (about S$34.68). A two-node pool can have higher electricity costs even when its per-node power is lower.
+
+## Tariffs and billing scope
+
+| Existing-meter case | Variable price used | Applicability and primary evidence |
+|---|---:|---|
+| Singapore regulated low tension | **S$0.3116/kWh with GST**, S$0.2859 before GST | SP’s 30 September release and Appendix 2 give the same rate for domestic and non-domestic low-tension supply for **1 October–31 December 2026**. For a registered business with recoverable GST or a negotiated retailer tariff, substitute its actual marginal cost. High-tension schedules have separate time and capacity charges. [SP release](https://www.spgroup.com.sg/about-us/media-resources/news-and-media-releases/Electricity-Tariff-Revision-for-the-Period-1-October-to-31-December-2026) · [SP Appendix 2, domestic and non-domestic rates](https://www.spgroup.com.sg/dam/spgroup/images/news-media-releases/2026/SP-Group-4Q-2026-Tariff---Appendix-2.jpg) · [EMA](https://www.ema.gov.sg/consumer-information/electricity/buying-electricity/buying-at-regulated-tariff) |
+| Peninsular Malaysia non-domestic low voltage, General | **RM0.5509088/kWh** including generation, capacity, network, renewable-energy levy and November AFA | RP4 tariff schedule **1 July 2025–31 December 2027**, with the **1–30 November 2026** fuel adjustment. Existing meter already above the low-usage incentive threshold. The RM20 monthly retail charge is already incurred. [Tariff schedule](https://myenergystats.st.gov.my/documents/d/guest/jadual-tarif-tnb-terkini) · [Regulator’s dated November AFA notice](https://www.st.gov.my/sites/default/files/2026-10/Notis-Kadar-AFA-bagi-Bulan-November-2026_1.pdf) · [TNB renewable-energy levy](https://www.tnb.com.my/kumpulan-wang-tenaga-boleh-baharu-kwtbb) |
+
+The Malaysian schedule charges 27.03 sen for energy, 8.83 for capacity and 14.82 for network. Their sum is **50.68 sen/kWh**. TNB’s July 2025 RP4 billing examples apply KWTBB of 1.6% on those components, excluding AFA and the fixed retail charge. The full marginal calculation in ringgit is **(0.2703 + 0.0883 + 0.1482) × 1.016 + 0.0360 = 0.5509088**. A new account or a different tariff class would require its own calculation. Royal Malaysian Customs states that commercial electricity is not subject to service tax; its domestic-customer rules are separate. [TNB presentation, low-voltage billing calculation](https://mra.com.my/wp-content/uploads/2025/07/New-RP4-Electricity-Tariff-Structure-Now-in-Effect-%E2%80%93-What-Retailers-Should-Know.pdf) · [Monthly AFA](https://www.st.gov.my/AFA) · [Malaysian Customs electricity guidance](https://mysst.customs.gov.my/faq-business/)
+
+For a **Malaysian household**, use the difference between the complete site bill with and without CI. Under Domestic General, the published components up to 1,500 kWh are 27.03 + 4.55 + 12.85 = **44.43 sen/kWh** before incentives and account-specific adjustments. The Energy Commission extended domestic protection from AFA, the retail charge and SST through **800 kWh monthly for September–December 2026**. The renewable-energy levy has a separate domestic threshold, and an energy-efficiency incentive can change with consumption. For a low-usage business the incentive can apply through **200 kWh**. Crossing any threshold can change the charge on more than the runner’s incremental kWh. Use the account’s other usage and actual month to obtain the bill difference. This Peninsular tariff does not apply in Sabah or Sarawak. [Domestic protection notice](https://www.st.gov.my/node/5743) · [Energy Commission outlook, domestic and small-business incentives](https://www.st.gov.my/sites/default/files/2026-04/ST_Performance-Booklet_Digital_FA_Hi-Res.pdf) · [TNB billing calculator information](https://www.tnb.com.my/residential/billing)
+
+## AC power evidence and assumptions
+
+| Platform | Published whole-system result | Assumed idle / moderate / heavy |
+|---|---|---:|
+| WRX80, Threadripper PRO 5995WX | MyNavi’s ASRock WRX80D8-2T system drew **106 W idle, 443 W peak in Cinebench R23**. PC Perspective measured a Lenovo P620 with the same CPU, eight RDIMMs and RTX A6000 at **435 W typical, 461 W peak** during CPU Blender work. GPUs, boards and memory differ from the proposed builds. [MyNavi test and equipment](https://news.mynavi.jp/article/20220810-2422493/) · [Original wall-power chart](https://news.mynavi.jp/article/20220810-2422493/images/109.jpg) · [PC Perspective’s P620](https://pcper.com/2023/01/lenovo-thinkstation-p620-review-ryzen-threadripper-pro-5995wx-beast/) | **110 / 275 / 440 W** |
+| AM5, Ryzen 9 9950X / 9950X3D | PC Watch used a plug-in power meter and recorded **82.7 W idle** and average **313.2–350.1 W** across CPU-heavy benchmarks on its review system. Those endpoints include the test rig, its graphics hardware and power-conversion losses. A separate original 9950X3D review measured 333 W whole-system during Cinebench, supporting this order of magnitude. [PCGamesN 9950X3D power](https://www.pcgamesn.com/amd/ryzen-9-9950x3d-review). [PC Watch, system-power graph 40](https://pc.watch.impress.co.jp/docs/column/hothot/1615930.html) | **85 / 210 / 335 W** |
+| LGA1851, Core Ultra 7 270K Plus | Club386’s whole-system chart gives **98 W idle and 362 W under load**. CPU boost and motherboard settings, discrete graphics and cooling can change a headless worker’s draw. [Club386, Power and Temperature](https://www.club386.com/intel-core-ultra-7-270k-plus-review/) | **100 / 230 / 360 W** |
+
+Idle means the machine stays on throughout the month; heavy is our sustained active-load allowance. Moderate, the central cost assumption, is **half the hours idle and half at heavy draw**. It describes a duty cycle, not 50% CPU utilization. A practical sensitivity for other schedules is `average watts = idle watts + active fraction × (heavy watts − idle watts)`. The measured figures above belong to the cited publications. The model’s rounded watts and duty cycle are estimates for the proposed hardware. Hetzner separately reports **61 W idle / 349 W maximum** for its *basic AX162* qualification system. Its actual DIMM, PSU, board and fan arrangement can differ from a purchased workstation. [Hetzner qualification matrix](https://www.hetzner.com/dedicated-rootserver/matrix-ax/)
+
+## Monthly electricity by load
+
+Each cell lists **idle / moderate / heavy** for a complete machine or pair. Energy equals mean AC watts × **730 hours/month** ÷ 1,000. A two-node pool assumes both machines remain powered and uses their combined draw. Calculations use the unrounded tariffs.
+
+| Platform | kWh/month | Singapore, S$/month | Peninsular Malaysia, RM/month |
+|---|---:|---:|---:|
+| One 5995WX | 80.30 / 200.75 / 321.20 | 25.02 / **62.55** / 100.09 | 44.24 / **110.59** / 176.95 |
+| One 9950X / 9950X3D | 62.05 / 153.30 / 244.55 | 19.33 / **47.77** / 76.20 | 34.18 / **84.45** / 134.72 |
+| One 270K Plus | 73.00 / 167.90 / 262.80 | 22.75 / **52.32** / 81.89 | 40.22 / **92.50** / 144.78 |
+| Two 9950X / 9950X3D workers | 124.10 / 306.60 / 489.10 | 38.67 / **95.54** / 152.40 | 68.37 / **168.91** / 269.45 |
+| Two 270K Plus workers | 146.00 / 335.80 / 525.60 | 45.49 / **104.64** / 163.78 | 80.43 / **185.00** / 289.56 |
+
+The added 9950X3D2 variants use an explicitly analytical **85 / 225 / 365 W** budget: the heavy allowance is 30 W above the Ryzen baseline and 225 W is the midpoint. Phoronix measured average **CPU-package**, not wall, power of 184 W for X3D2 against 165 W for X3D, supporting the direction without proving this exact wall delta. [Original monitoring](https://www.phoronix.com/review/amd-ryzen-9950x3d2-linux/11). At 225 W the modeled bill is **S$51.18/month or RM90.49/month**. All memory capacities share a platform budget; exact per-DIMM consumption and these headless builds remain unmeasured.
+
+For the moderate 5995WX, a full year at these rates costs **S$750.64** in Singapore or **RM1,327.14** in Peninsular Malaysia. Each extra **100 W sustained** adds 73 kWh monthly, about **S$22.75** or **RM40.22**. Additional cooling or UPS losses upstream of the measured wall socket would be separate site-dependent power increments. Adding CPU TDP, PSU nameplate wattage or a blanket cooling percentage to these wall figures would give a different budget. The direct comparisons use the runner’s AC consumption only. Quarterly and monthly tariff snapshots held constant over multiple years are sensitivities.
+
+Signed-off-by: Alexey Zhokhov <alexey@zhokhov.com>
