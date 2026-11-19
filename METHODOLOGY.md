@@ -20,7 +20,7 @@ Sources:
 
 - [AX162 configurator](https://www.hetzner.com/dedicated-rootserver/ax162/configurator/)
 - [AX hardware matrix](https://www.hetzner.com/dedicated-rootserver/matrix-ax/)
-- [Official price adjustment table](https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/)
+- [Historical official price adjustment table](https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/) — still indexed with the same amounts, but direct retrieval returned HTTP 404 in the final 20 November check; the live feed below independently confirms the current prices.
 - [Public live price feed](https://www.hetzner.com/_resources/app/data/app/live_data_prices.json), product `ROBOT_1724`
 - [Public availability feed](https://www.hetzner.com/_resources/app/data/app/live_data_upfront.json)
 
