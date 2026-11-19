@@ -2,7 +2,7 @@
 
 This extension compares buying non-ECC desktop/workstation hardware in Singapore or Malaysia with the rental research already in this repository. It adds a permanent [buy-versus-rent research folder](buy-vs-rent/README.md) for Rust/TypeScript builds and tests in Docker. Singapore is the preferred purchase/hosting market, with Malaysia second; worldwide rental locations remain available for comparison when geography is flexible.
 
-**Current coverage: 119 rental offers.** The initial 104-offer snapshot and direct-payback follow-up are preserved chronologically below. The [latest integration](#follow-up-integrating-the-119-offer-main-branch) adds the 15 offers subsequently published on main.
+**Analyzed coverage: the 119-offer snapshot at `c868b31`.** The canonical comparison has subsequently expanded; later additions and revised promotions are outside this ownership model until separately analyzed. The initial 104-offer snapshot and direct-payback follow-up are preserved chronologically below. The [latest integration](#follow-up-integrating-the-119-offer-main-branch) adds the 15 offers subsequently published on main.
 
 ## Source snapshot and repository scope
 
@@ -90,3 +90,9 @@ The [Faciotech configurator](https://faciotech.com/dedicated-servers.php#configu
 The update preserves payment-specific watchlists separately. AvalinHost's EUR pricing basis is paid in Iranian toman, with international payment eligibility unverified; Gengbiz's Malaysian-market page does not establish a qualifying Malaysian physical deployment. Neither is silently promoted to a generally payable or locally allocated replacement. AmazingRDP's annual quote is modeled as a real USD5,400 upfront term invoice, with cash crossover distinguished from its monthly equivalent.
 
 GPT-6.2 Astra max performed the delta comparison and decision-impact review, followed by GPT-6.2 Sol max's independent review of new calculations, capacity counts, fee/currency handling, prepaid behavior and cross-file integration. The current canonical server table is preserved byte-for-byte from `c868b31`; the authored integration commit includes the standing Alexey Zhokhov sign-off.
+
+## Publication follow-up: preserve the analyzed snapshot
+
+On 20 November 2026, the user explicitly instructed that completed work be committed, pushed and any created or touched PRs merged. PR #1 was reviewed against main `175399c50339f5d8192c4a5821e74db4d5fbd4f6`, whose canonical comparison had grown to 141 rows. The ownership extension's arithmetic still analyzes the earlier 119-offer snapshot. Its current-facing summaries now state that scope explicitly, while historical sections, all original amounts, source IDs and the 104/15-row analyses remain intact. No claim is made that the later 22 rows or refreshed PowerDedi promotion have been recalculated in the ownership model.
+
+The prospective merge preserves the full 141-row canonical table and all six files from the newer supplier expansion. Changes in this follow-up concern snapshot labeling and integration only. The existing DCO check passed on the prior PR head; the new publication commit carries the standing sign-off and must pass the same check before merging. No new hardware-performance or cost-model conclusions are introduced.

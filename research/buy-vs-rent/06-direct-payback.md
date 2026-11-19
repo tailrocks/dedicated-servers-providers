@@ -2,7 +2,7 @@
 
 **Updated: 20 November 2026.** This is the primary purchase-versus-rental view requested by the user. **Office, room, floor-space and premises rent are excluded from every scenario**, including optional sensitivities. Singapore is the first purchase/hosting preference; Malaysia is second.
 
-**Current rental coverage is 119 offers:** the [initial 104-offer payback snapshot](07-all-rentals-break-even.md) plus [15 subsequent additions](08-latest-rental-comparisons.md). Stable original IDs are preserved. New quotes inherit their evidence dates; a cost calculation does not establish new stock or payment eligibility.
+**Analyzed rental coverage is the 119-offer `c868b31` snapshot:** the [initial 104-offer payback snapshot](07-all-rentals-break-even.md) plus [15 subsequent additions](08-latest-rental-comparisons.md). Stable original IDs are preserved. New quotes inherit their evidence dates; a cost calculation does not establish new stock or payment eligibility.
 
 ## 1. What “the hardware has cost me zero” means
 
@@ -204,7 +204,7 @@ The whole-month number is the first integer service-month whose **modeled cumula
 
 For prepaid `p`-month blocks costing `P`, rental cash needed for a horizon `N≥1` is `F + ceil(N/p)×P`, assuming the same terms renew. Monthly equivalent `R=P/p` is useful for an economic comparison but is not the actual payment schedule. Buying may appear cheaper at the first prepayment, become more expensive before that paid term ends, then become cheaper at renewal. Do not call the first temporary crossing permanent payback. Monthly-paid minimum contracts also create liabilities without implying the entire term was paid on day one.
 
-The [initial 104-offer payback appendix](07-all-rentals-break-even.md) and [latest 15-offer extension](08-latest-rental-comparisons.md) keep these cases distinct across all 119 current rows, mark unknown setup/terms, and exclude capacity-unmatched offers from equivalence rankings. The initial appendix's regular Hetzner row preserves the root table's **bare** server price, whereas this file's regular Hetzner rows explicitly add one IPv4; the different figures have different, labeled scopes.
+The [initial 104-offer payback appendix](07-all-rentals-break-even.md) and [latest 15-offer extension](08-latest-rental-comparisons.md) keep these cases distinct across all 119 analyzed snapshot rows, mark unknown setup/terms, and exclude capacity-unmatched offers from equivalence rankings. The initial appendix's regular Hetzner row preserves the root table's **bare** server price, whereas this file's regular Hetzner rows explicitly add one IPv4; the different figures have different, labeled scopes.
 
 ## 9. Practical interpretation
 

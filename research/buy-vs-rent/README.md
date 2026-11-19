@@ -4,7 +4,7 @@
 
 **Buy/host priority:** Singapore first, Malaysia second.
 
-**Rental coverage:** all **119 current offers** in this repository: the original 104 plus 15 additions, with existing worldwide locations and evidence retained.
+**Rental coverage:** the **119-offer snapshot at `c868b31`**: the original 104 plus 15 additions, with worldwide locations and evidence retained. The canonical root comparison has since expanded. Later additions and price changes are not yet incorporated into this cost model; use the root table for current supplier listings.
 
 **Workload:** Linux Rust/TypeScript builds and tests in Docker containers.
 
@@ -31,7 +31,7 @@
 | [05-repository-rental-comparison.md](05-repository-rental-comparison.md) | Initial 104-offer snapshot: A1/A2 capacity matching, native terms and horizon costs |
 | [06-direct-payback.md](06-direct-payback.md) | **Start here:** hardware-only rent equivalents, four independent electricity/internet scenarios, first whole break-even month, Singapore and Malaysia |
 | [07-all-rentals-break-even.md](07-all-rentals-break-even.md) | Four-scenario payback for the initial 104 offers; setup unknowns, prepaid cash and commitment distinctions |
-| [08-latest-rental-comparisons.md](08-latest-rental-comparisons.md) | Fifteen additions, completing current 119-offer coverage; GBP quotes, horizon costs, four-scenario payback and prepaid cash |
+| [08-latest-rental-comparisons.md](08-latest-rental-comparisons.md) | Fifteen additions, completing the pinned 119-offer coverage; GBP quotes, horizon costs, four-scenario payback and prepaid cash |
 | [Integration and corrections log](../2026-11-20-buy-vs-rent.md) | Changes from the earlier standalone hardware research and exact source snapshot |
 
 The [root seven-column table](../../README.md#servers) remains the canonical provider list. This folder adds a workload-specific ownership decision; it does not silently change the original rental table's raw-capacity floor or label every listed CPU as a measured CI match.
@@ -45,7 +45,7 @@ The [root seven-column table](../../README.md#servers) remains the canonical pro
 
 Mirroring is the comparison convention, not a claim that the user's current rental is already configured as RAID1. Filesystem overhead and operating headroom reduce available space. CPU, SSD latency/endurance, memory protection, network and support are separate acceptance questions.
 
-The repository's general minimum is only 128 GB plus 2 TB **raw** SSD. Of its **119 current offers, 76 distinct rows meet at least one of these stricter capacity classes**: 35 only A1, 39 only A2, two both; 43 meet neither. This gives **78 capacity-profile comparisons**. No main-table row establishes allocation in Singapore or Malaysia. Files 05/07 preserve the initial stable IDs 001–104, and file 08 covers additions N01–N15; together they retain every current offer and its evidence. A one-drive or undersized host is not presented as equivalent to a mirrored owned system.
+The repository's general minimum is only 128 GB plus 2 TB **raw** SSD. Of the **119 analyzed offers, 76 distinct rows meet at least one of these stricter capacity classes**: 35 only A1, 39 only A2, two both; 43 meet neither. This gives **78 capacity-profile comparisons**. No analyzed row establishes allocation in Singapore or Malaysia. Files 05/07 preserve the initial stable IDs 001–104, and file 08 covers additions N01–N15; together they retain every offer in that snapshot and its evidence. A one-drive or undersized host is not presented as equivalent to a mirrored owned system.
 
 ## Owned hardware shortlist
 
@@ -92,9 +92,9 @@ For A2 Singapore ownership, the direct **36-month costs** are:
 | Internet only | Excluded | S$50 | **S$10,409.40** |
 | Both utilities | S$79.61 | S$50 | **S$13,275.50** |
 
-UHost's known 36-month rent plus setup is **S$10,368.91**. Thus hardware alone is below it, while including both selected bills puts ownership above it. Do not describe either conclusion as universal. The [initial break-even appendix](07-all-rentals-break-even.md) and [latest additions](08-latest-rental-comparisons.md) together preserve all **119 offers**, **78 capacity-profile comparisons over 76 matching offers**, missing fees, and prepaid cash flows. Among the stated-setup matches, **six** offers are cheaper at 36 months than the direct hardware-plus-both-utilities models; **nine** are cheaper than the optional expanded budgets. File 05 retains the earlier seven-offer count for its initial 104-row snapshot.
+UHost's known 36-month rent plus setup is **S$10,368.91**. Thus hardware alone is below it, while including both selected bills puts ownership above it. Do not describe either conclusion as universal. The [initial break-even appendix](07-all-rentals-break-even.md) and [latest additions](08-latest-rental-comparisons.md) together preserve all **119 analyzed offers**, **78 capacity-profile comparisons over 76 matching offers**, missing fees, and prepaid cash flows. Among the stated-setup matches, **six** offers are cheaper at 36 months than the direct hardware-plus-both-utilities models; **nine** are cheaper than the optional expanded budgets. File 05 retains the earlier seven-offer count for its initial 104-row snapshot.
 
-The latest additions do not displace UHost A2 or PlusClouds A1 as the lowest stated-setup 36-month quotes in the ranked inventory. Nindohost A2 is USD234/month with setup, term and stock unresolved. Progressive Robot's separate A1/A2 listings are GBP221/month + GBP88 setup, each **S$13,643.26 over 36 months** at dated FX; their final location, tax and term are unconfirmed. They account for the two additional rentals below the expanded budgets. Payment-specific and non-orderable watchlist leads remain separately qualified in file 08 and the upstream logs.
+The 15 additions analyzed in file 08 do not displace UHost A2 or PlusClouds A1 as the lowest stated-setup 36-month quotes in the ranked inventory. Nindohost A2 is USD234/month with setup, term and stock unresolved. Progressive Robot's separate A1/A2 listings are GBP221/month + GBP88 setup, each **S$13,643.26 over 36 months** at dated FX; their final location, tax and term are unconfirmed. They account for the two additional rentals below the expanded budgets. Payment-specific and non-orderable watchlist leads remain separately qualified in file 08 and the upstream logs.
 
 ## Optional expanded financial comparison
 
